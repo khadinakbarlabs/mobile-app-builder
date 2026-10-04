@@ -1,6 +1,6 @@
 # Publisher guide
 
-Run `python3 -m unittest discover -s tests -p 'test_*.py'`, then `python3 tools/release.py`. Source-only dependencies are pinned in requirements-dev.txt. Archives are written to dist/2.1.0, each with a single plugin root and a complete file/hash inventory. They are not placed inside installed folders.
+Run `python3 -m unittest discover -s tests -p 'test_*.py'`, then `python3 tools/release.py`. Source-only dependencies are pinned in requirements-dev.txt. Archives are written to dist/2.1.1, each with a single plugin root and a complete file/hash inventory. They are not placed inside installed folders.
 
 Run the public audit against the repository and both installed roots. Run the supported host CLI version 2.1.287 strict validation against the marketplace and each plugin manifest. Use `node tools/verify-host.mjs plugins/mobile-app-builder` and the optional research folder to compare actual host discovery with the files. Current native skill/agent schema checks are required in addition to manifest checks.
 

@@ -22,9 +22,9 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "f8e76c90d32cf973837c25c0ab37f667ae81d63583450e2eb1c8994b6dd25305",
+      "targetSha256": "fac168d7bbdf9402292e9b1b8e6d358122404f9f469ca548295f02989d986cd6",
       "status": "adapted",
-      "reason": "Preserved original workflows and resources; updated neutral product identity, repository routes and three-platform guidance."
+      "reason": "Accurate backend CLI data-flow disclosures and current neutral product metadata; workflows preserved."
     },
     {
       "source": "CHANGELOG.md",
