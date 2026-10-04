@@ -67,7 +67,7 @@
     },
     {
       "id": "operations",
-      "title": "Agency direction & operations",
+      "title": "Project direction & operations",
       "agents": [
         "agency-director",
         "release-manager"
@@ -197,7 +197,8 @@
         "install-android-cli-tools",
         "install-android-studio",
         "install-jdk-gradle",
-        "install-cursor-vscode"
+        "install-cursor-vscode",
+        "build-web-app"
       ]
     },
     {
@@ -700,6 +701,7 @@
     "mobile-store-intelligence": "shared",
     "mobile-influencer-intelligence": "shared",
     "mobile-ad-intelligence": "shared",
-    "mobile-seo-intelligence": "shared"
+    "mobile-seo-intelligence": "shared",
+    "build-web-app": "web"
   }
 }

@@ -13,7 +13,7 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CORE = 'mobile-app-builder-agency'
+CORE = 'mobile-app-builder'
 RESEARCH = 'mobile-app-builder-research'
 PLUGINS = (CORE, RESEARCH)
 TEXT_TYPES = {'.md', '.json', '.mjs', '.txt', '.yaml', '.yml'}
@@ -230,6 +230,13 @@ def validate_migration(root, migration, source):
             raise ValueError('Migration target differs from the recorded content')
 
 
+def validate_preserved_skills(current, source):
+    original = {Path(entry['path']).parent.name for entry in source['files']
+                if entry['path'].startswith('skills/') and entry['path'].endswith('/SKILL.md')}
+    if not original.issubset(set(current)):
+        raise ValueError('Every original workflow must remain discoverable')
+
+
 def validate_repository(root=ROOT):
     root = Path(root)
     if list(root.glob('.gitattributes')) or list((root / 'plugins').glob('.gitattributes')):
@@ -237,18 +244,26 @@ def validate_repository(root=ROOT):
     reports = [validate_folder(root / 'plugins' / name, core=name == CORE) for name in PLUGINS]
     core = reports[0]
     catalog = json.loads((root / 'plugins' / CORE / 'agency/catalog.json').read_text())
-    if sorted(item['id'] for item in catalog['skills']) != core['skills'] or len(core['skills']) != 189:
+    if sorted(item['id'] for item in catalog['skills']) != core['skills']:
         raise ValueError('The full migrated workflow library must remain discoverable')
     if sorted({agent for dept in catalog['departments'] for agent in dept['agents']}) != core['agents']:
         raise ValueError('The full migrated agent team must remain discoverable')
     if len(core['agents']) != 16 or len(catalog['departments']) != 8:
         raise ValueError('The agency team or classification was lost')
+    taxonomy = json.loads((root / 'plugins' / CORE / 'agency/taxonomy.json').read_text())
+    classified = [(skill, group['department'], group['id'])
+                  for group in taxonomy['groups'] for skill in group['skills']]
+    expected = [(skill['id'], skill['department'], skill['category']) for skill in catalog['skills']]
+    if (sorted(classified) != sorted(expected)
+            or taxonomy['platforms'] != {skill['id']: skill['platform'] for skill in catalog['skills']}):
+        raise ValueError('Workflow taxonomy differs from the installed catalog')
     marketplace = json.loads((root / '.claude-plugin/marketplace.json').read_text())
     if {entry['name']: entry['source'] for entry in marketplace['plugins']} != {
             name: './plugins/' + name for name in PLUGINS}:
         raise ValueError('Marketplace must point at the exact two installed roots')
     migration = json.loads((root / 'migration/report.json').read_text())
     source = json.loads((root / 'migration/source.json').read_text())
+    validate_preserved_skills(core['skills'], source)
     validate_migration(root, migration, source)
     return reports
 

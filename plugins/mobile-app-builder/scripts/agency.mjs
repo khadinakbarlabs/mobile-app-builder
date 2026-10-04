@@ -9,7 +9,7 @@ try {
     const argument = args[index];
     if (argument === '--json') { json = true; continue; }
     if (argument === '--help') {
-      console.log('Browse the agency: node scripts/agency.mjs [--department research|strategy|design|engineering|quality|launch|growth|operations] [--platform ios|android|shared] [--query text] [--json]');
+      console.log('Browse workflows: node scripts/agency.mjs [--department research|strategy|design|engineering|quality|launch|growth|operations] [--platform ios|android|web|shared] [--query text] [--json]');
       process.exit(0);
     }
     if (!['--department', '--platform', '--query'].includes(argument) || !args[index + 1] || args[index + 1].startsWith('--')) {
@@ -19,7 +19,7 @@ try {
   }
   const catalog = loadPreparedCatalog();
   if (filters.department && !catalog.departments.some(item => item.id === filters.department)) throw new Error('Unknown department. Use --help.');
-  if (filters.platform && !['ios', 'android', 'shared'].includes(filters.platform)) throw new Error('Unknown platform. Use --help.');
+  if (filters.platform && !['ios', 'android', 'web', 'shared'].includes(filters.platform)) throw new Error('Unknown platform. Use --help.');
   const skills = selectSkills(catalog, filters);
   if (json) console.log(JSON.stringify(skills, null, 2));
   else {

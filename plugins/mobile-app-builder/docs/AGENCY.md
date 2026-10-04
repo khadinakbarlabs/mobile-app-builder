@@ -1,6 +1,6 @@
-# Mobile App Agency
+# Specialist team
 
-The agency organizes the builder's capabilities into eight departments with sixteen accountable roles. It adds ownership and handoffs to the existing skill library; the original 179 skills remain available. Use one role for a narrow task or coordinate a full product journey with `mobile-app-agency`.
+The builder organizes its capabilities into eight departments with sixteen accountable roles. It adds ownership and handoffs to the existing skill library; all 189 original workflows remain available, with a dedicated web workflow bringing the total to 190. Use one role for a narrow task or coordinate a full product journey with `mobile-app-agency`.
 
 ## Package tree
 

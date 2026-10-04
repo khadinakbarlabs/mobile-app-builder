@@ -8,4 +8,4 @@ You are responsible for your own code, accounts, credentials, app identifiers, c
 
 The package deliberately requires confirmation before consequential actions. Do not bypass these safeguards or use the package to expose credentials, access unauthorized systems, misrepresent app capabilities, or create deceptive listings.
 
-The package is licensed under the MIT License. These terms are published with the canonical source at [github.com/khadinakbarlabs/mobile-app-builder-agency](https://github.com/khadinakbarlabs/mobile-app-builder-agency).
+The package is licensed under the MIT License. These terms are published with the canonical source at [github.com/khadinakbarlabs/mobile-app-builder](https://github.com/khadinakbarlabs/mobile-app-builder).

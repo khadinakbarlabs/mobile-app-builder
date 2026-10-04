@@ -8,9 +8,9 @@ Say:
 
 > I want to build an app for [audience] that helps with [problem]. Start by researching the opportunity before choosing features. My target market is [country/language].
 
-The assistant first checks what you already know and any available project files. It researches demand, Apple/Google Play competitors, review themes and useful design patterns, using public sources or a bounded Apify plan. You receive a concise evidence brief, uncertainties and a proposed first useful feature. No paid Actor runs start without sufficient existing budget authorization.
+The assistant first checks what you already know and any available project files. It researches demand, Apple/Google Play competitors, review themes and useful design patterns, using public sources or a bounded backend research plan. You receive a concise evidence brief, uncertainties and a proposed first useful feature. No paid research runs start without sufficient existing budget authorization.
 
-Then you can choose the next useful step: validate the idea, refine positioning, design the core journey or build a small working slice. The assistant uses iOS and Android by default when the platform is unspecified, labels that assumption, and checks it before platform-specific work or account setup. It records the product decisions so later stages reuse them.
+Then you can choose the next useful step: validate the idea, refine positioning, design the core journey or build a small working slice. The assistant covers iOS, Android and web by default when the platform is unspecified, labels that assumption, and checks it before platform-specific work or account setup. It records the product decisions so later stages reuse them.
 
 ## I already have an app
 
@@ -38,7 +38,7 @@ Existing apps can use any relevant framework. Expo instructions apply when the a
 | Prepare screenshots and metadata | Genuine UI capture plan, truthful copy and asset checklist |
 | Check launch readiness | Evidence of what passes and exact outstanding device/store gates |
 
-Research, design, development, QA, release and growth are independent entry points. The assistant should produce a useful first result without forcing the whole agency process.
+Research, design, development, QA, release and growth are independent entry points. The assistant should produce a useful first result without forcing the whole project process.
 
 ## A good first response
 

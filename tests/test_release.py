@@ -136,6 +136,20 @@ class ReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Migration'):
             release.validate_migration(self.root, valid, {'fileCount': 2, 'files': source['files'] * 2})
 
+    def test_real_catalog_browser_loads_and_filters_web_workflows(self):
+        import subprocess
+        tool = ROOT / 'plugins/mobile-app-builder/scripts/agency.mjs'
+        all_skills = json.loads(subprocess.check_output(['node', str(tool), '--json'], text=True))
+        self.assertEqual(len(all_skills), 190)
+        web_skills = json.loads(subprocess.check_output(['node', str(tool), '--platform', 'web', '--json'], text=True))
+        self.assertEqual([item['id'] for item in web_skills], ['build-web-app'])
+
+    def test_workflow_extensions_preserve_every_original_skill(self):
+        previous = {'files': [{'path': 'skills/example/SKILL.md'}]}
+        release.validate_preserved_skills(['example', 'build-web-app'], previous)
+        with self.assertRaisesRegex(ValueError, 'original'):
+            release.validate_preserved_skills(['build-web-app'], previous)
+
     def test_core_refuses_mcp_or_environment_reading_helpers(self):
         self.write('.mcp.json', json.dumps({'apify': {'type': 'http', 'url': 'https://mcp.apify.com'}}))
         with self.assertRaisesRegex(ValueError, 'Core'):

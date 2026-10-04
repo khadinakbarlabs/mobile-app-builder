@@ -1,0 +1,31 @@
+{
+  "name": "mobile-app-builder",
+  "displayName": "Mobile App Builder",
+  "version": "2.1.0",
+  "description": "Research, design, build and grow iOS, Android and web apps",
+  "author": {
+    "name": "Khadin Akbar Ventures LLC",
+    "url": "https://github.com/khadinakbarlabs/mobile-app-builder"
+  },
+  "homepage": "https://github.com/khadinakbarlabs/mobile-app-builder",
+  "repository": "https://github.com/khadinakbarlabs/mobile-app-builder",
+  "license": "MIT",
+  "keywords": [
+    "mobile-app-builder",
+    "ios",
+    "android",
+    "web",
+    "app-development",
+    "ui-ux",
+    "research",
+    "quality-assurance",
+    "app-growth",
+    "seo",
+    "store-assets"
+  ],
+  "icon": "./assets/mobile-app-builder-logo-v8.png",
+  "documentationUrl": "https://github.com/khadinakbarlabs/mobile-app-builder#readme",
+  "supportUrl": "https://github.com/khadinakbarlabs/mobile-app-builder/issues",
+  "privacyPolicyUrl": "https://github.com/khadinakbarlabs/mobile-app-builder/blob/main/plugins/mobile-app-builder/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/khadinakbarlabs/mobile-app-builder/blob/main/plugins/mobile-app-builder/TERMS.md"
+}

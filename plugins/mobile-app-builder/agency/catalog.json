@@ -67,7 +67,7 @@
     },
     {
       "id": "operations",
-      "title": "Agency direction & operations",
+      "title": "Project direction & operations",
       "agents": [
         "agency-director",
         "release-manager"
@@ -134,7 +134,7 @@
       "department": "engineering",
       "id": "architecture-tooling",
       "title": "Architecture & environment",
-      "count": 9
+      "count": 10
     },
     {
       "department": "engineering",
@@ -839,6 +839,14 @@
       "platform": "shared",
       "department": "growth",
       "category": "retention-lifecycle"
+    },
+    {
+      "id": "build-web-app",
+      "description": "Build and verify responsive web experiences alongside iOS and Android, preserving the current stack and product direction.",
+      "path": "skills/build-web-app/SKILL.md",
+      "platform": "web",
+      "department": "engineering",
+      "category": "architecture-tooling"
     },
     {
       "id": "build-win-back-flow",

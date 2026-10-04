@@ -26,8 +26,8 @@ The written wordmark is “Mobile App Builder”, set in a system sans-serif wit
 
 - Short title: **Mobile App Builder**.
 - Existing subtitle: **Develop Android & iOS Apps**.
-- Native description: **A mobile app agency for iOS and Android**.
-- Supporting copy: **189 workflows, sixteen specialist roles and eight departments covering research, product strategy, design, Expo engineering, QA/security, store production, release and growth.**
+- Native description: **Research, design, build and grow iOS, Android and web apps**.
+- Supporting copy: **190 workflows, sixteen specialist roles and eight departments covering research, product strategy, design, Expo engineering, QA/security, store production, release and growth.**
 - Boundary: **Skills guide work in the user's authorized environment. CLI, device, paid research and publication tasks require the relevant tools and authorization.**
 
 The [owner review brief](ANTHROPIC-REVIEW.md) contains the exact listing links and evidence gates. Future artwork/metadata creation follows the standalone Anthropic preparation skill rather than changing the identity of an existing listing.

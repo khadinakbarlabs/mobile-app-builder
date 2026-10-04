@@ -1,22 +1,22 @@
 {
-  "name": "khadin-mobile-agency",
+  "name": "khadin-mobile-builder",
   "owner": {
     "name": "Khadin Akbar Ventures LLC"
   },
   "metadata": {
-    "description": "Mobile App Builder agency and optional research integration",
-    "version": "2.0.1"
+    "description": "Mobile App Builder for iOS, Android and web",
+    "version": "2.1.0"
   },
   "plugins": [
     {
-      "name": "mobile-app-builder-agency",
-      "source": "./plugins/mobile-app-builder-agency",
-      "description": "Research, design, build and grow iOS and Android apps"
+      "name": "mobile-app-builder",
+      "source": "./plugins/mobile-app-builder",
+      "description": "Research, design, build and grow iOS, Android and web apps"
     },
     {
       "name": "mobile-app-builder-research",
       "source": "./plugins/mobile-app-builder-research",
-      "description": "Optional Apify research connection for the mobile app agency"
+      "description": "Optional technical research connection for app development"
     }
   ]
 }

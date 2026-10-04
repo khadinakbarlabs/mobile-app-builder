@@ -4,7 +4,7 @@ This is a new Anthropic-specific source repository derived from the owner's Mobi
 
 ## Installed packages
 
-- `plugins/mobile-app-builder-agency`: the complete 189-workflow library, 16 native specialist agents, eight departments, references, templates, original artwork and four readable local helpers. Default native discovery loads `skills/` and `agents/`. Helpers only print a plan or read a prepared local catalog; they do not read credentials, start remote research or run on installation.
+- `plugins/mobile-app-builder`: the complete 190-workflow library, 16 native specialist agents, eight departments, references, templates, original artwork and four readable local helpers. Default native discovery loads `skills/` and `agents/`. Helpers only print a plan or read a prepared local catalog; they do not read credentials, start remote research or run on installation.
 - `plugins/mobile-app-builder-research`: an optional Apify connection using a sensitive required `userConfig` value and one declared HTTPS MCP endpoint. It has no shell launcher, environment-derived token, package download or startup hook. Core does not depend on it. Installing core does not install this connection.
 
 All publisher tools, tests, receipts and migration records live outside these two roots. ZIPs contain one selected plugin root; a marketplace manifest at the repository root lists the two independently installable folders. A directory submission names the core folder, not the marketplace repository as a whole.

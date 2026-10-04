@@ -8,4 +8,4 @@ Publisher tooling is outside the install folders. Four original readable helpers
 
 Local regression tests, full inventory/hash validation, skill/agent frontmatter checks, public audits, media decoding, official strict manifests and real native host discovery are required before the release. Receipt files record the results. Host model output, authenticated research execution, consuming-app device QA and actual directory approval remain separate gates; do not infer them from passing local checks.
 
-The previous v1.3.9 remains with Anthropic for review. The new edition has not been submitted and has no live directory listing. It is ready for owner verification after the repository and release checks finish; a new repository does not guarantee clearance of the earlier generic inventory hold.
+The owner has authorized submission of this updated Mobile App Builder edition. Confirm the actual portal receipt and scan outcome after submission; source validation does not establish reviewer approval or a live listing. Existing submissions for other source repositories are separate records and are not withdrawn by this release.

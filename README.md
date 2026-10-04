@@ -1,37 +1,43 @@
-# Mobile App Builder Agency
+# Mobile App Builder
 
-![Mobile App Builder](plugins/mobile-app-builder-agency/assets/mobile-app-builder-banner.png)
+![Mobile App Builder](plugins/mobile-app-builder/assets/mobile-app-builder-banner.png)
 
-The full Mobile App Builder agency, rebuilt for Anthropic's native plugin format. **189 workflows, 16 specialist agents and eight departments** cover mobile research, product strategy, UI/UX and design inspiration, iOS/Android engineering, QA, store assets and metadata, launch, advertising, influencer intelligence and SEO.
+Research, design, build and grow **iOS, Android and web apps**. Mobile App Builder brings together **190 workflows and 16 specialist agents** for product research, UI/UX, development, QA, screenshots, store metadata, launch, marketing and SEO.
 
-Start with an idea or bring an existing app. Keep the established product direction and choose only the relevant department for a focused task. See the [agency guide](plugins/mobile-app-builder-agency/README.md), [complete department index](plugins/mobile-app-builder-agency/agency/INDEX.md) and [resources](plugins/mobile-app-builder-agency/docs/RESOURCES.md).
+## Start where you are
 
-## Install the agency
+- **New app:** “Research this idea, identify the first useful feature, and plan the iOS, Android and web experience.”
+- **Existing app:** “Inspect my app, preserve its design, fix this problem, and verify the affected behavior.”
+- **Focused task:** “Improve my onboarding,” “Prepare store screenshots,” or “Fix my website SEO.”
+
+The assistant selects the relevant workflows and specialists. You can begin with research, design, engineering, testing, launch or growth. See [getting started](plugins/mobile-app-builder/docs/START-HERE.md), [workflow index](plugins/mobile-app-builder/agency/INDEX.md) and [resources](plugins/mobile-app-builder/docs/RESOURCES.md).
+
+## What is included
+
+| Area | Outcomes |
+| --- | --- |
+| Research | Demand, competitors, store intelligence, creators, ads and search |
+| Strategy | Product brief, positioning, pricing and a focused first feature |
+| Design | UI/UX, inspiration, accessible journeys and visual handoff |
+| Development | Shared features, native capabilities and responsive web experiences |
+| QA | Behavioral checks, accessibility, performance, privacy and security |
+| Launch | Screenshots, metadata, localization and release readiness |
+| Growth | Advertising, influencer research, retention and SEO |
+| Coordination | Scope, specialist ownership, handoffs and evidence |
+
+## Install
 
 ```text
-/plugin marketplace add khadinakbarlabs/mobile-app-builder-agency
-/plugin install mobile-app-builder-agency@khadin-mobile-agency
+/plugin marketplace add khadinakbarlabs/mobile-app-builder
+/plugin install mobile-app-builder@khadin-mobile-builder
 ```
 
-For live Apify collection, independently install the optional research connection:
+Describe your outcome in ordinary language. Platform-specific tooling runs in your development environment. Research-service credentials and optional integrations belong in technical setup, not product prompts; do not paste secrets into chat or public files. You can start with public sources or your own research exports.
 
-```text
-/plugin install mobile-app-builder-research@khadin-mobile-agency
-/plugin configure mobile-app-builder-research@khadin-mobile-agency
-```
+## Verification
 
-Configure the token through the host's secure plugin configuration. Do not paste it into chat, a shell command or a public repository. Read the [research connection guide](plugins/mobile-app-builder-research/README.md) before running any Actor. The agency can plan research and analyze exports without that connection.
+All 189 previous workflows, 16 specialists, supporting references, templates and artwork are retained. The added web workflow covers responsive UI, routing, rendering, accessibility, SEO and browser verification. The [migration report](migration/report.json) accounts for every previous native file.
 
-## What changed
+Release checks cover package integrity, credential safety, native manifests and actual component discovery. They do not prove a consuming app's deployment, device behavior or store approval. Directory submission and its reviewer status are reported separately.
 
-The complete previous native plugin is accounted for in the [migration report](migration/report.json). Workflow IDs, agents, templates, Actor catalog and original logo/banner carry over from v1.3.9. Host metadata and research authentication are adapted for this edition. Publisher tools, tests and migration records live outside the installed plugin folders. There is no OpenAI/Cursor overlay or hosted app backend in this repository.
-
-The [architecture](docs/ARCHITECTURE.md) explains the boundaries. [Owner review](docs/OWNER-REVIEW.md) lists verification and remaining gates. [Publisher guide](docs/PUBLISHING.md) covers tests, inventory and release packaging. Each plugin is independently installable and independently reviewed.
-
-## Verification and status
-
-This edition is prepared for owner review. GitHub publication is separate from Anthropic directory submission, security scanning and reviewer approval. The previous Mobile App Builder v1.3.9 remains in its original review and is not replaced or withdrawn. Creating this repository does not clear that hold or guarantee approval.
-
-The optional research configuration is structurally validated. Live authenticated Actor execution still needs an owner-selected account and approved run budget. The original iOS/Android workflows are development guidance; manifest validation is not device QA.
-
-[License](LICENSE) · [Core privacy](plugins/mobile-app-builder-agency/PRIVACY.md) · [Research privacy](plugins/mobile-app-builder-research/PRIVACY.md) · [Support](https://github.com/khadinakbarlabs/mobile-app-builder-agency/issues)
+[License](LICENSE) · [Privacy](plugins/mobile-app-builder/PRIVACY.md) · [Terms](plugins/mobile-app-builder/TERMS.md) · [Support](https://github.com/khadinakbarlabs/mobile-app-builder/issues)

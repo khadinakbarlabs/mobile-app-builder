@@ -1,6 +1,6 @@
 # Support
 
-Use [GitHub Issues](https://github.com/khadinakbarlabs/mobile-app-builder-agency/issues) for installation problems, documentation corrections, and reproducible plugin defects.
+Use [GitHub Issues](https://github.com/khadinakbarlabs/mobile-app-builder/issues) for installation problems, documentation corrections, and reproducible plugin defects.
 
 Include the host and version, operating system, relevant skill name, expected behavior, actual behavior, and the smallest redacted reproduction. Do not include tokens, signing material, account identifiers, customer data, private source code, or unredacted logs.
 

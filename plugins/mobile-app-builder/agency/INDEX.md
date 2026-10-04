@@ -1,4 +1,4 @@
-# Agency department index
+# Workflow index
 
 All original workflow IDs and roles remain available. Load only the relevant role and skill for the requested outcome.
 
@@ -85,6 +85,7 @@ Roles: [mobile-architect](../agents/mobile-architect.md), [expo-engineer](../age
 
 | Workflow | Platform | Category |
 | --- | --- | --- |
+| [build-web-app](../skills/build-web-app/SKILL.md) | web | architecture-tooling |
 | [add-android-foldable-tablet](../skills/add-android-foldable-tablet/SKILL.md) | android | interface-media |
 | [add-android-foreground-service](../skills/add-android-foreground-service/SKILL.md) | android | native-extensions |
 | [add-android-pip](../skills/add-android-pip/SKILL.md) | android | native-extensions |
@@ -246,7 +247,7 @@ Roles: [growth-strategist](../agents/growth-strategist.md), [seo-strategist](../
 | [run-paid-acquisition](../skills/run-paid-acquisition/SKILL.md) | shared | paid-acquisition |
 | [set-up-ab-testing](../skills/set-up-ab-testing/SKILL.md) | shared | analytics-experiments |
 
-## Agency direction & operations
+## Project direction & operations
 
 Clear ownership, coordination, continuity and release evidence.
 

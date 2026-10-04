@@ -17,10 +17,10 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_*.py'
       - run: python tools/release.py
       - run: node tools/audit-public-package.mjs .
-      - run: node tools/audit-public-package.mjs plugins/mobile-app-builder-agency
+      - run: node tools/audit-public-package.mjs plugins/mobile-app-builder
       - run: node tools/audit-public-package.mjs plugins/mobile-app-builder-research
       - run: npx --yes @anthropic-ai/claude-code@2.1.287 plugin validate .claude-plugin/marketplace.json --strict
-      - run: npx --yes @anthropic-ai/claude-code@2.1.287 plugin validate plugins/mobile-app-builder-agency/.claude-plugin/plugin.json --strict
+      - run: npx --yes @anthropic-ai/claude-code@2.1.287 plugin validate plugins/mobile-app-builder/.claude-plugin/plugin.json --strict
       - run: npx --yes @anthropic-ai/claude-code@2.1.287 plugin validate plugins/mobile-app-builder-research/.claude-plugin/plugin.json --strict
-      - run: node tools/verify-host.mjs plugins/mobile-app-builder-agency
+      - run: node tools/verify-host.mjs plugins/mobile-app-builder
       - run: node tools/verify-host.mjs plugins/mobile-app-builder-research
