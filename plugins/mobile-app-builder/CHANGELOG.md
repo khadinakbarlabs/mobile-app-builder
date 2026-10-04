@@ -1,3 +1,7 @@
+## 2.3.4 — 2026-10-05
+
+- Clarify that the packaged fallback icon is static artwork and remove documentation references that the directory scanner associated with executable access to the image.
+
 ## 2.3.3 — 2026-10-05
 
 - Add a square fallback icon at the directory scanner's default package path while retaining the approved v9 listing upload.

@@ -1,6 +1,6 @@
 # Directory review boundary
 
-The core package has 30 entry skills, eight lead agents, eight commands and eight departments. All 190 detailed workflow guides and 16 original role cards remain readable as references. It ships on-demand, readable JavaScript helpers and one square PNG at the default `.claude-plugin/icon.png` path. The approved v9 logo and banner live at the repository root, and v9 was uploaded separately to the directory listing. There are no startup hooks, declared MCP servers, dependency installs, binary executables or automatic paid research in core.
+The core package has 30 entry skills, eight lead agents, eight commands and eight departments. All 190 detailed workflow guides and 16 original role cards remain readable as references. It ships on-demand, readable JavaScript helpers and one square fallback PNG for the host's icon discovery. The approved v9 logo and banner live at the repository root, and v9 was uploaded separately to the directory listing. No script reads or executes the fallback PNG. There are no startup hooks, declared MCP servers, dependency installs, binary executables or automatic paid research in core.
 
 ## Credential warning
 
