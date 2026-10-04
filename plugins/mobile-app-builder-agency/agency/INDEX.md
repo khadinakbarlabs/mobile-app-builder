@@ -262,4 +262,3 @@ Roles: [agency-director](../agents/agency-director.md), [release-manager](../age
 | [mobile-app-agency](../skills/mobile-app-agency/SKILL.md) | shared | agency-coordination |
 | [mobile-app-builder-ios-android](../skills/mobile-app-builder-ios-android/SKILL.md) | android | agency-coordination |
 | [set-up-project-guidance](../skills/set-up-project-guidance/SKILL.md) | shared | agency-coordination |
-
