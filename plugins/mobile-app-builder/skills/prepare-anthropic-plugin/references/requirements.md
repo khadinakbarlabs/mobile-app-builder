@@ -13,7 +13,7 @@ Verified against current primary documentation on 2026-10-04. Refresh before a r
 - [Directory policy](https://support.claude.com/en/articles/13145358-anthropic-software-directory-policy)
 - [npm local/remote execution semantics](https://docs.npmjs.com/cli/v11/commands/npm-exec/)
 
-The native plugin manifest contains the directory icon and documentation, support, privacy and terms URLs. Keep those fields out of marketplace entries. Claude Code before 2.1.281 can report those valid keys as unknown; validate with a compatible pinned tool, leaving the user's installation intact.
+For a fresh listing, the native plugin manifest can provide the directory icon and documentation, support, privacy and terms URLs. Keep those fields out of marketplace entries. After a directory imports them, confirm whether its listing editor stores them independently before removing directory-only fields from a later version to address scan notes. Claude Code before 2.1.281 can report the valid keys as unknown; validate with a compatible pinned tool, leaving the user's installation intact.
 
 ## Structural preparation
 
@@ -29,7 +29,7 @@ Keep credential delivery and outbound destinations explicit. Do not bundle real 
 
 | Symptom | Check and repair |
 | --- | --- |
-| Unknown directory keys locally | Check actual CLI version; use directory-aware validator. Preserve valid fields. |
+| Unknown directory keys locally | Check actual CLI version; use a directory-aware validator. For an existing listing, verify its stored values before changing valid listing fields. |
 | Package passes, portal reads old version | Compare exact GitHub branch commit with local candidate and portal fetched commit. Revalidate after approved publication. |
 | ZIP fits, submitted source exceeds limits | Publish an approved native tree at a dedicated branch root or plugin folder. Count the actual portal folder/repository. |
 | Could not validate repository | Inspect filename collisions, path case, Git attributes, archive sizes and connected-org GitHub access. |

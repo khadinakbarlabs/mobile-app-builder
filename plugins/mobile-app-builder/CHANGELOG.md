@@ -1,3 +1,8 @@
+## 2.3.2 — 2026-10-05
+
+- Keep the already-imported directory icon and support/policy links in the listing while removing directory-only manifest keys that the scanner flags as unrecognized or cross-tool fields.
+- Retain the approved v9 artwork in the repository and directory listing, outside the installed plugin root, and keep the published policy documents in the package.
+
 ## 2.3.1 — 2026-10-05
 
 - Refine the logo and banner with a small UI design cue while keeping the mobile development symbol minimal and legible.

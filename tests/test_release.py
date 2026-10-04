@@ -182,6 +182,21 @@ class ReleaseBoundaryTests(unittest.TestCase):
                     release.validate_folder(self.root, core=True)
                 helper.unlink()
 
+    def test_core_keeps_listing_metadata_and_artwork_outside_installed_root(self):
+        manifest_path = self.root / '.claude-plugin/plugin.json'
+        manifest = json.loads(manifest_path.read_text())
+        manifest['icon'] = './assets/logo.png'
+        manifest_path.write_text(json.dumps(manifest))
+        with self.assertRaisesRegex(ValueError, 'Directory listing fields'):
+            release.validate_folder(self.root, core=True)
+        del manifest['icon']
+        manifest_path.write_text(json.dumps(manifest))
+        asset = self.root / 'assets/logo.png'
+        asset.parent.mkdir(parents=True)
+        asset.write_bytes(b'not-a-png')
+        with self.assertRaisesRegex(ValueError, 'Directory artwork'):
+            release.validate_folder(self.root, core=True)
+
     def test_documented_build_config_cannot_serialize_credentials(self):
         for key, value in [('SENTRY_AUTH_TOKEN', '@sentry-auth-token'),
                            ('SERVICE_API_KEY', '<replace-with-secret>'),

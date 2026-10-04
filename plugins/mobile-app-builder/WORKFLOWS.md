@@ -1257,7 +1257,6 @@ mobile-app-builder/
 ├── agents/                  8 specialist leads, discovered by Claude
 ├── skills/                  30 entry skills and 190 detailed guides
 ├── agency/                  Prepared catalog, taxonomy, roles and contracts
-├── assets/                  Selected logo and banner
 ├── docs/                    User guides and versioned references
 ├── scripts/                 Catalog browser and scaffold planner
 ├── PRIVACY.md
@@ -1267,7 +1266,7 @@ mobile-app-builder/
 └── README.md
 ```
 
-Other distributions use their own host manifest and role surface. Tests, publisher scripts and the optional hosted adapter remain in the canonical source repository. Every installed helper and its local dependencies must be present in the exact bundle.
+The listing artwork lives at the repository root and in the directory's stored listing. Other distributions use their own host manifest and role surface. Tests, publisher scripts and the optional hosted adapter remain in the canonical source repository. Every installed helper and its local dependencies must be present in the exact bundle.
 
 ### A typical skill
 

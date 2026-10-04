@@ -30,6 +30,7 @@ PRIVATE_ENV_KEY = re.compile(r'(?:^|_)(?:TOKEN|SECRET|PASSWORD|API_KEY|PRIVATE_K
 # Firebase client keys are public app configuration; allow only this fake example,
 # never arbitrary values or a blanket EXPO_PUBLIC_* credential exception.
 PUBLIC_ENV_EXAMPLES = {'EXPO_PUBLIC_FIREBASE_API_KEY': '<firebase-public-web-api-key>'}
+DIRECTORY_LISTING_KEYS = {'icon', 'documentationUrl', 'supportUrl', 'privacyPolicyUrl', 'termsOfServiceUrl'}
 
 
 class UniqueLoader(yaml.SafeLoader):
@@ -164,6 +165,8 @@ def validate_folder(folder, core=False):
     if core and (set(manifest) & {'mcpServers', 'hooks', 'dependencies', 'userConfig'}
                  or (folder / '.mcp.json').exists() or (folder / 'hooks').exists()):
         raise ValueError('Core must not declare connectors, hooks, dependencies or credentials')
+    if core and set(manifest) & DIRECTORY_LISTING_KEYS:
+        raise ValueError('Directory listing fields must stay out of the installed core manifest')
     skills, agents, commands, inventory = [], [], [], []
     for path in entries:
         if not path.is_file():
@@ -172,6 +175,8 @@ def validate_folder(folder, core=False):
         data = path.read_bytes()
         if len(data) >= 5 * 1024 * 1024:
             raise ValueError('Plugin file exceeds the directory limit')
+        if core and path.suffix == '.png':
+            raise ValueError('Directory artwork must stay outside the installed plugin root')
         if path.suffix == '.png':
             with Image.open(path) as image:
                 if image.format != 'PNG':

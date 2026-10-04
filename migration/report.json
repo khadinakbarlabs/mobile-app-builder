@@ -230,7 +230,7 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "2cb3a8ba000be73a6c564ee6a36c97b63544dfc24af6e3a5f1e08361a0177049",
+      "targetSha256": "004255fb4d740333920929c55bcec2068f2045c748dab00edd09c6e9f6a6d5eb",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -238,7 +238,7 @@
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "d88bc6a295011797be2e6b44e0fbc91c66a4c555401aee57319d58c16d2bd494",
+      "targetSha256": "3c67c9049d752a8574cd542bc4bba11fae6c35911a2e21b6ebe8fe92237ee887",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -294,7 +294,7 @@
       "source": "WORKFLOWS.md",
       "sourceSha256": "a50d48661a768eacfb5200914457033b318d750a83ed10fd0c98be735b32ea72",
       "target": "plugins/mobile-app-builder/WORKFLOWS.md",
-      "targetSha256": "1c5ceb3c184a1c55b4f35b6992d79f3022dc46833d50a2a4d86ab1f782270a6f",
+      "targetSha256": "b6ec9a65f6191dd92404d509efddec8a13f53fa3aff76ab202c619d20c4af037",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -478,7 +478,7 @@
       "source": "docs/BRAND.md",
       "sourceSha256": "09f57acbf62f870530dcd952574d41ccb8191fbf2f7481ca629e02582161dd7f",
       "target": "plugins/mobile-app-builder/docs/BRAND.md",
-      "targetSha256": "e4867c180f7241fcdbbe04817bba21be7ccda16be35503c5edcee4c8fe165740",
+      "targetSha256": "1c4b90368896d73c0f560625bc02feb02cc127af130c605d69fb1d46401b59dc",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -2638,7 +2638,7 @@
       "source": "skills/prepare-anthropic-plugin/SKILL.md",
       "sourceSha256": "ea5526f7f246cb418bc9acbf85d9f5995abca3b66ae1ac7a72bfd7071976fcc9",
       "target": "plugins/mobile-app-builder/skills/prepare-anthropic-plugin/guide.md",
-      "targetSha256": "56d6f6e7273a853309d93449fdf40dab43fb6ca32e91dc91033d556761d7cf4e",
+      "targetSha256": "1d63e18dfa4b4e873184d5c1a05c7636b902fe4c7fcfefaaf373f11303590b22",
       "status": "adapted",
       "reason": "Guide retained with local links adjusted for consolidated entry points."
     },
@@ -2646,9 +2646,9 @@
       "source": "skills/prepare-anthropic-plugin/references/requirements.md",
       "sourceSha256": "4a7888e5c73f74da236f6da576b4f9035b62e52036ca00248815894359cc917d",
       "target": "plugins/mobile-app-builder/skills/prepare-anthropic-plugin/references/requirements.md",
-      "targetSha256": "4a7888e5c73f74da236f6da576b4f9035b62e52036ca00248815894359cc917d",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "f350e7df24a56aa7695f5f7b76774e49df8bb718c6d97c1773b028edfaee6e7c",
+      "status": "adapted",
+      "reason": "Updated the preserved requirements guide for the verified directory listing and binary scan behavior."
     },
     {
       "source": "skills/prepare-anthropic-plugin/templates/review-pack.md",
