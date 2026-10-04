@@ -1,0 +1,2510 @@
+{
+  "upstream": "https://github.com/khadinakbarlabs/expo-mobile-app-builder",
+  "nativeCommit": "3b6c85860691e31f3a30fa475ef212c1c2e35e2e",
+  "previousFiles": 312,
+  "accountedFiles": 312,
+  "lostFiles": 0,
+  "previousSkillIds": 189,
+  "retainedSkillIds": 189,
+  "previousAgents": 16,
+  "retainedAgents": 16,
+  "newResearchSkill": "research-connection",
+  "files": [
+    {
+      "source": ".claude-plugin/marketplace.json",
+      "sourceSha256": "ccbead7ffd66154caa2ff67dd873e36f58929fc22139b1b8e8720afa36107482",
+      "target": "migration/previous-documents/.claude-plugin--marketplace.json.txt",
+      "targetSha256": "ccbead7ffd66154caa2ff67dd873e36f58929fc22139b1b8e8720afa36107482",
+      "status": "relocated",
+      "reason": "Original kept as provenance; new root marketplace selects isolated packages."
+    },
+    {
+      "source": ".claude-plugin/plugin.json",
+      "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
+      "target": "plugins/mobile-app-builder-agency/.claude-plugin/plugin.json",
+      "targetSha256": "ac82c26e22a969c908cc31d770c9ae5bde49ac6aca6fc324964b893f1fd3a34f",
+      "status": "adapted",
+      "reason": "Authentication or native identity adapted; exact workflow and resources retained."
+    },
+    {
+      "source": "CHANGELOG.md",
+      "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
+      "target": "plugins/mobile-app-builder-agency/CHANGELOG.md",
+      "targetSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "LICENSE",
+      "sourceSha256": "a76c7a42b53ba654ffef3e2d1219db765dff5783bf2df3d247d1596d8e3c668f",
+      "target": "plugins/mobile-app-builder-agency/LICENSE",
+      "targetSha256": "a76c7a42b53ba654ffef3e2d1219db765dff5783bf2df3d247d1596d8e3c668f",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "PRIVACY.md",
+      "sourceSha256": "4eb5243664138478102639aebcda04af383e3bc81661bf49c3d8a903c0826559",
+      "target": "plugins/mobile-app-builder-agency/PRIVACY.md",
+      "targetSha256": "5d3674b582846ccbf03d455c8258c13a4c89de7ca1d603081445e2cc08473aaf",
+      "status": "adapted",
+      "reason": "Anthropic-only privacy disclosure and new repository support links; original policy preserved in previous-documents."
+    },
+    {
+      "source": "README.md",
+      "sourceSha256": "e3732ea7ebcbd62e709d19a88a4eb6370a3d0d62ceb176606a25a8ce4f378005",
+      "target": "migration/previous-documents/README.md.txt",
+      "targetSha256": "e3732ea7ebcbd62e709d19a88a4eb6370a3d0d62ceb176606a25a8ce4f378005",
+      "status": "relocated",
+      "reason": "Original kept as source provenance; new user-facing guide installed."
+    },
+    {
+      "source": "SECURITY.md",
+      "sourceSha256": "f5103bc824581dcc922840fc1b1e7e65ef7efd7addd1e43ff5fa1e6138523ae2",
+      "target": "plugins/mobile-app-builder-agency/SECURITY.md",
+      "targetSha256": "0c8cdac39cdef9736fbc93f5f1c7388e119001b9b45057a3d2121acc36c8dcb2",
+      "status": "adapted",
+      "reason": "Updated native edition publisher links and verified release-gate instructions; workflow retained."
+    },
+    {
+      "source": "SUPPORT.md",
+      "sourceSha256": "612f221810d984f4e2d76bf212ad93a0debf52a0e67d8fdcaccaf938a4946008",
+      "target": "plugins/mobile-app-builder-agency/SUPPORT.md",
+      "targetSha256": "acbc56bde60f53504a570f4f4f337be41918993bc186e506f12baaaf41786333",
+      "status": "adapted",
+      "reason": "Anthropic-only privacy disclosure and new repository support links; original policy preserved in previous-documents."
+    },
+    {
+      "source": "TERMS.md",
+      "sourceSha256": "219fc7a31f0d7535e090c749403e1e7fc7bf45771fff4977d321a4736999901f",
+      "target": "plugins/mobile-app-builder-agency/TERMS.md",
+      "targetSha256": "380444907c966a27032ba51a274e68566e27a0b1b371205b021e99dfb80dfc08",
+      "status": "adapted",
+      "reason": "Anthropic-only privacy disclosure and new repository support links; original policy preserved in previous-documents."
+    },
+    {
+      "source": "WORKFLOWS.md",
+      "sourceSha256": "a50d48661a768eacfb5200914457033b318d750a83ed10fd0c98be735b32ea72",
+      "target": "plugins/mobile-app-builder-agency/WORKFLOWS.md",
+      "targetSha256": "a50d48661a768eacfb5200914457033b318d750a83ed10fd0c98be735b32ea72",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agency/catalog.json",
+      "sourceSha256": "c5df5fcdcb94c4f5bb9caa91432830f525b0d1173a9dce2412492ab19e81d6ba",
+      "target": "plugins/mobile-app-builder-agency/agency/catalog.json",
+      "targetSha256": "aa7bb12490000aeeb024c526d3d76bca2560e30ba025b7981b3a532811994394",
+      "status": "adapted",
+      "reason": "Authentication or native identity adapted; exact workflow and resources retained."
+    },
+    {
+      "source": "agency/taxonomy.json",
+      "sourceSha256": "23ab522d7d7f0371250560b72ef026dbca80d25cdda838ec81646c4bc342518b",
+      "target": "plugins/mobile-app-builder-agency/agency/taxonomy.json",
+      "targetSha256": "23ab522d7d7f0371250560b72ef026dbca80d25cdda838ec81646c4bc342518b",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/ads-intelligence-analyst.md",
+      "sourceSha256": "fdc8c014f472e1f2f7612749c549bf070d229326544c1dbe5bd14da4edf4ed82",
+      "target": "plugins/mobile-app-builder-agency/agents/ads-intelligence-analyst.md",
+      "targetSha256": "fdc8c014f472e1f2f7612749c549bf070d229326544c1dbe5bd14da4edf4ed82",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/agency-director.md",
+      "sourceSha256": "f3b97c8a77eb891dafa1880869f60f561e16fd019ab2bed8d6ab4bb33de1f280",
+      "target": "plugins/mobile-app-builder-agency/agents/agency-director.md",
+      "targetSha256": "f3b97c8a77eb891dafa1880869f60f561e16fd019ab2bed8d6ab4bb33de1f280",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/creator-researcher.md",
+      "sourceSha256": "b68dd77e8e158f984a58d48bb9219a1c5b2846f7237b07788d521dedf9823326",
+      "target": "plugins/mobile-app-builder-agency/agents/creator-researcher.md",
+      "targetSha256": "b68dd77e8e158f984a58d48bb9219a1c5b2846f7237b07788d521dedf9823326",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/expo-engineer.md",
+      "sourceSha256": "4e36f853e72063f6023b263b526fe4414434307fca92428379c94d778f82bdd5",
+      "target": "plugins/mobile-app-builder-agency/agents/expo-engineer.md",
+      "targetSha256": "4e36f853e72063f6023b263b526fe4414434307fca92428379c94d778f82bdd5",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/growth-strategist.md",
+      "sourceSha256": "b887cdf1f99653ba879e2d70e02b9de7da7d17780279259d28fbbc2565abce09",
+      "target": "plugins/mobile-app-builder-agency/agents/growth-strategist.md",
+      "targetSha256": "b887cdf1f99653ba879e2d70e02b9de7da7d17780279259d28fbbc2565abce09",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/market-researcher.md",
+      "sourceSha256": "bec3227168afe172f3431838e2ce1361c0b25585b7ce9866e2bfce0106bb718e",
+      "target": "plugins/mobile-app-builder-agency/agents/market-researcher.md",
+      "targetSha256": "bec3227168afe172f3431838e2ce1361c0b25585b7ce9866e2bfce0106bb718e",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/mobile-architect.md",
+      "sourceSha256": "61e51ded80f1a86c744a9e1fab0ae3cb096803b7d5fc3548bb0399d3f55a1519",
+      "target": "plugins/mobile-app-builder-agency/agents/mobile-architect.md",
+      "targetSha256": "61e51ded80f1a86c744a9e1fab0ae3cb096803b7d5fc3548bb0399d3f55a1519",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/product-strategist.md",
+      "sourceSha256": "82ec1a8d8b6c799b50cd7f1089e10ace40643c67da85c6ca345fef33a36c5c8a",
+      "target": "plugins/mobile-app-builder-agency/agents/product-strategist.md",
+      "targetSha256": "82ec1a8d8b6c799b50cd7f1089e10ace40643c67da85c6ca345fef33a36c5c8a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/qa-engineer.md",
+      "sourceSha256": "11922af39f065cbc63a048312a6456b2f43e4406ffc8ecb662fec8a9059194fa",
+      "target": "plugins/mobile-app-builder-agency/agents/qa-engineer.md",
+      "targetSha256": "11922af39f065cbc63a048312a6456b2f43e4406ffc8ecb662fec8a9059194fa",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/release-manager.md",
+      "sourceSha256": "a9be64e3ed7ef37e5a0f0f0ad330ea92b486d8448cb85a4c5b8e97a7a7929dad",
+      "target": "plugins/mobile-app-builder-agency/agents/release-manager.md",
+      "targetSha256": "a9be64e3ed7ef37e5a0f0f0ad330ea92b486d8448cb85a4c5b8e97a7a7929dad",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/security-reviewer.md",
+      "sourceSha256": "e932f0fb3b168bad975082b0b662688dbc22aebed1c8b42b65c574ae7254a0d4",
+      "target": "plugins/mobile-app-builder-agency/agents/security-reviewer.md",
+      "targetSha256": "e932f0fb3b168bad975082b0b662688dbc22aebed1c8b42b65c574ae7254a0d4",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/seo-strategist.md",
+      "sourceSha256": "b4cfcc20c2e954919cb4e5c3df91db1aac3b9fe62bb30377580c4cfd76486324",
+      "target": "plugins/mobile-app-builder-agency/agents/seo-strategist.md",
+      "targetSha256": "b4cfcc20c2e954919cb4e5c3df91db1aac3b9fe62bb30377580c4cfd76486324",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/store-intelligence-analyst.md",
+      "sourceSha256": "daa1b6195bb37f48cb5619ed7240894c621be9a34da4196ddf409341c6fa9abc",
+      "target": "plugins/mobile-app-builder-agency/agents/store-intelligence-analyst.md",
+      "targetSha256": "daa1b6195bb37f48cb5619ed7240894c621be9a34da4196ddf409341c6fa9abc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/store-producer.md",
+      "sourceSha256": "b1987157fbb97c1cc0844914a864ebdaa9271036d8d4a80b746816fc781db0a0",
+      "target": "plugins/mobile-app-builder-agency/agents/store-producer.md",
+      "targetSha256": "b1987157fbb97c1cc0844914a864ebdaa9271036d8d4a80b746816fc781db0a0",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/ux-designer.md",
+      "sourceSha256": "5cf48e8a2669e4c509d7a7ca24a354d8c9428d5dd67a10d37f70d6012e4a310e",
+      "target": "plugins/mobile-app-builder-agency/agents/ux-designer.md",
+      "targetSha256": "5cf48e8a2669e4c509d7a7ca24a354d8c9428d5dd67a10d37f70d6012e4a310e",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "agents/visual-designer.md",
+      "sourceSha256": "d67ea26da48c39e3db6db07cbeea84b1b19a69c5b60f03d692517a85a282f178",
+      "target": "plugins/mobile-app-builder-agency/agents/visual-designer.md",
+      "targetSha256": "d67ea26da48c39e3db6db07cbeea84b1b19a69c5b60f03d692517a85a282f178",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "assets/mobile-app-builder-banner.png",
+      "sourceSha256": "113ded0016c656f3e8cfd06f8e67e55f1bab6d418329fdccc5e8b69119ee74af",
+      "target": "plugins/mobile-app-builder-agency/assets/mobile-app-builder-banner.png",
+      "targetSha256": "113ded0016c656f3e8cfd06f8e67e55f1bab6d418329fdccc5e8b69119ee74af",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "assets/mobile-app-builder-logo-v8.png",
+      "sourceSha256": "4a3663a826010f645c460ad9d732ffa44a39a2563cec1f543b3477df0a7a5cbf",
+      "target": "plugins/mobile-app-builder-agency/assets/mobile-app-builder-logo-v8.png",
+      "targetSha256": "4a3663a826010f645c460ad9d732ffa44a39a2563cec1f543b3477df0a7a5cbf",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/AGENCY.md",
+      "sourceSha256": "ade30f6f62ffc472523bc22eb01b4a5412a6b7c2324d42ee3aa462c397ce7df5",
+      "target": "plugins/mobile-app-builder-agency/docs/AGENCY.md",
+      "targetSha256": "ade30f6f62ffc472523bc22eb01b4a5412a6b7c2324d42ee3aa462c397ce7df5",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/ANTHROPIC-REVIEW.md",
+      "sourceSha256": "35a2fd9929a374949b5d915a98e23612c34b5ff3636875a5db0cc4320a093aa1",
+      "target": "migration/previous-documents/docs--ANTHROPIC-REVIEW.md.txt",
+      "targetSha256": "35a2fd9929a374949b5d915a98e23612c34b5ff3636875a5db0cc4320a093aa1",
+      "status": "relocated",
+      "reason": "Historical reviewer evidence preserved; new package boundary explained."
+    },
+    {
+      "source": "docs/BRAND.md",
+      "sourceSha256": "09f57acbf62f870530dcd952574d41ccb8191fbf2f7481ca629e02582161dd7f",
+      "target": "plugins/mobile-app-builder-agency/docs/BRAND.md",
+      "targetSha256": "09f57acbf62f870530dcd952574d41ccb8191fbf2f7481ca629e02582161dd7f",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/DISTRIBUTION.md",
+      "sourceSha256": "0a91c776c3db5febe78950913f3003e9601609173ec3a74188b32dff84312fbd",
+      "target": "migration/previous-documents/docs--DISTRIBUTION.md.txt",
+      "targetSha256": "0a91c776c3db5febe78950913f3003e9601609173ec3a74188b32dff84312fbd",
+      "status": "relocated",
+      "reason": "Historical upstream status preserved; current edition distribution guide installed."
+    },
+    {
+      "source": "docs/PROMPTS.md",
+      "sourceSha256": "a4ca192fe4bbedb360484a76b16b82343ffb6de65c59fd8304282ad94246b982",
+      "target": "plugins/mobile-app-builder-agency/docs/PROMPTS.md",
+      "targetSha256": "a4ca192fe4bbedb360484a76b16b82343ffb6de65c59fd8304282ad94246b982",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/RESOURCES.md",
+      "sourceSha256": "356f918a931698564e91594453551affee53949c8df56c75c0a48634b17ed086",
+      "target": "plugins/mobile-app-builder-agency/docs/RESOURCES.md",
+      "targetSha256": "356f918a931698564e91594453551affee53949c8df56c75c0a48634b17ed086",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/SKILL-CATALOG.md",
+      "sourceSha256": "80b18fe18ec34a90318a78350ba5ca16d5db606b69f79a2980e190679654993d",
+      "target": "plugins/mobile-app-builder-agency/docs/SKILL-CATALOG.md",
+      "targetSha256": "80b18fe18ec34a90318a78350ba5ca16d5db606b69f79a2980e190679654993d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/START-HERE.md",
+      "sourceSha256": "69e5fb3ddb5dccac1503c6180ca29716c1c7589cb9a9a58c6f38933ec271ee71",
+      "target": "plugins/mobile-app-builder-agency/docs/START-HERE.md",
+      "targetSha256": "69e5fb3ddb5dccac1503c6180ca29716c1c7589cb9a9a58c6f38933ec271ee71",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/SUBMISSION-NOTES.md",
+      "sourceSha256": "db1a17f90bc5a49c556790c263bc091128fd3ff8a088a078411216ebda6cdc9b",
+      "target": "migration/previous-documents/docs--SUBMISSION-NOTES.md.txt",
+      "targetSha256": "db1a17f90bc5a49c556790c263bc091128fd3ff8a088a078411216ebda6cdc9b",
+      "status": "relocated",
+      "reason": "Historical publisher notes preserved; current source/approval state installed."
+    },
+    {
+      "source": "docs/anthropic-link-evidence.json",
+      "sourceSha256": "9df60760ad30d40bc5de4047d83b334044dfc3aabf08418d4f92fb1c0e3add76",
+      "target": "migration/previous-documents/docs--anthropic-link-evidence.json.txt",
+      "targetSha256": "9df60760ad30d40bc5de4047d83b334044dfc3aabf08418d4f92fb1c0e3add76",
+      "status": "relocated",
+      "reason": "Historical source-check evidence preserved outside the install folder."
+    },
+    {
+      "source": "docs/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/docs/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/references/02-eas-pipeline.md",
+      "sourceSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "target": "plugins/mobile-app-builder-agency/docs/references/02-eas-pipeline.md",
+      "targetSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/references/03-monetization.md",
+      "sourceSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "target": "plugins/mobile-app-builder-agency/docs/references/03-monetization.md",
+      "targetSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/docs/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/references/05-product-design.md",
+      "sourceSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "target": "plugins/mobile-app-builder-agency/docs/references/05-product-design.md",
+      "targetSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "docs/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/docs/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "scripts/agency-runtime.mjs",
+      "sourceSha256": "36fbba12a7eece98b295bdd853b8d41ee5ec158bd2b90c58a9fb0274d5d58603",
+      "target": "plugins/mobile-app-builder-agency/scripts/agency-runtime.mjs",
+      "targetSha256": "36fbba12a7eece98b295bdd853b8d41ee5ec158bd2b90c58a9fb0274d5d58603",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "scripts/agency.mjs",
+      "sourceSha256": "cf8dae98a851de4549b99d56d4ac5a322a672fc588a33e89812f215942f49c69",
+      "target": "plugins/mobile-app-builder-agency/scripts/agency.mjs",
+      "targetSha256": "cf8dae98a851de4549b99d56d4ac5a322a672fc588a33e89812f215942f49c69",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "scripts/plan-expo-project.mjs",
+      "sourceSha256": "17b1df78272cc52dd63c639725a42dc913f430c811c3f16244ca58d15d33ed67",
+      "target": "plugins/mobile-app-builder-agency/scripts/plan-expo-project.mjs",
+      "targetSha256": "17b1df78272cc52dd63c639725a42dc913f430c811c3f16244ca58d15d33ed67",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/5-1-2-i-ai-disclosure/SKILL.md",
+      "sourceSha256": "d52338cd200c20ee4213f33973d2e2089a5837d64d4d59b86a79d74fec9aa65a",
+      "target": "plugins/mobile-app-builder-agency/skills/5-1-2-i-ai-disclosure/SKILL.md",
+      "targetSha256": "d52338cd200c20ee4213f33973d2e2089a5837d64d4d59b86a79d74fec9aa65a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/5-1-2-i-ai-disclosure/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/skills/5-1-2-i-ai-disclosure/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/accessibility-audit/SKILL.md",
+      "sourceSha256": "3851fd12cce5c4024b44a9d6066f724f4a2d622bd5f5b87a83ba143aa287db12",
+      "target": "plugins/mobile-app-builder-agency/skills/accessibility-audit/SKILL.md",
+      "targetSha256": "3851fd12cce5c4024b44a9d6066f724f4a2d622bd5f5b87a83ba143aa287db12",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/accessibility-audit-android/SKILL.md",
+      "sourceSha256": "40ca85986ef1f723b5b7be3a3b70bb52d4ed3daa75acd1c2a7ab7c437ad2deac",
+      "target": "plugins/mobile-app-builder-agency/skills/accessibility-audit-android/SKILL.md",
+      "targetSha256": "40ca85986ef1f723b5b7be3a3b70bb52d4ed3daa75acd1c2a7ab7c437ad2deac",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/account-deletion-flow/SKILL.md",
+      "sourceSha256": "6b5738e9b67cf577b20952d2c639186654df999c68002015cffcb4874227c53b",
+      "target": "plugins/mobile-app-builder-agency/skills/account-deletion-flow/SKILL.md",
+      "targetSha256": "6b5738e9b67cf577b20952d2c639186654df999c68002015cffcb4874227c53b",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/account-deletion-flow/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/skills/account-deletion-flow/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/account-deletion-flow-android/SKILL.md",
+      "sourceSha256": "28a5aa7b080295ad3c6db87c862abb70aa28c539078ab0477df796c7fe365503",
+      "target": "plugins/mobile-app-builder-agency/skills/account-deletion-flow-android/SKILL.md",
+      "targetSha256": "28a5aa7b080295ad3c6db87c862abb70aa28c539078ab0477df796c7fe365503",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-android-foldable-tablet/SKILL.md",
+      "sourceSha256": "e553434586b995ef0e4538578c1054140fdd3e751778562ef8a614461a695427",
+      "target": "plugins/mobile-app-builder-agency/skills/add-android-foldable-tablet/SKILL.md",
+      "targetSha256": "e553434586b995ef0e4538578c1054140fdd3e751778562ef8a614461a695427",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-android-foreground-service/SKILL.md",
+      "sourceSha256": "fdc20e12adea2693b95dabf281f5ff352f60a4e89146a26ec980002d2b1fb32b",
+      "target": "plugins/mobile-app-builder-agency/skills/add-android-foreground-service/SKILL.md",
+      "targetSha256": "fdc20e12adea2693b95dabf281f5ff352f60a4e89146a26ec980002d2b1fb32b",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-android-pip/SKILL.md",
+      "sourceSha256": "b73337b68dc1168b0e2f6bf68c7fa9283f7aabf180842dcc562db36200a73e51",
+      "target": "plugins/mobile-app-builder-agency/skills/add-android-pip/SKILL.md",
+      "targetSha256": "b73337b68dc1168b0e2f6bf68c7fa9283f7aabf180842dcc562db36200a73e51",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-android-quick-actions/SKILL.md",
+      "sourceSha256": "df49e19d2719f735fb55222bf82aa45f9ebb724d5d3c9f90dec75f0d81587171",
+      "target": "plugins/mobile-app-builder-agency/skills/add-android-quick-actions/SKILL.md",
+      "targetSha256": "df49e19d2719f735fb55222bf82aa45f9ebb724d5d3c9f90dec75f0d81587171",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-android-widget-glance/SKILL.md",
+      "sourceSha256": "971e69067e1f965046fd6aa157938e20965d407fcab9219c3c8fd567097170ac",
+      "target": "plugins/mobile-app-builder-agency/skills/add-android-widget-glance/SKILL.md",
+      "targetSha256": "971e69067e1f965046fd6aa157938e20965d407fcab9219c3c8fd567097170ac",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-app-actions-slices/SKILL.md",
+      "sourceSha256": "1461453b3e96d2017401833bd9e68ded1543c2246bf28a2dd813af87d9019ba0",
+      "target": "plugins/mobile-app-builder-agency/skills/add-app-actions-slices/SKILL.md",
+      "targetSha256": "1461453b3e96d2017401833bd9e68ded1543c2246bf28a2dd813af87d9019ba0",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-app-attestation/SKILL.md",
+      "sourceSha256": "e95bc1cc918f2ab8563e833621e0c5ba1a872a1c0646daa6fe8a78c584ff4b77",
+      "target": "plugins/mobile-app-builder-agency/skills/add-app-attestation/SKILL.md",
+      "targetSha256": "e95bc1cc918f2ab8563e833621e0c5ba1a872a1c0646daa6fe8a78c584ff4b77",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-app-clips/SKILL.md",
+      "sourceSha256": "ab7be090ebab23ae0ee089d3881134bd830f543a3499fc3b3b0434872455bd40",
+      "target": "plugins/mobile-app-builder-agency/skills/add-app-clips/SKILL.md",
+      "targetSha256": "ab7be090ebab23ae0ee089d3881134bd830f543a3499fc3b3b0434872455bd40",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-app-icon-launch-screen/SKILL.md",
+      "sourceSha256": "8e82411920cc76c6acc5488fda1546fb4732391a6460e4572474772bb9889f8d",
+      "target": "plugins/mobile-app-builder-agency/skills/add-app-icon-launch-screen/SKILL.md",
+      "targetSha256": "8e82411920cc76c6acc5488fda1546fb4732391a6460e4572474772bb9889f8d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-deep-links/SKILL.md",
+      "sourceSha256": "f5a828fe7c556349ae448ce3ff5886c161e579e5c315b7f69e571800355d4055",
+      "target": "plugins/mobile-app-builder-agency/skills/add-deep-links/SKILL.md",
+      "targetSha256": "f5a828fe7c556349ae448ce3ff5886c161e579e5c315b7f69e571800355d4055",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-deep-links/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/add-deep-links/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-drizzle-sqlite/SKILL.md",
+      "sourceSha256": "552ed6de22827ef65c4d1d88823a52ed83a3646b71398564ec523dbbc95c1a05",
+      "target": "plugins/mobile-app-builder-agency/skills/add-drizzle-sqlite/SKILL.md",
+      "targetSha256": "552ed6de22827ef65c4d1d88823a52ed83a3646b71398564ec523dbbc95c1a05",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-edge-to-edge-android/SKILL.md",
+      "sourceSha256": "bc8aaf5342e6370938c3581f229bfbdbb4e4fef08dadb8ca19cae5b87b6e235d",
+      "target": "plugins/mobile-app-builder-agency/skills/add-edge-to-edge-android/SKILL.md",
+      "targetSha256": "bc8aaf5342e6370938c3581f229bfbdbb4e4fef08dadb8ca19cae5b87b6e235d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-apple-targets/SKILL.md",
+      "sourceSha256": "38f94776ed8919026ff6553cc9f28f8b535eb7a248f4fad9714fc77d1edfea1d",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-apple-targets/SKILL.md",
+      "targetSha256": "38f94776ed8919026ff6553cc9f28f8b535eb7a248f4fad9714fc77d1edfea1d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-camera/SKILL.md",
+      "sourceSha256": "51a0f50c3a4dc595a0f96b595557c277c7e2a744b9a73cdf3b8d03254c2e4114",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-camera/SKILL.md",
+      "targetSha256": "51a0f50c3a4dc595a0f96b595557c277c7e2a744b9a73cdf3b8d03254c2e4114",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-camera/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-camera/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-camera-android/SKILL.md",
+      "sourceSha256": "8b924facb46f95b4646cffdf7627a730382b836a16ea5e9b17de2bdaaf3c8708",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-camera-android/SKILL.md",
+      "targetSha256": "8b924facb46f95b4646cffdf7627a730382b836a16ea5e9b17de2bdaaf3c8708",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-notifications/SKILL.md",
+      "sourceSha256": "39b2eccda36741c9ba97d3b8157e44a605c062162660ef8a45899a5a90f54ae7",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-notifications/SKILL.md",
+      "targetSha256": "39b2eccda36741c9ba97d3b8157e44a605c062162660ef8a45899a5a90f54ae7",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-notifications/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-notifications/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-notifications-fcm/SKILL.md",
+      "sourceSha256": "ea5880be5a0dc7f005742274fe26532ea455c36ca6001617c4756f0ac7c1d9ac",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-notifications-fcm/SKILL.md",
+      "targetSha256": "ea5880be5a0dc7f005742274fe26532ea455c36ca6001617c4756f0ac7c1d9ac",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-secure-store/SKILL.md",
+      "sourceSha256": "9e300318899477e1973566276bae390f02aeeae056d7efc1ad1d0797fb1c7d15",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-secure-store/SKILL.md",
+      "targetSha256": "9e300318899477e1973566276bae390f02aeeae056d7efc1ad1d0797fb1c7d15",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-secure-store/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-secure-store/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-expo-secure-store-keystore/SKILL.md",
+      "sourceSha256": "763e245c1281b67eacc8d4fe5dcbcaeb37489766a154ba08c1881a7c7e0f42b2",
+      "target": "plugins/mobile-app-builder-agency/skills/add-expo-secure-store-keystore/SKILL.md",
+      "targetSha256": "763e245c1281b67eacc8d4fe5dcbcaeb37489766a154ba08c1881a7c7e0f42b2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-firebase-android/SKILL.md",
+      "sourceSha256": "20c64a2dbe99323d897e2d246affc5de57bdc9bb468df8797dbef3ea02184059",
+      "target": "plugins/mobile-app-builder-agency/skills/add-firebase-android/SKILL.md",
+      "targetSha256": "20c64a2dbe99323d897e2d246affc5de57bdc9bb468df8797dbef3ea02184059",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-flashlist/SKILL.md",
+      "sourceSha256": "eb2da5ddfa8926d753184d6af7170de60ee2df92552acd6d2dc7ace1839a6525",
+      "target": "plugins/mobile-app-builder-agency/skills/add-flashlist/SKILL.md",
+      "targetSha256": "eb2da5ddfa8926d753184d6af7170de60ee2df92552acd6d2dc7ace1839a6525",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-flashlist/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/add-flashlist/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-foundation-models/SKILL.md",
+      "sourceSha256": "528defe40a60c20f3d776e6fbe13c932327a3a4cc31cebbcfe30698c9a772686",
+      "target": "plugins/mobile-app-builder-agency/skills/add-foundation-models/SKILL.md",
+      "targetSha256": "528defe40a60c20f3d776e6fbe13c932327a3a4cc31cebbcfe30698c9a772686",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-foundation-models/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/skills/add-foundation-models/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-gemini-nano/SKILL.md",
+      "sourceSha256": "c7c04eb425c0acb8f972c0180e5946bfa83d6f18e04811256831b3c74fcf9d24",
+      "target": "plugins/mobile-app-builder-agency/skills/add-gemini-nano/SKILL.md",
+      "targetSha256": "c7c04eb425c0acb8f972c0180e5946bfa83d6f18e04811256831b3c74fcf9d24",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-google-signin-credential-manager/SKILL.md",
+      "sourceSha256": "11dc45f49d415d4f58edbc7fc751d3618aed09902f629e646bbb042812338e4f",
+      "target": "plugins/mobile-app-builder-agency/skills/add-google-signin-credential-manager/SKILL.md",
+      "targetSha256": "11dc45f49d415d4f58edbc7fc751d3618aed09902f629e646bbb042812338e4f",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-haptics/SKILL.md",
+      "sourceSha256": "b4eca898fc9e6f35c7696be27ca068f729f4df8a1c9db9afa4cae1f80eaf5f12",
+      "target": "plugins/mobile-app-builder-agency/skills/add-haptics/SKILL.md",
+      "targetSha256": "b4eca898fc9e6f35c7696be27ca068f729f4df8a1c9db9afa4cae1f80eaf5f12",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-haptics-android/SKILL.md",
+      "sourceSha256": "cdedf79d34fe99d8ecdcd5b5fc96faf4d1c59894d3f23abb7c87f4718becb74f",
+      "target": "plugins/mobile-app-builder-agency/skills/add-haptics-android/SKILL.md",
+      "targetSha256": "cdedf79d34fe99d8ecdcd5b5fc96faf4d1c59894d3f23abb7c87f4718becb74f",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-image/SKILL.md",
+      "sourceSha256": "d1d976a127b74e08ecd1c0cb07af8cd47f4af4c6dd7e990447102db4068ff698",
+      "target": "plugins/mobile-app-builder-agency/skills/add-image/SKILL.md",
+      "targetSha256": "d1d976a127b74e08ecd1c0cb07af8cd47f4af4c6dd7e990447102db4068ff698",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-image-android/SKILL.md",
+      "sourceSha256": "c1ba84508a97effe958cee0792ec1a1eb7d692fb46df1475d56e10ab7b1afcaa",
+      "target": "plugins/mobile-app-builder-agency/skills/add-image-android/SKILL.md",
+      "targetSha256": "c1ba84508a97effe958cee0792ec1a1eb7d692fb46df1475d56e10ab7b1afcaa",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-live-activity/SKILL.md",
+      "sourceSha256": "4abb4e372329a513f8a609a937f97b93535a77ccc3fdd84d549749f947a2ea7b",
+      "target": "plugins/mobile-app-builder-agency/skills/add-live-activity/SKILL.md",
+      "targetSha256": "4abb4e372329a513f8a609a937f97b93535a77ccc3fdd84d549749f947a2ea7b",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-live-activity/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/add-live-activity/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-nativewind-android/SKILL.md",
+      "sourceSha256": "d7ad54c9b91dc708fa3836acb1f3561396ba96d21cc1691593f1a97fce7f685b",
+      "target": "plugins/mobile-app-builder-agency/skills/add-nativewind-android/SKILL.md",
+      "targetSha256": "d7ad54c9b91dc708fa3836acb1f3561396ba96d21cc1691593f1a97fce7f685b",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-onesignal-push/SKILL.md",
+      "sourceSha256": "8192b28c9f25e4d6e0ad654ff4091379d245b9aa5d06e023d967086a5043a56e",
+      "target": "plugins/mobile-app-builder-agency/skills/add-onesignal-push/SKILL.md",
+      "targetSha256": "8192b28c9f25e4d6e0ad654ff4091379d245b9aa5d06e023d967086a5043a56e",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-openai-streaming-rn/SKILL.md",
+      "sourceSha256": "85f48a0a23ff4129a0c0815b884e81e11c9fcf8c19c21d855be3bbb95a0fd80c",
+      "target": "plugins/mobile-app-builder-agency/skills/add-openai-streaming-rn/SKILL.md",
+      "targetSha256": "85f48a0a23ff4129a0c0815b884e81e11c9fcf8c19c21d855be3bbb95a0fd80c",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-posthog-rn/SKILL.md",
+      "sourceSha256": "9a20ddcbdce0b85a89910d86674e0331a0dc934c4066c63b31a010931ebe66a0",
+      "target": "plugins/mobile-app-builder-agency/skills/add-posthog-rn/SKILL.md",
+      "targetSha256": "9a20ddcbdce0b85a89910d86674e0331a0dc934c4066c63b31a010931ebe66a0",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-posthog-rn-android/SKILL.md",
+      "sourceSha256": "6a0e85d477abbdb39c8f51595007a1a15bfb3b8848bf2ba86b60a129477e872b",
+      "target": "plugins/mobile-app-builder-agency/skills/add-posthog-rn-android/SKILL.md",
+      "targetSha256": "6a0e85d477abbdb39c8f51595007a1a15bfb3b8848bf2ba86b60a129477e872b",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-predictive-back/SKILL.md",
+      "sourceSha256": "b813fc677787773fc8e6b40736cae3b12f4fcf69f0daf2354afe6d52d45a9b43",
+      "target": "plugins/mobile-app-builder-agency/skills/add-predictive-back/SKILL.md",
+      "targetSha256": "b813fc677787773fc8e6b40736cae3b12f4fcf69f0daf2354afe6d52d45a9b43",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-reanimated/SKILL.md",
+      "sourceSha256": "b24b8f744d580aed5567d9bd45e057f9a6b075200be332d1ad8e832f0689acbd",
+      "target": "plugins/mobile-app-builder-agency/skills/add-reanimated/SKILL.md",
+      "targetSha256": "b24b8f744d580aed5567d9bd45e057f9a6b075200be332d1ad8e832f0689acbd",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-reanimated/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/add-reanimated/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-sentry-rn/SKILL.md",
+      "sourceSha256": "5bf5f69f8e1314499b574baa82b60f02c11371f4db4825cffefdd7b36e96ccb7",
+      "target": "plugins/mobile-app-builder-agency/skills/add-sentry-rn/SKILL.md",
+      "targetSha256": "5bf5f69f8e1314499b574baa82b60f02c11371f4db4825cffefdd7b36e96ccb7",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-sentry-rn-android/SKILL.md",
+      "sourceSha256": "3331b493fa96ca8646cd5c51c1b98cb46910975a8112a42b1462c36ce6858db8",
+      "target": "plugins/mobile-app-builder-agency/skills/add-sentry-rn-android/SKILL.md",
+      "targetSha256": "3331b493fa96ca8646cd5c51c1b98cb46910975a8112a42b1462c36ce6858db8",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-supabase-auth/SKILL.md",
+      "sourceSha256": "5edd4782c82a6de0f9cc8e70502f384c385cd309b394a2ac57ab2825e97359fe",
+      "target": "plugins/mobile-app-builder-agency/skills/add-supabase-auth/SKILL.md",
+      "targetSha256": "5edd4782c82a6de0f9cc8e70502f384c385cd309b394a2ac57ab2825e97359fe",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-supabase-auth-android/SKILL.md",
+      "sourceSha256": "fb03d722420950387ebc1a6b8f31b828d9a75ddc1af0b81c56d420a037340140",
+      "target": "plugins/mobile-app-builder-agency/skills/add-supabase-auth-android/SKILL.md",
+      "targetSha256": "fb03d722420950387ebc1a6b8f31b828d9a75ddc1af0b81c56d420a037340140",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-tanstack-query/SKILL.md",
+      "sourceSha256": "0be18da2f1e9f2af3e3eb0548bcb4f0c34181bcd5c20869387784e33a16620be",
+      "target": "plugins/mobile-app-builder-agency/skills/add-tanstack-query/SKILL.md",
+      "targetSha256": "0be18da2f1e9f2af3e3eb0548bcb4f0c34181bcd5c20869387784e33a16620be",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-tanstack-query/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/add-tanstack-query/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-watch-app/SKILL.md",
+      "sourceSha256": "979a04e75726de839481a74d61070aa9a3c7cc3ad62b143439717417aab90e8a",
+      "target": "plugins/mobile-app-builder-agency/skills/add-watch-app/SKILL.md",
+      "targetSha256": "979a04e75726de839481a74d61070aa9a3c7cc3ad62b143439717417aab90e8a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-wear-os-app/SKILL.md",
+      "sourceSha256": "4280248c7ed2fc97117932a83fe578dd1431d3ed12c24d757edbd199da602bcf",
+      "target": "plugins/mobile-app-builder-agency/skills/add-wear-os-app/SKILL.md",
+      "targetSha256": "4280248c7ed2fc97117932a83fe578dd1431d3ed12c24d757edbd199da602bcf",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-widgets/SKILL.md",
+      "sourceSha256": "04f8564e339afca0e88692cec7e2852a2a719614f6b27fbd2cbdefa06e5ad746",
+      "target": "plugins/mobile-app-builder-agency/skills/add-widgets/SKILL.md",
+      "targetSha256": "04f8564e339afca0e88692cec7e2852a2a719614f6b27fbd2cbdefa06e5ad746",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-widgets/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/add-widgets/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/add-zustand/SKILL.md",
+      "sourceSha256": "82ac653adf221b539a4086ddddefcf9d56aa1cf692a1cd79a09f3298f1713a78",
+      "target": "plugins/mobile-app-builder-agency/skills/add-zustand/SKILL.md",
+      "targetSha256": "82ac653adf221b539a4086ddddefcf9d56aa1cf692a1cd79a09f3298f1713a78",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/android-research-library/SKILL.md",
+      "sourceSha256": "82360481ca2da08dc22cd5a5025342f2569ea381252b56921a75cf61177a3fd5",
+      "target": "plugins/mobile-app-builder-agency/skills/android-research-library/SKILL.md",
+      "targetSha256": "82360481ca2da08dc22cd5a5025342f2569ea381252b56921a75cf61177a3fd5",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/android-research-library/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/android-research-library/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/android-research-library/references/02-eas-pipeline.md",
+      "sourceSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "target": "plugins/mobile-app-builder-agency/skills/android-research-library/references/02-eas-pipeline.md",
+      "targetSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/android-research-library/references/03-monetization.md",
+      "sourceSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "target": "plugins/mobile-app-builder-agency/skills/android-research-library/references/03-monetization.md",
+      "targetSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/android-research-library/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/android-research-library/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/android-research-library/references/05-product-design.md",
+      "sourceSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "target": "plugins/mobile-app-builder-agency/skills/android-research-library/references/05-product-design.md",
+      "targetSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/android-research-library/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/skills/android-research-library/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apify-mobile-research/SKILL.md",
+      "sourceSha256": "3bee43b35c09eeabaf51724aa5e637a6a0a287584d3979ac90fe60dc2f5c0a08",
+      "target": "plugins/mobile-app-builder-agency/skills/apify-mobile-research/SKILL.md",
+      "targetSha256": "1c6874808366556e2c74fc2e0de314ec895fee525b89e9485e0f675bb2268c78",
+      "status": "adapted",
+      "reason": "Authentication or native identity adapted; exact workflow and resources retained."
+    },
+    {
+      "source": "skills/apify-mobile-research/references/actor-catalog.json",
+      "sourceSha256": "cd7c5e2f44f63abcd878afbc13b52cc782ef03f6578b9ad11e40654948b2440c",
+      "target": "plugins/mobile-app-builder-agency/skills/apify-mobile-research/references/actor-catalog.json",
+      "targetSha256": "cd7c5e2f44f63abcd878afbc13b52cc782ef03f6578b9ad11e40654948b2440c",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apify-mobile-research/references/cli-workflow.md",
+      "sourceSha256": "75527bb751d45acd417a1c88633f4eeeb18d48eb0ba279dda517d48032a8439f",
+      "target": "plugins/mobile-app-builder-agency/skills/apify-mobile-research/references/cli-workflow.md",
+      "targetSha256": "1250692b5c19b56fbfcfce12b8810751f62bc51385239d328c8c06cbbb62084c",
+      "status": "adapted",
+      "reason": "Authentication or native identity adapted; exact workflow and resources retained."
+    },
+    {
+      "source": "skills/apify-mobile-research/references/research-protocol.md",
+      "sourceSha256": "dae0b2ef2d94c0b79de3b7aaf19dbe4ac09344b7547aa9cc36914662b446eec2",
+      "target": "plugins/mobile-app-builder-agency/skills/apify-mobile-research/references/research-protocol.md",
+      "targetSha256": "dae0b2ef2d94c0b79de3b7aaf19dbe4ac09344b7547aa9cc36914662b446eec2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apify-mobile-research/templates/actor-registry.json",
+      "sourceSha256": "f0ca5f461eac328e234c2903975f14aff9b053da885862092178920edc4ed09c",
+      "target": "plugins/mobile-app-builder-agency/skills/apify-mobile-research/templates/actor-registry.json",
+      "targetSha256": "f0ca5f461eac328e234c2903975f14aff9b053da885862092178920edc4ed09c",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apify-mobile-research/templates/research-brief.md",
+      "sourceSha256": "f15db9eeaf5551b367c918379b203e0e70d83304c802a9b3e6126cc54a9885d9",
+      "target": "plugins/mobile-app-builder-agency/skills/apify-mobile-research/templates/research-brief.md",
+      "targetSha256": "f15db9eeaf5551b367c918379b203e0e70d83304c802a9b3e6126cc54a9885d9",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apify-mobile-research/templates/run-manifest.json",
+      "sourceSha256": "30a6d95cdb1a3c766e97b8587b601ae7deeaab404e141af097019f8de940dc25",
+      "target": "plugins/mobile-app-builder-agency/skills/apify-mobile-research/templates/run-manifest.json",
+      "targetSha256": "30a6d95cdb1a3c766e97b8587b601ae7deeaab404e141af097019f8de940dc25",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/app-naming/SKILL.md",
+      "sourceSha256": "bddc4afe25e9c0393f82cd40ee4aaf596a465c94387ba35ea01864fb2d857355",
+      "target": "plugins/mobile-app-builder-agency/skills/app-naming/SKILL.md",
+      "targetSha256": "bddc4afe25e9c0393f82cd40ee4aaf596a465c94387ba35ea01864fb2d857355",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/app-naming/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/app-naming/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/app-naming-android/SKILL.md",
+      "sourceSha256": "a01b11c14667ad514e84bfb41dc016a0859ada94903c029ecd099cee1a718e1f",
+      "target": "plugins/mobile-app-builder-agency/skills/app-naming-android/SKILL.md",
+      "targetSha256": "a01b11c14667ad514e84bfb41dc016a0859ada94903c029ecd099cee1a718e1f",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/app-store-server-notifications/SKILL.md",
+      "sourceSha256": "aac7f0f2d2c806d20b3cb53f8d10165c75461309db8c3ab0107d818de0682103",
+      "target": "plugins/mobile-app-builder-agency/skills/app-store-server-notifications/SKILL.md",
+      "targetSha256": "aac7f0f2d2c806d20b3cb53f8d10165c75461309db8c3ab0107d818de0682103",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/app-store-server-notifications-android/SKILL.md",
+      "sourceSha256": "b49853eb13536ea0a8baf0f70e93a71350f8651e2bbe0f0b4d656dd726ed62a2",
+      "target": "plugins/mobile-app-builder-agency/skills/app-store-server-notifications-android/SKILL.md",
+      "targetSha256": "b49853eb13536ea0a8baf0f70e93a71350f8651e2bbe0f0b4d656dd726ed62a2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apply-hig/SKILL.md",
+      "sourceSha256": "5dd4ad88f16981dac74f32421e0958b0d5de0472d28bc92f24dc830e961aacec",
+      "target": "plugins/mobile-app-builder-agency/skills/apply-hig/SKILL.md",
+      "targetSha256": "5dd4ad88f16981dac74f32421e0958b0d5de0472d28bc92f24dc830e961aacec",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apply-hig/references/05-product-design.md",
+      "sourceSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "target": "plugins/mobile-app-builder-agency/skills/apply-hig/references/05-product-design.md",
+      "targetSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apply-liquid-glass/SKILL.md",
+      "sourceSha256": "d32f31849ebf454eb59393784705eb5b9b794db862aba9f94f1662b001055f9f",
+      "target": "plugins/mobile-app-builder-agency/skills/apply-liquid-glass/SKILL.md",
+      "targetSha256": "d32f31849ebf454eb59393784705eb5b9b794db862aba9f94f1662b001055f9f",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apply-liquid-glass/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/apply-liquid-glass/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apply-material-you-dynamic-colors/SKILL.md",
+      "sourceSha256": "9a4df391df900baa0e25b17d73f3acfe9c4665dd6a03b7225b72f6d2ae930837",
+      "target": "plugins/mobile-app-builder-agency/skills/apply-material-you-dynamic-colors/SKILL.md",
+      "targetSha256": "9a4df391df900baa0e25b17d73f3acfe9c4665dd6a03b7225b72f6d2ae930837",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/apply-material3/SKILL.md",
+      "sourceSha256": "12e591037ce867fd123ca04af210882937cf1391d8a4d34c2f98fbb36e5c4455",
+      "target": "plugins/mobile-app-builder-agency/skills/apply-material3/SKILL.md",
+      "targetSha256": "12e591037ce867fd123ca04af210882937cf1391d8a4d34c2f98fbb36e5c4455",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/asa-to-aso/SKILL.md",
+      "sourceSha256": "f8b3e567c0dfc533c6967fe25dc0ddd0f6f380a644a329b602a4864932c67eb7",
+      "target": "plugins/mobile-app-builder-agency/skills/asa-to-aso/SKILL.md",
+      "targetSha256": "f8b3e567c0dfc533c6967fe25dc0ddd0f6f380a644a329b602a4864932c67eb7",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/asa-to-aso/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/asa-to-aso/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/asa-to-aso-android/SKILL.md",
+      "sourceSha256": "eca41efae13569eafb11d5092db769da96722b6b684b0ff566f81c42efde0895",
+      "target": "plugins/mobile-app-builder-agency/skills/asa-to-aso-android/SKILL.md",
+      "targetSha256": "eca41efae13569eafb11d5092db769da96722b6b684b0ff566f81c42efde0895",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/aso-keywords/SKILL.md",
+      "sourceSha256": "e48ec5eba3a231fd75e4dbae3d83cb7a6e5292a90622a43070c9c9b5f006e0cb",
+      "target": "plugins/mobile-app-builder-agency/skills/aso-keywords/SKILL.md",
+      "targetSha256": "e48ec5eba3a231fd75e4dbae3d83cb7a6e5292a90622a43070c9c9b5f006e0cb",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/aso-keywords/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/aso-keywords/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/aso-keywords-play/SKILL.md",
+      "sourceSha256": "1958e4a2750bc1952370b1aa4dde9fc0f3a1eefc91cba6215ef993038e525759",
+      "target": "plugins/mobile-app-builder-agency/skills/aso-keywords-play/SKILL.md",
+      "targetSha256": "1958e4a2750bc1952370b1aa4dde9fc0f3a1eefc91cba6215ef993038e525759",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/build-affiliate-program/SKILL.md",
+      "sourceSha256": "3335baaf3ff3c3f49377cf012b31594a971993657333786b1e1e63ffed2c9862",
+      "target": "plugins/mobile-app-builder-agency/skills/build-affiliate-program/SKILL.md",
+      "targetSha256": "3335baaf3ff3c3f49377cf012b31594a971993657333786b1e1e63ffed2c9862",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/build-cancellation-flow/SKILL.md",
+      "sourceSha256": "4e09e29438a36ca5b83987212312dea3fcaaab5e085027fbad18f772df25bbff",
+      "target": "plugins/mobile-app-builder-agency/skills/build-cancellation-flow/SKILL.md",
+      "targetSha256": "4e09e29438a36ca5b83987212312dea3fcaaab5e085027fbad18f772df25bbff",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/build-creator-program/SKILL.md",
+      "sourceSha256": "85bc2acc3e305f9b0ca48cfecc7eda5fb69fa954a93ab0c5510e207cdadb9ab9",
+      "target": "plugins/mobile-app-builder-agency/skills/build-creator-program/SKILL.md",
+      "targetSha256": "85bc2acc3e305f9b0ca48cfecc7eda5fb69fa954a93ab0c5510e207cdadb9ab9",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/build-in-public-x/SKILL.md",
+      "sourceSha256": "0c4cb1cec34b3886cb4c59906ab7268d20b539378c481067837f066d10f17088",
+      "target": "plugins/mobile-app-builder-agency/skills/build-in-public-x/SKILL.md",
+      "targetSha256": "0c4cb1cec34b3886cb4c59906ab7268d20b539378c481067837f066d10f17088",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/build-in-public-x/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/build-in-public-x/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/build-review-routing/SKILL.md",
+      "sourceSha256": "98f5a82bc5aff4d4c95ce959d9c2eaa83735ed0f14d429c8795392b60a87f3ff",
+      "target": "plugins/mobile-app-builder-agency/skills/build-review-routing/SKILL.md",
+      "targetSha256": "98f5a82bc5aff4d4c95ce959d9c2eaa83735ed0f14d429c8795392b60a87f3ff",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/build-win-back-flow/SKILL.md",
+      "sourceSha256": "4153eaddb4fb14b2b278d94aebf243f792787cebb6f86140679ee7d945f781af",
+      "target": "plugins/mobile-app-builder-agency/skills/build-win-back-flow/SKILL.md",
+      "targetSha256": "4153eaddb4fb14b2b278d94aebf243f792787cebb6f86140679ee7d945f781af",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/choose-backend/SKILL.md",
+      "sourceSha256": "9ce402d94d5a5e38195fb065069c7cdef6f4d88c0bec86c0fbef6d2c69ad1fa8",
+      "target": "plugins/mobile-app-builder-agency/skills/choose-backend/SKILL.md",
+      "targetSha256": "9ce402d94d5a5e38195fb065069c7cdef6f4d88c0bec86c0fbef6d2c69ad1fa8",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/choose-storage/SKILL.md",
+      "sourceSha256": "78fecae385efe39329409d93bae5bcfe235c43c9c33ec12c7e6c585ed219f58e",
+      "target": "plugins/mobile-app-builder-agency/skills/choose-storage/SKILL.md",
+      "targetSha256": "78fecae385efe39329409d93bae5bcfe235c43c9c33ec12c7e6c585ed219f58e",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/code-signing/SKILL.md",
+      "sourceSha256": "1ba92472d96edf1ac9103090d6e2216ed81eb7737c2328cf487cd5c0b64da82c",
+      "target": "plugins/mobile-app-builder-agency/skills/code-signing/SKILL.md",
+      "targetSha256": "1ba92472d96edf1ac9103090d6e2216ed81eb7737c2328cf487cd5c0b64da82c",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/code-signing/references/02-eas-pipeline.md",
+      "sourceSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "target": "plugins/mobile-app-builder-agency/skills/code-signing/references/02-eas-pipeline.md",
+      "targetSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/code-signing-android/SKILL.md",
+      "sourceSha256": "7cfb3faa6b9d8abc3152d8c892f6f483420effddd816ec46efef79bd72f6181d",
+      "target": "plugins/mobile-app-builder-agency/skills/code-signing-android/SKILL.md",
+      "targetSha256": "7cfb3faa6b9d8abc3152d8c892f6f483420effddd816ec46efef79bd72f6181d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-aso-pass/SKILL.md",
+      "sourceSha256": "0f4192bb9c6094ea556e96c321c0565bfbb9889462350d82f49084ba117fe7f8",
+      "target": "plugins/mobile-app-builder-agency/skills/command-aso-pass/SKILL.md",
+      "targetSha256": "0f4192bb9c6094ea556e96c321c0565bfbb9889462350d82f49084ba117fe7f8",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-aso-pass-play/SKILL.md",
+      "sourceSha256": "12347ebb59b22af523a144360fcbf1daf3bd8b35be5ba3a755e51a28126a3b09",
+      "target": "plugins/mobile-app-builder-agency/skills/command-aso-pass-play/SKILL.md",
+      "targetSha256": "12347ebb59b22af523a144360fcbf1daf3bd8b35be5ba3a755e51a28126a3b09",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-audit-android/SKILL.md",
+      "sourceSha256": "1f258cc68256239e5adf4de0e108fbbddd91db5dad86b136852fe3122eac1494",
+      "target": "plugins/mobile-app-builder-agency/skills/command-audit-android/SKILL.md",
+      "targetSha256": "1f258cc68256239e5adf4de0e108fbbddd91db5dad86b136852fe3122eac1494",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-audit-rn/SKILL.md",
+      "sourceSha256": "bd217b67f566e503e3f67e657c0602119fc383aabc59c679eccd774a9fbb3cca",
+      "target": "plugins/mobile-app-builder-agency/skills/command-audit-rn/SKILL.md",
+      "targetSha256": "bd217b67f566e503e3f67e657c0602119fc383aabc59c679eccd774a9fbb3cca",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-build-onboarding/SKILL.md",
+      "sourceSha256": "a02c211ec9579f7f12f498589ae7660dbcf862e5a7c6cd9dcbd49289392a85c8",
+      "target": "plugins/mobile-app-builder-agency/skills/command-build-onboarding/SKILL.md",
+      "targetSha256": "a02c211ec9579f7f12f498589ae7660dbcf862e5a7c6cd9dcbd49289392a85c8",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-build-paywall/SKILL.md",
+      "sourceSha256": "3ae9b11eeaba996cc4b30fd2a5daf1c6eb6f1ec9156e7721414f68a11058a4c3",
+      "target": "plugins/mobile-app-builder-agency/skills/command-build-paywall/SKILL.md",
+      "targetSha256": "3ae9b11eeaba996cc4b30fd2a5daf1c6eb6f1ec9156e7721414f68a11058a4c3",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-build-paywall-android/SKILL.md",
+      "sourceSha256": "837b1784ffc316214addb04269e301fba17977c075548ceb497ad7c47bc49f0a",
+      "target": "plugins/mobile-app-builder-agency/skills/command-build-paywall-android/SKILL.md",
+      "targetSha256": "837b1784ffc316214addb04269e301fba17977c075548ceb497ad7c47bc49f0a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-build-review-prompt/SKILL.md",
+      "sourceSha256": "38fddbd750fd37814bf282c73097325b2dd36fd5adda7c74aaac40f65d316f35",
+      "target": "plugins/mobile-app-builder-agency/skills/command-build-review-prompt/SKILL.md",
+      "targetSha256": "38fddbd750fd37814bf282c73097325b2dd36fd5adda7c74aaac40f65d316f35",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-eas-deploy/SKILL.md",
+      "sourceSha256": "2692268de1e44d762df390bbde8b0a34f7550d8704315566a57207ea7727d621",
+      "target": "plugins/mobile-app-builder-agency/skills/command-eas-deploy/SKILL.md",
+      "targetSha256": "2692268de1e44d762df390bbde8b0a34f7550d8704315566a57207ea7727d621",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-eas-deploy-android/SKILL.md",
+      "sourceSha256": "96484b0c4a48fccdb1408c7fc26eb0a451c811b93b3cff37ad3f655ae9379b60",
+      "target": "plugins/mobile-app-builder-agency/skills/command-eas-deploy-android/SKILL.md",
+      "targetSha256": "96484b0c4a48fccdb1408c7fc26eb0a451c811b93b3cff37ad3f655ae9379b60",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-research/SKILL.md",
+      "sourceSha256": "f4f5b3cf986d3d4696b6160da13ccc0ed75c11e1e58ea3f894956c2da5f7618c",
+      "target": "plugins/mobile-app-builder-agency/skills/command-research/SKILL.md",
+      "targetSha256": "f4f5b3cf986d3d4696b6160da13ccc0ed75c11e1e58ea3f894956c2da5f7618c",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-research-android/SKILL.md",
+      "sourceSha256": "fdb2c6d94ba5337c4863c43742a62f1f913ebf80731f84eaceff16e0f9896a89",
+      "target": "plugins/mobile-app-builder-agency/skills/command-research-android/SKILL.md",
+      "targetSha256": "fdb2c6d94ba5337c4863c43742a62f1f913ebf80731f84eaceff16e0f9896a89",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-scaffold-app/SKILL.md",
+      "sourceSha256": "61c6ecb4a47c37b3d263d1461691cf67337b1def06286dd78bfd2dd7679fcac9",
+      "target": "plugins/mobile-app-builder-agency/skills/command-scaffold-app/SKILL.md",
+      "targetSha256": "61c6ecb4a47c37b3d263d1461691cf67337b1def06286dd78bfd2dd7679fcac9",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-scaffold-app/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/command-scaffold-app/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-scaffold-app/scripts/plan-expo-project.mjs",
+      "sourceSha256": "17b1df78272cc52dd63c639725a42dc913f430c811c3f16244ca58d15d33ed67",
+      "target": "plugins/mobile-app-builder-agency/skills/command-scaffold-app/scripts/plan-expo-project.mjs",
+      "targetSha256": "17b1df78272cc52dd63c639725a42dc913f430c811c3f16244ca58d15d33ed67",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/command-ship-it/SKILL.md",
+      "sourceSha256": "ce966e44f23ae6243063cbf0c2ab7e4b850d9287c1fcfacc7182bde3bf62e275",
+      "target": "plugins/mobile-app-builder-agency/skills/command-ship-it/SKILL.md",
+      "targetSha256": "ce966e44f23ae6243063cbf0c2ab7e4b850d9287c1fcfacc7182bde3bf62e275",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/competitor-aso-teardown/SKILL.md",
+      "sourceSha256": "a253ed8d342b331f87a13b759bb0ad6a622eb39122e254558b68a79dd3f0ae40",
+      "target": "plugins/mobile-app-builder-agency/skills/competitor-aso-teardown/SKILL.md",
+      "targetSha256": "a253ed8d342b331f87a13b759bb0ad6a622eb39122e254558b68a79dd3f0ae40",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/competitor-feature-matrix/SKILL.md",
+      "sourceSha256": "6ed1af42df7879676c0d9c821b36d816c79c930500df9bfb2eb888d61ac8d178",
+      "target": "plugins/mobile-app-builder-agency/skills/competitor-feature-matrix/SKILL.md",
+      "targetSha256": "6ed1af42df7879676c0d9c821b36d816c79c930500df9bfb2eb888d61ac8d178",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/competitor-onboarding-teardown/SKILL.md",
+      "sourceSha256": "1907842bec1c7adf5a57cf0c4bb3353b560df765515b08b2a23ef790bc4c050a",
+      "target": "plugins/mobile-app-builder-agency/skills/competitor-onboarding-teardown/SKILL.md",
+      "targetSha256": "1907842bec1c7adf5a57cf0c4bb3353b560df765515b08b2a23ef790bc4c050a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/competitor-paywall-analysis/SKILL.md",
+      "sourceSha256": "d51e5585ffa58440b6892655b00c3279f70632ff1f3063ed1ff3c318d1175f1a",
+      "target": "plugins/mobile-app-builder-agency/skills/competitor-paywall-analysis/SKILL.md",
+      "targetSha256": "d51e5585ffa58440b6892655b00c3279f70632ff1f3063ed1ff3c318d1175f1a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/competitor-paywall-analysis-android/SKILL.md",
+      "sourceSha256": "118b6ee05cfa330bdcfe75bb92cefc4de5e447c5a706e24830fb48b2b9de31c3",
+      "target": "plugins/mobile-app-builder-agency/skills/competitor-paywall-analysis-android/SKILL.md",
+      "targetSha256": "118b6ee05cfa330bdcfe75bb92cefc4de5e447c5a706e24830fb48b2b9de31c3",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/configure-aab-build/SKILL.md",
+      "sourceSha256": "4fd92b3a05517090a1f2468d6a98a6e824bb6b6c9189e80877b3890a85bcb409",
+      "target": "plugins/mobile-app-builder-agency/skills/configure-aab-build/SKILL.md",
+      "targetSha256": "4fd92b3a05517090a1f2468d6a98a6e824bb6b6c9189e80877b3890a85bcb409",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/custom-product-pages/SKILL.md",
+      "sourceSha256": "89c257c39194c1464c0b58ab7eba305704ca6a3edbb2fc23cb125790791659d9",
+      "target": "plugins/mobile-app-builder-agency/skills/custom-product-pages/SKILL.md",
+      "targetSha256": "89c257c39194c1464c0b58ab7eba305704ca6a3edbb2fc23cb125790791659d9",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/custom-product-pages/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/custom-product-pages/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/custom-store-listings/SKILL.md",
+      "sourceSha256": "f80a45a26b6591de08228586fbaba0185d666d24729a4f9e210653f062accc60",
+      "target": "plugins/mobile-app-builder-agency/skills/custom-store-listings/SKILL.md",
+      "targetSha256": "f80a45a26b6591de08228586fbaba0185d666d24729a4f9e210653f062accc60",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/data-safety-form/SKILL.md",
+      "sourceSha256": "a0f53519daa14bd15e2692c9984fc51e31606a3febfcb8cfda11bf8fe70a492d",
+      "target": "plugins/mobile-app-builder-agency/skills/data-safety-form/SKILL.md",
+      "targetSha256": "a0f53519daa14bd15e2692c9984fc51e31606a3febfcb8cfda11bf8fe70a492d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-app-icon-adaptive/SKILL.md",
+      "sourceSha256": "e1ab266d136155070f72d26cd0e4d2ee174e590d8ac4621101605dae96a855b9",
+      "target": "plugins/mobile-app-builder-agency/skills/design-app-icon-adaptive/SKILL.md",
+      "targetSha256": "e1ab266d136155070f72d26cd0e4d2ee174e590d8ac4621101605dae96a855b9",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-lifecycle-messaging/SKILL.md",
+      "sourceSha256": "34b4a85156b7c0ed3533873a0efa6be33cad1d1f9c55a5581bf5d3c7c12433ec",
+      "target": "plugins/mobile-app-builder-agency/skills/design-lifecycle-messaging/SKILL.md",
+      "targetSha256": "34b4a85156b7c0ed3533873a0efa6be33cad1d1f9c55a5581bf5d3c7c12433ec",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-onboarding-funnel/SKILL.md",
+      "sourceSha256": "8b020441c32b0bbbd33c58d2e11ea645461038a7bf764ca6a84977b7c2151d22",
+      "target": "plugins/mobile-app-builder-agency/skills/design-onboarding-funnel/SKILL.md",
+      "targetSha256": "8b020441c32b0bbbd33c58d2e11ea645461038a7bf764ca6a84977b7c2151d22",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-onboarding-quiz/SKILL.md",
+      "sourceSha256": "7d80e5a3c0f52e6a48d3eed8e36a3d5e176b8302aa9b0d729da830d1f43342cf",
+      "target": "plugins/mobile-app-builder-agency/skills/design-onboarding-quiz/SKILL.md",
+      "targetSha256": "7d80e5a3c0f52e6a48d3eed8e36a3d5e176b8302aa9b0d729da830d1f43342cf",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-onboarding-quiz/references/03-monetization.md",
+      "sourceSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "target": "plugins/mobile-app-builder-agency/skills/design-onboarding-quiz/references/03-monetization.md",
+      "targetSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-onboarding-quiz/references/activation-first-onboarding.md",
+      "sourceSha256": "74dfe9c070b3d8390f08638369400b6a004fa7455ef30edffbe8639ea245f857",
+      "target": "plugins/mobile-app-builder-agency/skills/design-onboarding-quiz/references/activation-first-onboarding.md",
+      "targetSha256": "74dfe9c070b3d8390f08638369400b6a004fa7455ef30edffbe8639ea245f857",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-paywall/SKILL.md",
+      "sourceSha256": "8ed3b70e689928cbb44595d731cd56aec8c78433299191702a609977ba107f81",
+      "target": "plugins/mobile-app-builder-agency/skills/design-paywall/SKILL.md",
+      "targetSha256": "8ed3b70e689928cbb44595d731cd56aec8c78433299191702a609977ba107f81",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-paywall/references/03-monetization.md",
+      "sourceSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "target": "plugins/mobile-app-builder-agency/skills/design-paywall/references/03-monetization.md",
+      "targetSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-paywall/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/skills/design-paywall/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-paywall-android/SKILL.md",
+      "sourceSha256": "1d805c718d7c1c42a08c5f3e161bd05a85f3e01b65bb1ad8916580ba066a3d54",
+      "target": "plugins/mobile-app-builder-agency/skills/design-paywall-android/SKILL.md",
+      "targetSha256": "1d805c718d7c1c42a08c5f3e161bd05a85f3e01b65bb1ad8916580ba066a3d54",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-push-strategy/SKILL.md",
+      "sourceSha256": "af6968e0ab0e67850e9b0ea99b82b6b14e714dec1bffc55df5976ad1b47086b0",
+      "target": "plugins/mobile-app-builder-agency/skills/design-push-strategy/SKILL.md",
+      "targetSha256": "af6968e0ab0e67850e9b0ea99b82b6b14e714dec1bffc55df5976ad1b47086b0",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-retention-loop/SKILL.md",
+      "sourceSha256": "85a1ef44c59d3bee0ccaaf8a945288b837ec921f7a54a94fd54906f5145713cb",
+      "target": "plugins/mobile-app-builder-agency/skills/design-retention-loop/SKILL.md",
+      "targetSha256": "85a1ef44c59d3bee0ccaaf8a945288b837ec921f7a54a94fd54906f5145713cb",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-screenshots/SKILL.md",
+      "sourceSha256": "530f9841c91f2934c051e9a83ec09d52f443ec40ca8dfad5321641b72d231886",
+      "target": "plugins/mobile-app-builder-agency/skills/design-screenshots/SKILL.md",
+      "targetSha256": "530f9841c91f2934c051e9a83ec09d52f443ec40ca8dfad5321641b72d231886",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-screenshots/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/design-screenshots/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-screenshots-play/SKILL.md",
+      "sourceSha256": "dfb68ace09e180d5d19e145f32bde82707e6b9b6718c3bf158f1030f86d9f93d",
+      "target": "plugins/mobile-app-builder-agency/skills/design-screenshots-play/SKILL.md",
+      "targetSha256": "dfb68ace09e180d5d19e145f32bde82707e6b9b6718c3bf158f1030f86d9f93d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-shareable-result-card/SKILL.md",
+      "sourceSha256": "287e76bf616cd10229dec18ba52f9687618779f8a98b4ab2a6367ea85f011864",
+      "target": "plugins/mobile-app-builder-agency/skills/design-shareable-result-card/SKILL.md",
+      "targetSha256": "287e76bf616cd10229dec18ba52f9687618779f8a98b4ab2a6367ea85f011864",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-splash-screen/SKILL.md",
+      "sourceSha256": "41de294f2fcb977c18d31809237e879c39bc393b116788a1a9a3cf0048b0e3f4",
+      "target": "plugins/mobile-app-builder-agency/skills/design-splash-screen/SKILL.md",
+      "targetSha256": "41de294f2fcb977c18d31809237e879c39bc393b116788a1a9a3cf0048b0e3f4",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/design-viral-loop/SKILL.md",
+      "sourceSha256": "327136077e733a89eac2fe9fc80a56ee9cf87ef950adb81b1fdfdfbec9a1bea8",
+      "target": "plugins/mobile-app-builder-agency/skills/design-viral-loop/SKILL.md",
+      "targetSha256": "327136077e733a89eac2fe9fc80a56ee9cf87ef950adb81b1fdfdfbec9a1bea8",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/dissect-competitor-android-app/SKILL.md",
+      "sourceSha256": "278ddd3e26aad8d3dfce4c957d28cec2ba3fe7a9a24fda1eb8c109f41bca2440",
+      "target": "plugins/mobile-app-builder-agency/skills/dissect-competitor-android-app/SKILL.md",
+      "targetSha256": "278ddd3e26aad8d3dfce4c957d28cec2ba3fe7a9a24fda1eb8c109f41bca2440",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/dissect-competitor-app/SKILL.md",
+      "sourceSha256": "6349f5526befa1dfa96542cbe6cf424a47a64a1f402577adef7ee916904f85a6",
+      "target": "plugins/mobile-app-builder-agency/skills/dissect-competitor-app/SKILL.md",
+      "targetSha256": "6349f5526befa1dfa96542cbe6cf424a47a64a1f402577adef7ee916904f85a6",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/e2e-checklist/SKILL.md",
+      "sourceSha256": "0c5f5bc8b8ebe16e6fc4b06ea0bf4ba938a457428e3e2baafb047afb14b155fa",
+      "target": "plugins/mobile-app-builder-agency/skills/e2e-checklist/SKILL.md",
+      "targetSha256": "0c5f5bc8b8ebe16e6fc4b06ea0bf4ba938a457428e3e2baafb047afb14b155fa",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/e2e-checklist-android/SKILL.md",
+      "sourceSha256": "dc2e7ed6bccb4849c7d0e522b9fead2955298396340aa32133b9d9e0e20d8aaf",
+      "target": "plugins/mobile-app-builder-agency/skills/e2e-checklist-android/SKILL.md",
+      "targetSha256": "dc2e7ed6bccb4849c7d0e522b9fead2955298396340aa32133b9d9e0e20d8aaf",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/eas-build-profiles/SKILL.md",
+      "sourceSha256": "a305e8bd33639ba20780c4adc907a3a557053936f8f26485b28ef56a4e10b0b4",
+      "target": "plugins/mobile-app-builder-agency/skills/eas-build-profiles/SKILL.md",
+      "targetSha256": "a305e8bd33639ba20780c4adc907a3a557053936f8f26485b28ef56a4e10b0b4",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/eas-build-profiles/references/02-eas-pipeline.md",
+      "sourceSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "target": "plugins/mobile-app-builder-agency/skills/eas-build-profiles/references/02-eas-pipeline.md",
+      "targetSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/eas-build-profiles-android/SKILL.md",
+      "sourceSha256": "4b745de9a1f256ec59df66cad4a826ab4732abf73ab5b9788ce4e2fb59e743ef",
+      "target": "plugins/mobile-app-builder-agency/skills/eas-build-profiles-android/SKILL.md",
+      "targetSha256": "4b745de9a1f256ec59df66cad4a826ab4732abf73ab5b9788ce4e2fb59e743ef",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/eas-submit-play/SKILL.md",
+      "sourceSha256": "ad446fafb83b773c77d7f8cd89da6733ae68db9ac984a2c04442a396abd471fa",
+      "target": "plugins/mobile-app-builder-agency/skills/eas-submit-play/SKILL.md",
+      "targetSha256": "ad446fafb83b773c77d7f8cd89da6733ae68db9ac984a2c04442a396abd471fa",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/eas-submit-testflight/SKILL.md",
+      "sourceSha256": "1362ca8ce70a21def631477d9075fee9b788df16b6b8c6c83b9f67e2b76a0b58",
+      "target": "plugins/mobile-app-builder-agency/skills/eas-submit-testflight/SKILL.md",
+      "targetSha256": "1362ca8ce70a21def631477d9075fee9b788df16b6b8c6c83b9f67e2b76a0b58",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/eas-submit-testflight/references/02-eas-pipeline.md",
+      "sourceSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "target": "plugins/mobile-app-builder-agency/skills/eas-submit-testflight/references/02-eas-pipeline.md",
+      "targetSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/eas-update-rollout/SKILL.md",
+      "sourceSha256": "18b01db792363aab273d242c2eb34397183c9ea018c8813324303b4f08c6fa54",
+      "target": "plugins/mobile-app-builder-agency/skills/eas-update-rollout/SKILL.md",
+      "targetSha256": "18b01db792363aab273d242c2eb34397183c9ea018c8813324303b4f08c6fa54",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/eas-update-rollout/references/02-eas-pipeline.md",
+      "sourceSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "target": "plugins/mobile-app-builder-agency/skills/eas-update-rollout/references/02-eas-pipeline.md",
+      "targetSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/eas-update-rollout-android/SKILL.md",
+      "sourceSha256": "62f3523410a89a68b32ba25359cb6cf92aa011e5f362e3687acd3629f3f06468",
+      "target": "plugins/mobile-app-builder-agency/skills/eas-update-rollout-android/SKILL.md",
+      "targetSha256": "62f3523410a89a68b32ba25359cb6cf92aa011e5f362e3687acd3629f3f06468",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/enable-r8-proguard/SKILL.md",
+      "sourceSha256": "977c81cc14278abcf1a16e6cc02108fd3456695befd0757014ce2b8d5c47647d",
+      "target": "plugins/mobile-app-builder-agency/skills/enable-r8-proguard/SKILL.md",
+      "targetSha256": "977c81cc14278abcf1a16e6cc02108fd3456695befd0757014ce2b8d5c47647d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/engineering-workflow-guard/SKILL.md",
+      "sourceSha256": "436e4487909236ad2a2fd0c6e8348524026bbcbf5d051162e53992905caf2b01",
+      "target": "plugins/mobile-app-builder-agency/skills/engineering-workflow-guard/SKILL.md",
+      "targetSha256": "436e4487909236ad2a2fd0c6e8348524026bbcbf5d051162e53992905caf2b01",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/enroll-apple-developer/SKILL.md",
+      "sourceSha256": "c593b454abb90ce6e57df0d818a4c01cb9b8bbf633e395baea17f076fd40efed",
+      "target": "plugins/mobile-app-builder-agency/skills/enroll-apple-developer/SKILL.md",
+      "targetSha256": "c593b454abb90ce6e57df0d818a4c01cb9b8bbf633e395baea17f076fd40efed",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/enroll-google-play-developer/SKILL.md",
+      "sourceSha256": "273a945988785b210e6d80fb44e96ce037fd8dc1bc0c55a4d2de6e3a5ab603f8",
+      "target": "plugins/mobile-app-builder-agency/skills/enroll-google-play-developer/SKILL.md",
+      "targetSha256": "273a945988785b210e6d80fb44e96ce037fd8dc1bc0c55a4d2de6e3a5ab603f8",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/figma-to-rn/SKILL.md",
+      "sourceSha256": "9f988d9da796a16d018cd5add60da885bc821be138eeebc88e51de61a8e708ce",
+      "target": "plugins/mobile-app-builder-agency/skills/figma-to-rn/SKILL.md",
+      "targetSha256": "9f988d9da796a16d018cd5add60da885bc821be138eeebc88e51de61a8e708ce",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/figma-to-rn/references/05-product-design.md",
+      "sourceSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "target": "plugins/mobile-app-builder-agency/skills/figma-to-rn/references/05-product-design.md",
+      "targetSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/figma-to-rn-android/SKILL.md",
+      "sourceSha256": "014e5e610aef121bac1cdcc3660fafc08c7012d31e900798ec9d407ebb4cb745",
+      "target": "plugins/mobile-app-builder-agency/skills/figma-to-rn-android/SKILL.md",
+      "targetSha256": "014e5e610aef121bac1cdcc3660fafc08c7012d31e900798ec9d407ebb4cb745",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/find-niche/SKILL.md",
+      "sourceSha256": "8cf59c7752464b744bc6e5c80f09594bef55818bcd1fc04f70cd8d3c33cd73bc",
+      "target": "plugins/mobile-app-builder-agency/skills/find-niche/SKILL.md",
+      "targetSha256": "8cf59c7752464b744bc6e5c80f09594bef55818bcd1fc04f70cd8d3c33cd73bc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/find-niche/references/03-monetization.md",
+      "sourceSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "target": "plugins/mobile-app-builder-agency/skills/find-niche/references/03-monetization.md",
+      "targetSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/find-niche/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/find-niche/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/find-niche-android/SKILL.md",
+      "sourceSha256": "5fdddefa123028c490f89df70fb5e7622c5bf75c0dd4cd8c6aa8828c7d6a5921",
+      "target": "plugins/mobile-app-builder-agency/skills/find-niche-android/SKILL.md",
+      "targetSha256": "5fdddefa123028c490f89df70fb5e7622c5bf75c0dd4cd8c6aa8828c7d6a5921",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/generate-privacy-policy/SKILL.md",
+      "sourceSha256": "cb237797d1d111442a6f7a50e830abf61ee5c9463d1e48d9eceef526b97ae617",
+      "target": "plugins/mobile-app-builder-agency/skills/generate-privacy-policy/SKILL.md",
+      "targetSha256": "cb237797d1d111442a6f7a50e830abf61ee5c9463d1e48d9eceef526b97ae617",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/generate-privacy-policy-android/SKILL.md",
+      "sourceSha256": "81299c1d78b11c5ebb268e8f4a6086b65a29b8054be220fdc4abbc313eaf22b4",
+      "target": "plugins/mobile-app-builder-agency/skills/generate-privacy-policy-android/SKILL.md",
+      "targetSha256": "81299c1d78b11c5ebb268e8f4a6086b65a29b8054be220fdc4abbc313eaf22b4",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/generate-terms-of-service/SKILL.md",
+      "sourceSha256": "ce8d1ef4cd6963293ca86d6e856452b958681412afcf1c367746f94b623a61c4",
+      "target": "plugins/mobile-app-builder-agency/skills/generate-terms-of-service/SKILL.md",
+      "targetSha256": "ce8d1ef4cd6963293ca86d6e856452b958681412afcf1c367746f94b623a61c4",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/google-play-15-percent-tier/SKILL.md",
+      "sourceSha256": "6a49c02219f24d0a92e545fa1040ec18a47319cc67e09fc0f8cf1f75daecdf3a",
+      "target": "plugins/mobile-app-builder-agency/skills/google-play-15-percent-tier/SKILL.md",
+      "targetSha256": "6a49c02219f24d0a92e545fa1040ec18a47319cc67e09fc0f8cf1f75daecdf3a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/handle-anr-android/SKILL.md",
+      "sourceSha256": "2ec9d89d9bd9cc2ff6a27a0a8f07d32a9de971c4de4097e20b441eff46b94833",
+      "target": "plugins/mobile-app-builder-agency/skills/handle-anr-android/SKILL.md",
+      "targetSha256": "2ec9d89d9bd9cc2ff6a27a0a8f07d32a9de971c4de4097e20b441eff46b94833",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/install-android-cli-tools/SKILL.md",
+      "sourceSha256": "971c0f339bbb286f70dd77e53537bad72cebbd940f94a55cb519140aa4e674f5",
+      "target": "plugins/mobile-app-builder-agency/skills/install-android-cli-tools/SKILL.md",
+      "targetSha256": "971c0f339bbb286f70dd77e53537bad72cebbd940f94a55cb519140aa4e674f5",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/install-android-studio/SKILL.md",
+      "sourceSha256": "a9f8e5e6ebc8c17119e8985f25793ba892a3f37bec30b1006ca7e49ac8d5f1b1",
+      "target": "plugins/mobile-app-builder-agency/skills/install-android-studio/SKILL.md",
+      "targetSha256": "a9f8e5e6ebc8c17119e8985f25793ba892a3f37bec30b1006ca7e49ac8d5f1b1",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/install-cli-tools/SKILL.md",
+      "sourceSha256": "00fc4dd1de00744840514b911056fddaa7d735477a745d55ff76816ca9fba389",
+      "target": "plugins/mobile-app-builder-agency/skills/install-cli-tools/SKILL.md",
+      "targetSha256": "00fc4dd1de00744840514b911056fddaa7d735477a745d55ff76816ca9fba389",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/install-cursor-vscode/SKILL.md",
+      "sourceSha256": "683441c0160d44d0172e3bd277be1989b106fbafd51d2e343875859ed5177468",
+      "target": "plugins/mobile-app-builder-agency/skills/install-cursor-vscode/SKILL.md",
+      "targetSha256": "683441c0160d44d0172e3bd277be1989b106fbafd51d2e343875859ed5177468",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/install-jdk-gradle/SKILL.md",
+      "sourceSha256": "184cb67308140b3bd2dd302d0f361174016c2cd180a0101135771cb203d04af2",
+      "target": "plugins/mobile-app-builder-agency/skills/install-jdk-gradle/SKILL.md",
+      "targetSha256": "184cb67308140b3bd2dd302d0f361174016c2cd180a0101135771cb203d04af2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/install-node-stack/SKILL.md",
+      "sourceSha256": "acd739eae33d3ed9cf0162015cd3c35d7cc6b92a8b399ac5036c5545c48273b1",
+      "target": "plugins/mobile-app-builder-agency/skills/install-node-stack/SKILL.md",
+      "targetSha256": "acd739eae33d3ed9cf0162015cd3c35d7cc6b92a8b399ac5036c5545c48273b1",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/instrument-growth-funnel/SKILL.md",
+      "sourceSha256": "9973930d1df64f622de5ed6912f288a0feb97ecf803511efef515ff059e74233",
+      "target": "plugins/mobile-app-builder-agency/skills/instrument-growth-funnel/SKILL.md",
+      "targetSha256": "9973930d1df64f622de5ed6912f288a0feb97ecf803511efef515ff059e74233",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/integrate-revenuecat-rn/SKILL.md",
+      "sourceSha256": "d5ca686dc1b11edeb703a008d9f14571a6af5d09e0ffc1eac47ec71fe7ec5806",
+      "target": "plugins/mobile-app-builder-agency/skills/integrate-revenuecat-rn/SKILL.md",
+      "targetSha256": "d5ca686dc1b11edeb703a008d9f14571a6af5d09e0ffc1eac47ec71fe7ec5806",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/integrate-revenuecat-rn/references/03-monetization.md",
+      "sourceSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "target": "plugins/mobile-app-builder-agency/skills/integrate-revenuecat-rn/references/03-monetization.md",
+      "targetSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/integrate-revenuecat-rn-android/SKILL.md",
+      "sourceSha256": "8c860b16a0bd91aa92ee409d4636855dc0d4df8c3d8e8840162117a0f8aa65a7",
+      "target": "plugins/mobile-app-builder-agency/skills/integrate-revenuecat-rn-android/SKILL.md",
+      "targetSha256": "8c860b16a0bd91aa92ee409d4636855dc0d4df8c3d8e8840162117a0f8aa65a7",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/internal-testing-track/SKILL.md",
+      "sourceSha256": "a6e3768e00804c71915e27564e6ebdc63962a68798c654645380577eec882c75",
+      "target": "plugins/mobile-app-builder-agency/skills/internal-testing-track/SKILL.md",
+      "targetSha256": "a6e3768e00804c71915e27564e6ebdc63962a68798c654645380577eec882c75",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/interview-users/SKILL.md",
+      "sourceSha256": "eea3ae83310cf2271cba597cd5f7bddf75c5c917db7314722a6e37a825313d4b",
+      "target": "plugins/mobile-app-builder-agency/skills/interview-users/SKILL.md",
+      "targetSha256": "eea3ae83310cf2271cba597cd5f7bddf75c5c917db7314722a6e37a825313d4b",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/interview-users/references/05-product-design.md",
+      "sourceSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "target": "plugins/mobile-app-builder-agency/skills/interview-users/references/05-product-design.md",
+      "targetSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/ios-research-library/SKILL.md",
+      "sourceSha256": "bed2cb31ba3ec334424e2c1cb961ff5dac45a6fd7a47c94c7ca898bd9a0f6415",
+      "target": "plugins/mobile-app-builder-agency/skills/ios-research-library/SKILL.md",
+      "targetSha256": "bed2cb31ba3ec334424e2c1cb961ff5dac45a6fd7a47c94c7ca898bd9a0f6415",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/ios-research-library/references/01-expo-sdk-54.md",
+      "sourceSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "target": "plugins/mobile-app-builder-agency/skills/ios-research-library/references/01-expo-sdk-54.md",
+      "targetSha256": "f423346a345ca8a5bf48546c6eb78137234a94d8b8d51380c23c69ff8ad80b08",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/ios-research-library/references/02-eas-pipeline.md",
+      "sourceSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "target": "plugins/mobile-app-builder-agency/skills/ios-research-library/references/02-eas-pipeline.md",
+      "targetSha256": "0f8cfa2f76af8df93a3ba77b70839049849caaf5ef193d484a7a7f73c3ed870d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/ios-research-library/references/03-monetization.md",
+      "sourceSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "target": "plugins/mobile-app-builder-agency/skills/ios-research-library/references/03-monetization.md",
+      "targetSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/ios-research-library/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/ios-research-library/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/ios-research-library/references/05-product-design.md",
+      "sourceSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "target": "plugins/mobile-app-builder-agency/skills/ios-research-library/references/05-product-design.md",
+      "targetSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/ios-research-library/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/skills/ios-research-library/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/jtbd-interview/SKILL.md",
+      "sourceSha256": "782eb2ab9c0fc4c85710ca61bbd03fe8f14e5d45ec2100699bbe3adc38525065",
+      "target": "plugins/mobile-app-builder-agency/skills/jtbd-interview/SKILL.md",
+      "targetSha256": "782eb2ab9c0fc4c85710ca61bbd03fe8f14e5d45ec2100699bbe3adc38525065",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/jtbd-interview/references/05-product-design.md",
+      "sourceSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "target": "plugins/mobile-app-builder-agency/skills/jtbd-interview/references/05-product-design.md",
+      "targetSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/launch-on-hacker-news/SKILL.md",
+      "sourceSha256": "43ce4e28c45ceb800e15b5b3addf237af0d421a2848fd1c1c61a9df3dbc2ad37",
+      "target": "plugins/mobile-app-builder-agency/skills/launch-on-hacker-news/SKILL.md",
+      "targetSha256": "43ce4e28c45ceb800e15b5b3addf237af0d421a2848fd1c1c61a9df3dbc2ad37",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/localize-figs-j/SKILL.md",
+      "sourceSha256": "424a2e03b2d5d094c8fe83b7285fb63625802aad34883252b088988db974338a",
+      "target": "plugins/mobile-app-builder-agency/skills/localize-figs-j/SKILL.md",
+      "targetSha256": "424a2e03b2d5d094c8fe83b7285fb63625802aad34883252b088988db974338a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/localize-figs-j/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/localize-figs-j/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/localize-figs-j-android/SKILL.md",
+      "sourceSha256": "c0cb53cd9d8f599a1a157103b14411ad00eb2322dae4fee7c97b7c8b443cccd1",
+      "target": "plugins/mobile-app-builder-agency/skills/localize-figs-j-android/SKILL.md",
+      "targetSha256": "c0cb53cd9d8f599a1a157103b14411ad00eb2322dae4fee7c97b7c8b443cccd1",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/market-validation/SKILL.md",
+      "sourceSha256": "f9f951f7d274cd3b6407127441606dd9313f1ad4f2e54695861afbe9976022fc",
+      "target": "plugins/mobile-app-builder-agency/skills/market-validation/SKILL.md",
+      "targetSha256": "f9f951f7d274cd3b6407127441606dd9313f1ad4f2e54695861afbe9976022fc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/market-validation/references/05-product-design.md",
+      "sourceSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "target": "plugins/mobile-app-builder-agency/skills/market-validation/references/05-product-design.md",
+      "targetSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/market-validation-android/SKILL.md",
+      "sourceSha256": "691f8dac1929dea913ae068f6e0579b9d1269a5a91836b54d8efd578a959a248",
+      "target": "plugins/mobile-app-builder-agency/skills/market-validation-android/SKILL.md",
+      "targetSha256": "691f8dac1929dea913ae068f6e0579b9d1269a5a91836b54d8efd578a959a248",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mine-competitor-reviews/SKILL.md",
+      "sourceSha256": "4a73045ab09a81e37fb15afee24d2357c2657e0f02915c4784cdd214c0847412",
+      "target": "plugins/mobile-app-builder-agency/skills/mine-competitor-reviews/SKILL.md",
+      "targetSha256": "4a73045ab09a81e37fb15afee24d2357c2657e0f02915c4784cdd214c0847412",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mine-play-reviews/SKILL.md",
+      "sourceSha256": "3df788a97e28c49d59344f3c6d0a3014418350cd236c00c1cdbea18a7ecb7ee5",
+      "target": "plugins/mobile-app-builder-agency/skills/mine-play-reviews/SKILL.md",
+      "targetSha256": "3df788a97e28c49d59344f3c6d0a3014418350cd236c00c1cdbea18a7ecb7ee5",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mine-reddit-android-pain-points/SKILL.md",
+      "sourceSha256": "7a5d01d27a22274020912c4922fa39fc947a38dadbe0f9051ee96bc3dddaf108",
+      "target": "plugins/mobile-app-builder-agency/skills/mine-reddit-android-pain-points/SKILL.md",
+      "targetSha256": "7a5d01d27a22274020912c4922fa39fc947a38dadbe0f9051ee96bc3dddaf108",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mine-reddit-pain-points/SKILL.md",
+      "sourceSha256": "285acd34391b7427fcc5c1215c2ff4a0ab3998ff96953e49fd82cf20b8b0bdce",
+      "target": "plugins/mobile-app-builder-agency/skills/mine-reddit-pain-points/SKILL.md",
+      "targetSha256": "285acd34391b7427fcc5c1215c2ff4a0ab3998ff96953e49fd82cf20b8b0bdce",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-ad-intelligence/SKILL.md",
+      "sourceSha256": "85452368a9ef6f79d6e4ca48128efcf8785eb3d1263cc148b8c817f63c0b8165",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-ad-intelligence/SKILL.md",
+      "targetSha256": "85452368a9ef6f79d6e4ca48128efcf8785eb3d1263cc148b8c817f63c0b8165",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-app-agency/SKILL.md",
+      "sourceSha256": "22b6285f57187eaca4bac4e5f4768f605ec7e37db407db9aa1564f9045152009",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-app-agency/SKILL.md",
+      "targetSha256": "22b6285f57187eaca4bac4e5f4768f605ec7e37db407db9aa1564f9045152009",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-app-agency/references/handoffs.md",
+      "sourceSha256": "89825ea560de886aa95e3c01c088ca34c200d336e340b94aa8ac105af2d70ef5",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-app-agency/references/handoffs.md",
+      "targetSha256": "89825ea560de886aa95e3c01c088ca34c200d336e340b94aa8ac105af2d70ef5",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-app-agency/references/roles.md",
+      "sourceSha256": "38d5eda55ac281dfb165e8ada052e2fdfcbfd9f024ed509b9e2df743a9857dc0",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-app-agency/references/roles.md",
+      "targetSha256": "38d5eda55ac281dfb165e8ada052e2fdfcbfd9f024ed509b9e2df743a9857dc0",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-app-agency/references/stage-gates.md",
+      "sourceSha256": "8438aee25e24a862dfc74502f37e5e73266e5f9d5b368fcba9941edeed81fb74",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-app-agency/references/stage-gates.md",
+      "targetSha256": "8438aee25e24a862dfc74502f37e5e73266e5f9d5b368fcba9941edeed81fb74",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-app-builder-ios-android/SKILL.md",
+      "sourceSha256": "b6d9b51a444ea9b84ed10bb07a796993b8411c690b8047000522991ccfcf6105",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-app-builder-ios-android/SKILL.md",
+      "targetSha256": "b6d9b51a444ea9b84ed10bb07a796993b8411c690b8047000522991ccfcf6105",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-design-references/SKILL.md",
+      "sourceSha256": "8f59a68320c228e2bf93c4d3e0199b769f9ceef43a76ab56563317251217a0ce",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-design-references/SKILL.md",
+      "targetSha256": "8f59a68320c228e2bf93c4d3e0199b769f9ceef43a76ab56563317251217a0ce",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-design-references/references/design-qa-checklist.md",
+      "sourceSha256": "aafea5f1be09458d09d2fcfe1f92eda9c3382c27826c633247a1dffd46766cfa",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-design-references/references/design-qa-checklist.md",
+      "targetSha256": "aafea5f1be09458d09d2fcfe1f92eda9c3382c27826c633247a1dffd46766cfa",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-design-references/references/source-catalog.md",
+      "sourceSha256": "345fb2f87bdfdf51d7127853de4b3ba6585a43b8997d8c83057477b41957d226",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-design-references/references/source-catalog.md",
+      "targetSha256": "345fb2f87bdfdf51d7127853de4b3ba6585a43b8997d8c83057477b41957d226",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-design-references/templates/design-handoff.md",
+      "sourceSha256": "a0f569ea3b144a5fcc7648792e1585fce8c080978fad719efd83af25491cae58",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-design-references/templates/design-handoff.md",
+      "targetSha256": "a0f569ea3b144a5fcc7648792e1585fce8c080978fad719efd83af25491cae58",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-design-references/templates/inspiration-board.md",
+      "sourceSha256": "49964a7b412cb344374a36220bea8a6b76437207e710327416cdb307e2624f6d",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-design-references/templates/inspiration-board.md",
+      "targetSha256": "49964a7b412cb344374a36220bea8a6b76437207e710327416cdb307e2624f6d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-influencer-intelligence/SKILL.md",
+      "sourceSha256": "0c05463e76cf32164ebaa0952060a6f4ce06d690c2ca5e266e2b99ae7b16f810",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-influencer-intelligence/SKILL.md",
+      "targetSha256": "0c05463e76cf32164ebaa0952060a6f4ce06d690c2ca5e266e2b99ae7b16f810",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-seo-intelligence/SKILL.md",
+      "sourceSha256": "e95812915611e162a1436bc7c5f936c353a973843c84f0f4e82846600cfa23ee",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-seo-intelligence/SKILL.md",
+      "targetSha256": "e95812915611e162a1436bc7c5f936c353a973843c84f0f4e82846600cfa23ee",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-store-asset-production/SKILL.md",
+      "sourceSha256": "53de6a1d480426fa071c2c856a60bf5cd8396b7f4baaa19e442ded72bac7f240",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-store-asset-production/SKILL.md",
+      "targetSha256": "53de6a1d480426fa071c2c856a60bf5cd8396b7f4baaa19e442ded72bac7f240",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-store-asset-production/references/capture-workflow.md",
+      "sourceSha256": "dbdd78a7aa9da686191baf507d294b3709d1856019a252c8e316d8704e04d1ba",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-store-asset-production/references/capture-workflow.md",
+      "targetSha256": "dbdd78a7aa9da686191baf507d294b3709d1856019a252c8e316d8704e04d1ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-store-asset-production/templates/capture-manifest.json",
+      "sourceSha256": "ddf89e25b277bc5587e19e40a3a7c12652a94310a8e1f8ce847ce369c157fe0c",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-store-asset-production/templates/capture-manifest.json",
+      "targetSha256": "ddf89e25b277bc5587e19e40a3a7c12652a94310a8e1f8ce847ce369c157fe0c",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-store-asset-production/templates/storyboard-metadata.md",
+      "sourceSha256": "a5662149fc75620752040cc87eee97d5d6336f52fdbfaa8e17a796bcc4fb872c",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-store-asset-production/templates/storyboard-metadata.md",
+      "targetSha256": "a5662149fc75620752040cc87eee97d5d6336f52fdbfaa8e17a796bcc4fb872c",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mobile-store-intelligence/SKILL.md",
+      "sourceSha256": "fe9d728458398a752c17a71c0c0e2c6c792f4a0e414a577c9dc575d8f09b1c9b",
+      "target": "plugins/mobile-app-builder-agency/skills/mobile-store-intelligence/SKILL.md",
+      "targetSha256": "fe9d728458398a752c17a71c0c0e2c6c792f4a0e414a577c9dc575d8f09b1c9b",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mom-test/SKILL.md",
+      "sourceSha256": "ea3985bf1b37d2cba61746975dec81b6463ad9b2d6059b63578bc1a7ca488e12",
+      "target": "plugins/mobile-app-builder-agency/skills/mom-test/SKILL.md",
+      "targetSha256": "ea3985bf1b37d2cba61746975dec81b6463ad9b2d6059b63578bc1a7ca488e12",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/mom-test/references/05-product-design.md",
+      "sourceSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "target": "plugins/mobile-app-builder-agency/skills/mom-test/references/05-product-design.md",
+      "targetSha256": "58dfdae40319fcc066c40fc13cff5c09a20ce6d116f8557b8fc6b5c4732271ba",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/optimize-aab-size/SKILL.md",
+      "sourceSha256": "be0708a5bf40f3bd055d7782de3073b96906e64f583e7ed63321b61e0600097b",
+      "target": "plugins/mobile-app-builder-agency/skills/optimize-aab-size/SKILL.md",
+      "targetSha256": "be0708a5bf40f3bd055d7782de3073b96906e64f583e7ed63321b61e0600097b",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/optimize-bundle-size/SKILL.md",
+      "sourceSha256": "3330abc9dc015e2d4dbc5b33a481ea78127a91ed6eecb0f1f2d3cc20eefd5330",
+      "target": "plugins/mobile-app-builder-agency/skills/optimize-bundle-size/SKILL.md",
+      "targetSha256": "3330abc9dc015e2d4dbc5b33a481ea78127a91ed6eecb0f1f2d3cc20eefd5330",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/pair-android-device/SKILL.md",
+      "sourceSha256": "d1585e078882c8bcdb45d9b1110fa22c584de95d379870b884cff004526bd2ef",
+      "target": "plugins/mobile-app-builder-agency/skills/pair-android-device/SKILL.md",
+      "targetSha256": "d1585e078882c8bcdb45d9b1110fa22c584de95d379870b884cff004526bd2ef",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/pair-physical-device/SKILL.md",
+      "sourceSha256": "889966a87e010400cec2ae989b73c3542f646eca3d610f1de43238e2d0612fd7",
+      "target": "plugins/mobile-app-builder-agency/skills/pair-physical-device/SKILL.md",
+      "targetSha256": "889966a87e010400cec2ae989b73c3542f646eca3d610f1de43238e2d0612fd7",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/paywall-compliance/SKILL.md",
+      "sourceSha256": "2c270caa1731361a6e7a9700f814641c6731b32fafb22f38a7322ed8feca67c3",
+      "target": "plugins/mobile-app-builder-agency/skills/paywall-compliance/SKILL.md",
+      "targetSha256": "2c270caa1731361a6e7a9700f814641c6731b32fafb22f38a7322ed8feca67c3",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/paywall-compliance/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/skills/paywall-compliance/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/paywall-compliance-play/SKILL.md",
+      "sourceSha256": "319a7225989360021183efe3bc3a44f6b49ef7a2f9577b2a5e83913a5242f02f",
+      "target": "plugins/mobile-app-builder-agency/skills/paywall-compliance-play/SKILL.md",
+      "targetSha256": "319a7225989360021183efe3bc3a44f6b49ef7a2f9577b2a5e83913a5242f02f",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/phased-release/SKILL.md",
+      "sourceSha256": "c5535de652e043518ed0c49e717ef7a0d6cb237963e8700bc314b84133e66883",
+      "target": "plugins/mobile-app-builder-agency/skills/phased-release/SKILL.md",
+      "targetSha256": "c5535de652e043518ed0c49e717ef7a0d6cb237963e8700bc314b84133e66883",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/phased-release/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/skills/phased-release/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/phased-release-play/SKILL.md",
+      "sourceSha256": "79e6171fd4d2ef492f98f434bf0d5eb934899b17c9764c7408a45a66067813a3",
+      "target": "plugins/mobile-app-builder-agency/skills/phased-release-play/SKILL.md",
+      "targetSha256": "79e6171fd4d2ef492f98f434bf0d5eb934899b17c9764c7408a45a66067813a3",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/plan-launch/SKILL.md",
+      "sourceSha256": "210a3382f7277a3faf7aa938f23df645880707320f5c7b8c2c4e6673dc9758e5",
+      "target": "plugins/mobile-app-builder-agency/skills/plan-launch/SKILL.md",
+      "targetSha256": "210a3382f7277a3faf7aa938f23df645880707320f5c7b8c2c4e6673dc9758e5",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/plan-launch/references/04-discovery-listing.md",
+      "sourceSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "target": "plugins/mobile-app-builder-agency/skills/plan-launch/references/04-discovery-listing.md",
+      "targetSha256": "404f8850686b5a72ef54e9dd42561eafeadeafe40050482b73491a837b46842d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/plan-launch-android/SKILL.md",
+      "sourceSha256": "d1f2a3c3d130fa06323a7bcba455d9429f7f34a363af90926694a1ab851746c4",
+      "target": "plugins/mobile-app-builder-agency/skills/plan-launch-android/SKILL.md",
+      "targetSha256": "d1f2a3c3d130fa06323a7bcba455d9429f7f34a363af90926694a1ab851746c4",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/play-ai-disclosure/SKILL.md",
+      "sourceSha256": "710bb688717c062e4b57de173feffe320f243eabe321e901af8211f8c75fae6e",
+      "target": "plugins/mobile-app-builder-agency/skills/play-ai-disclosure/SKILL.md",
+      "targetSha256": "710bb688717c062e4b57de173feffe320f243eabe321e901af8211f8c75fae6e",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/play-listing-experiments/SKILL.md",
+      "sourceSha256": "2128731aef51a346e25707326c0122ecee2ec1b2fb721d7080068173cf54ca7c",
+      "target": "plugins/mobile-app-builder-agency/skills/play-listing-experiments/SKILL.md",
+      "targetSha256": "2128731aef51a346e25707326c0122ecee2ec1b2fb721d7080068173cf54ca7c",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/play-pass-application/SKILL.md",
+      "sourceSha256": "57be033ff43fea5440683343881353c8da16ab3f0b79818ecee528bac9680892",
+      "target": "plugins/mobile-app-builder-agency/skills/play-pass-application/SKILL.md",
+      "targetSha256": "57be033ff43fea5440683343881353c8da16ab3f0b79818ecee528bac9680892",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/position-pitch/SKILL.md",
+      "sourceSha256": "2f1e8c6d997f740454143411179f1823052958499b06b836ebb9caee5720af6c",
+      "target": "plugins/mobile-app-builder-agency/skills/position-pitch/SKILL.md",
+      "targetSha256": "2f1e8c6d997f740454143411179f1823052958499b06b836ebb9caee5720af6c",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/position-pitch-android/SKILL.md",
+      "sourceSha256": "ece06ff6247b85fe4ce53b62645ccfdbd8097e4c0860c61cd79a22fa7336df9a",
+      "target": "plugins/mobile-app-builder-agency/skills/position-pitch-android/SKILL.md",
+      "targetSha256": "ece06ff6247b85fe4ce53b62645ccfdbd8097e4c0860c61cd79a22fa7336df9a",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/pre-registration-campaign/SKILL.md",
+      "sourceSha256": "073d8fd15384a43371cd685cd02589822b4e36ab76d0ec0a33ca4ba14595e4e7",
+      "target": "plugins/mobile-app-builder-agency/skills/pre-registration-campaign/SKILL.md",
+      "targetSha256": "073d8fd15384a43371cd685cd02589822b4e36ab76d0ec0a33ca4ba14595e4e7",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/pre-submission-audit/SKILL.md",
+      "sourceSha256": "b95c0e01e75946c0e9b1cc53af618b025774499810968a56cc3a00c1ceded2af",
+      "target": "plugins/mobile-app-builder-agency/skills/pre-submission-audit/SKILL.md",
+      "targetSha256": "b95c0e01e75946c0e9b1cc53af618b025774499810968a56cc3a00c1ceded2af",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/pre-submission-audit/references/06-store-readiness.md",
+      "sourceSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "target": "plugins/mobile-app-builder-agency/skills/pre-submission-audit/references/06-store-readiness.md",
+      "targetSha256": "4de682f46fed45418a1d0797a689f65d683db0c11ff9f3b788eaa9ff6c0113e2",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/pre-submission-audit-play/SKILL.md",
+      "sourceSha256": "95272a0a2751faaef84b9f37c9896db07c9b6e0c5a2443e760b88c65890ebe9e",
+      "target": "plugins/mobile-app-builder-agency/skills/pre-submission-audit-play/SKILL.md",
+      "targetSha256": "95272a0a2751faaef84b9f37c9896db07c9b6e0c5a2443e760b88c65890ebe9e",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/prepare-anthropic-plugin/SKILL.md",
+      "sourceSha256": "ea5526f7f246cb418bc9acbf85d9f5995abca3b66ae1ac7a72bfd7071976fcc9",
+      "target": "plugins/mobile-app-builder-agency/skills/prepare-anthropic-plugin/SKILL.md",
+      "targetSha256": "b8be716dea0739270d3a28df41683cb58512585f0a79b9908a18fb3f796c1c3e",
+      "status": "adapted",
+      "reason": "Updated native edition publisher links and verified release-gate instructions; workflow retained."
+    },
+    {
+      "source": "skills/prepare-anthropic-plugin/references/requirements.md",
+      "sourceSha256": "4a7888e5c73f74da236f6da576b4f9035b62e52036ca00248815894359cc917d",
+      "target": "plugins/mobile-app-builder-agency/skills/prepare-anthropic-plugin/references/requirements.md",
+      "targetSha256": "4a7888e5c73f74da236f6da576b4f9035b62e52036ca00248815894359cc917d",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/prepare-anthropic-plugin/templates/review-pack.md",
+      "sourceSha256": "924a2a925eef8bc9cbbb7a53e6af4473d235957a52535df246a9938fc12c925e",
+      "target": "plugins/mobile-app-builder-agency/skills/prepare-anthropic-plugin/templates/review-pack.md",
+      "targetSha256": "924a2a925eef8bc9cbbb7a53e6af4473d235957a52535df246a9938fc12c925e",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/prepare-chatgpt-app-submission/SKILL.md",
+      "sourceSha256": "cec3e3fe23c75c254b8afd402d77dc41149df11bbce3c669643fa1be24f81dbf",
+      "target": "plugins/mobile-app-builder-agency/skills/prepare-chatgpt-app-submission/SKILL.md",
+      "targetSha256": "cec3e3fe23c75c254b8afd402d77dc41149df11bbce3c669643fa1be24f81dbf",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/pricing-strategy/SKILL.md",
+      "sourceSha256": "50643b27d250715ab96b11d8ef22814684c0dea699055fe2d03821342426e82f",
+      "target": "plugins/mobile-app-builder-agency/skills/pricing-strategy/SKILL.md",
+      "targetSha256": "50643b27d250715ab96b11d8ef22814684c0dea699055fe2d03821342426e82f",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/pricing-strategy/references/03-monetization.md",
+      "sourceSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "target": "plugins/mobile-app-builder-agency/skills/pricing-strategy/references/03-monetization.md",
+      "targetSha256": "9a9a87f1cab4168c01feceaa962051ba39199458cb79114c859bcf0bf1e589dc",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/pricing-strategy-android/SKILL.md",
+      "sourceSha256": "2f345fee465afabc698578aa6a420c5f77e71e72d851dc76d5ba3b104818cfce",
+      "target": "plugins/mobile-app-builder-agency/skills/pricing-strategy-android/SKILL.md",
+      "targetSha256": "2f345fee465afabc698578aa6a420c5f77e71e72d851dc76d5ba3b104818cfce",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/run-paid-acquisition/SKILL.md",
+      "sourceSha256": "2ec825aa5704823b4840afa014251774fdf0117dd791dbe7369802e5d2888488",
+      "target": "plugins/mobile-app-builder-agency/skills/run-paid-acquisition/SKILL.md",
+      "targetSha256": "2ec825aa5704823b4840afa014251774fdf0117dd791dbe7369802e5d2888488",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/set-up-ab-testing/SKILL.md",
+      "sourceSha256": "7dd823e23ac24dbe606e1120e745548f5c42d971621fcc5d6ffd197a054ba3f3",
+      "target": "plugins/mobile-app-builder-agency/skills/set-up-ab-testing/SKILL.md",
+      "targetSha256": "7dd823e23ac24dbe606e1120e745548f5c42d971621fcc5d6ffd197a054ba3f3",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    },
+    {
+      "source": "skills/set-up-project-guidance/SKILL.md",
+      "sourceSha256": "8ca2fd52c99cd3bb7fab1fef01e87923886dd6473ba19c5515c7a7674fd4a4a9",
+      "target": "plugins/mobile-app-builder-agency/skills/set-up-project-guidance/SKILL.md",
+      "targetSha256": "8ca2fd52c99cd3bb7fab1fef01e87923886dd6473ba19c5515c7a7674fd4a4a9",
+      "status": "unchanged",
+      "reason": "Original bytes preserved."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "apify": {
+    "type": "http",
+    "url": "https://mcp.apify.com?tools=search-actors,fetch-actor-details,call-actor,get-actor-run,get-dataset-items,get-key-value-store-record,abort-actor-run",
+    "headers": {
+      "Authorization": "Bearer ${user_config.apify_token}"
+    }
+  }
+}
