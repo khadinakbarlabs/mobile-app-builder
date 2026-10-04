@@ -175,12 +175,15 @@ def validate_folder(folder, core=False):
         data = path.read_bytes()
         if len(data) >= 5 * 1024 * 1024:
             raise ValueError('Plugin file exceeds the directory limit')
-        if core and path.suffix == '.png':
-            raise ValueError('Directory artwork must stay outside the installed plugin root')
+        if core and path.suffix == '.png' and relative.as_posix() != '.claude-plugin/icon.png':
+            raise ValueError('Directory artwork must stay outside the installed plugin root except the default icon')
         if path.suffix == '.png':
             with Image.open(path) as image:
                 if image.format != 'PNG':
                     raise ValueError('Image must be a complete PNG')
+                if core and relative.as_posix() == '.claude-plugin/icon.png' and (
+                        image.width != image.height or not 512 <= image.width <= 2048 or len(data) >= 2 * 1024 * 1024):
+                    raise ValueError('Default directory icon must be square, 512-2048 pixels, under 2 MiB')
                 image.verify()
             with Image.open(path) as image:
                 image.load()

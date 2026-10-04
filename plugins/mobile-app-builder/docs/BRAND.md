@@ -6,9 +6,9 @@ Updated for owner review, 2026-10-05. Stable identity: **mobile-app-builder**. V
 
 ## Original artwork
 
-Use the slim cobalt smartphone outline with code chevrons, a short home stroke, and one small cyan design-selection corner. The blue shapes represent mobile development; the quiet cyan detail suggests UI design without turning the icon into a screen mockup. The same symbol appears in the listing logo and horizontal banner. The repository keeps those assets outside the installed plugin root, and the directory listing stores its uploaded icon separately from the runtime manifest. Host-specific adapters require their own asset updates; the submitted OpenAI v2.3.0 package is a separate version. No platform or provider mark is part of the artwork.
+Use the slim cobalt smartphone outline with code chevrons, a short home stroke, and one small cyan design-selection corner. The blue shapes represent mobile development; the quiet cyan detail suggests UI design without turning the icon into a screen mockup. The same symbol appears in the listing logo and horizontal banner. The repository keeps those v9 assets outside the installed plugin root, and the directory listing stores its uploaded v9 icon separately from the runtime manifest. A prior minimal symbol remains at `.claude-plugin/icon.png` solely as the installed package's default icon. Host-specific adapters require their own asset updates; the submitted OpenAI v2.3.0 package is a separate version. No platform or provider mark is part of the artwork.
 
-The selected logo PNG is 1254 × 1254, RGB, 983,281 bytes, below the directory's 5 MiB per-file limit. The matching banner is 2172 × 724, RGB. Full PNG decoding and small/light/dark visual inspection are release checks. Earlier candidates remain available in Git history; v9 remains in the repository and directory listing outside the installed core package.
+The selected v9 logo PNG is 1254 × 1254, RGB, 983,281 bytes, below the directory's 2 MiB icon limit. The matching banner is 2172 × 724, RGB. Full PNG decoding and small/light/dark visual inspection are release checks. Earlier candidates remain available in Git history; v9 remains in the repository and directory listing outside the installed core package.
 
 ## Palette and typography
 

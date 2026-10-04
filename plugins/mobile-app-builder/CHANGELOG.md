@@ -1,3 +1,8 @@
+## 2.3.3 — 2026-10-05
+
+- Add a square fallback icon at the directory scanner's default package path while retaining the approved v9 listing upload.
+- Limit package artwork to that default icon so the generated v9 image remains outside the installed root and cannot recreate its credential scan finding.
+
 ## 2.3.2 — 2026-10-05
 
 - Keep the already-imported directory icon and support/policy links in the listing while removing directory-only manifest keys that the scanner flags as unrecognized or cross-tool fields.

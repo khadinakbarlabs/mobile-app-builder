@@ -2,6 +2,7 @@ import importlib.util
 import json
 import os
 from pathlib import Path
+import shutil
 import socket
 import tempfile
 import unittest
@@ -196,6 +197,10 @@ class ReleaseBoundaryTests(unittest.TestCase):
         asset.write_bytes(b'not-a-png')
         with self.assertRaisesRegex(ValueError, 'Directory artwork'):
             release.validate_folder(self.root, core=True)
+        asset.unlink()
+        shutil.copyfile(ROOT / 'migration/previous-assets/mobile-app-builder-logo-v8.png',
+                        self.root / '.claude-plugin/icon.png')
+        self.assertEqual(release.validate_folder(self.root, core=True)['skills'], ['example'])
 
     def test_documented_build_config_cannot_serialize_credentials(self):
         for key, value in [('SENTRY_AUTH_TOKEN', '@sentry-auth-token'),
