@@ -1,14 +1,14 @@
 {
   "name": "mobile-app-builder-research",
   "displayName": "Mobile App Builder Research",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Optional Apify research connection for the mobile app agency",
   "author": {
     "name": "Khadin Akbar Ventures LLC",
-    "url": "https://github.com/khadinakbarlabs/mobile-app-builder-claude"
+    "url": "https://github.com/khadinakbarlabs/mobile-app-builder-agency"
   },
-  "homepage": "https://github.com/khadinakbarlabs/mobile-app-builder-claude",
-  "repository": "https://github.com/khadinakbarlabs/mobile-app-builder-claude",
+  "homepage": "https://github.com/khadinakbarlabs/mobile-app-builder-agency",
+  "repository": "https://github.com/khadinakbarlabs/mobile-app-builder-agency",
   "license": "MIT",
   "userConfig": {
     "apify_token": {

@@ -22,9 +22,9 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder-agency/.claude-plugin/plugin.json",
-      "targetSha256": "ac82c26e22a969c908cc31d770c9ae5bde49ac6aca6fc324964b893f1fd3a34f",
+      "targetSha256": "06a5cfb49f022bb94acbcfc96c922aace69aeb77696fbf9701c6376360a3333d",
       "status": "adapted",
-      "reason": "Authentication or native identity adapted; exact workflow and resources retained."
+      "reason": "Preserved workflow and resources; updated current neutral branding, installation URLs or publication guidance."
     },
     {
       "source": "CHANGELOG.md",
@@ -46,9 +46,9 @@
       "source": "PRIVACY.md",
       "sourceSha256": "4eb5243664138478102639aebcda04af383e3bc81661bf49c3d8a903c0826559",
       "target": "plugins/mobile-app-builder-agency/PRIVACY.md",
-      "targetSha256": "5d3674b582846ccbf03d455c8258c13a4c89de7ca1d603081445e2cc08473aaf",
+      "targetSha256": "cfa3121129447526ca1d4989382cb0773d709b47a276001b83d3c5f94af97653",
       "status": "adapted",
-      "reason": "Anthropic-only privacy disclosure and new repository support links; original policy preserved in previous-documents."
+      "reason": "Preserved workflow and resources; updated current neutral branding, installation URLs or publication guidance."
     },
     {
       "source": "README.md",
@@ -62,25 +62,25 @@
       "source": "SECURITY.md",
       "sourceSha256": "f5103bc824581dcc922840fc1b1e7e65ef7efd7addd1e43ff5fa1e6138523ae2",
       "target": "plugins/mobile-app-builder-agency/SECURITY.md",
-      "targetSha256": "0c8cdac39cdef9736fbc93f5f1c7388e119001b9b45057a3d2121acc36c8dcb2",
+      "targetSha256": "b3f01d3d435469403b01e910aef4fddd9dbea4b9f66a97867efa1a5f87bf0cdb",
       "status": "adapted",
-      "reason": "Updated native edition publisher links and verified release-gate instructions; workflow retained."
+      "reason": "Preserved workflow and resources; updated current neutral branding, installation URLs or publication guidance."
     },
     {
       "source": "SUPPORT.md",
       "sourceSha256": "612f221810d984f4e2d76bf212ad93a0debf52a0e67d8fdcaccaf938a4946008",
       "target": "plugins/mobile-app-builder-agency/SUPPORT.md",
-      "targetSha256": "acbc56bde60f53504a570f4f4f337be41918993bc186e506f12baaaf41786333",
+      "targetSha256": "7b5bfb52216b8b4f9ae50ba7fb11b9f06e782592d5076e3790576113354006e3",
       "status": "adapted",
-      "reason": "Anthropic-only privacy disclosure and new repository support links; original policy preserved in previous-documents."
+      "reason": "Preserved workflow and resources; updated current neutral branding, installation URLs or publication guidance."
     },
     {
       "source": "TERMS.md",
       "sourceSha256": "219fc7a31f0d7535e090c749403e1e7fc7bf45771fff4977d321a4736999901f",
       "target": "plugins/mobile-app-builder-agency/TERMS.md",
-      "targetSha256": "380444907c966a27032ba51a274e68566e27a0b1b371205b021e99dfb80dfc08",
+      "targetSha256": "a25fca0a783c2924c7c32f58ffcc10eeb4edfdba8ddd5eaba9158676212974b3",
       "status": "adapted",
-      "reason": "Anthropic-only privacy disclosure and new repository support links; original policy preserved in previous-documents."
+      "reason": "Preserved workflow and resources; updated current neutral branding, installation URLs or publication guidance."
     },
     {
       "source": "WORKFLOWS.md",
@@ -254,9 +254,9 @@
       "source": "docs/AGENCY.md",
       "sourceSha256": "ade30f6f62ffc472523bc22eb01b4a5412a6b7c2324d42ee3aa462c397ce7df5",
       "target": "plugins/mobile-app-builder-agency/docs/AGENCY.md",
-      "targetSha256": "ade30f6f62ffc472523bc22eb01b4a5412a6b7c2324d42ee3aa462c397ce7df5",
-      "status": "unchanged",
-      "reason": "Original bytes preserved."
+      "targetSha256": "9aab31cf8536b9fddc302cc3b466cf03c3857ba59cf20ff44f9dffedd99375b9",
+      "status": "adapted",
+      "reason": "Preserved workflow and resources; updated current neutral branding, installation URLs or publication guidance."
     },
     {
       "source": "docs/ANTHROPIC-REVIEW.md",
@@ -270,9 +270,9 @@
       "source": "docs/BRAND.md",
       "sourceSha256": "09f57acbf62f870530dcd952574d41ccb8191fbf2f7481ca629e02582161dd7f",
       "target": "plugins/mobile-app-builder-agency/docs/BRAND.md",
-      "targetSha256": "09f57acbf62f870530dcd952574d41ccb8191fbf2f7481ca629e02582161dd7f",
-      "status": "unchanged",
-      "reason": "Original bytes preserved."
+      "targetSha256": "2bb094166d05ef8b48fa67c856399371d61a6865700ec131776b70e0276e4fe4",
+      "status": "adapted",
+      "reason": "Preserved workflow and resources; updated current neutral branding, installation URLs or publication guidance."
     },
     {
       "source": "docs/DISTRIBUTION.md",
@@ -2430,9 +2430,9 @@
       "source": "skills/prepare-anthropic-plugin/SKILL.md",
       "sourceSha256": "ea5526f7f246cb418bc9acbf85d9f5995abca3b66ae1ac7a72bfd7071976fcc9",
       "target": "plugins/mobile-app-builder-agency/skills/prepare-anthropic-plugin/SKILL.md",
-      "targetSha256": "b8be716dea0739270d3a28df41683cb58512585f0a79b9908a18fb3f796c1c3e",
+      "targetSha256": "b24ce62fe3df3997f9d7786e7c9c41977cc3b7691f8f4c90fdf4acac8368e35c",
       "status": "adapted",
-      "reason": "Updated native edition publisher links and verified release-gate instructions; workflow retained."
+      "reason": "Preserved workflow and resources; updated current neutral branding, installation URLs or publication guidance."
     },
     {
       "source": "skills/prepare-anthropic-plugin/references/requirements.md",

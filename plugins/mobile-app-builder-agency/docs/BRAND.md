@@ -6,7 +6,7 @@ Prepared for owner review, 2026-10-03. Stable identity: **mobile-app-builder**. 
 
 ## Original artwork
 
-Use the new slim cobalt smartphone outline with a restrained pair of code chevrons and a short home stroke. Generous negative space communicates a modern developer/designer identity without a screen mockup or internal tile grid. The same original symbol is the listing logo and small icon. Claude's native manifest declares an icon; the OpenAI and Cursor adapters retain their own supported icon/logo fields. No Anthropic logo, provider mark or claim of official affiliation is part of the artwork.
+Use the new slim cobalt smartphone outline with a restrained pair of code chevrons and a short home stroke. Generous negative space communicates a modern developer/designer identity without a screen mockup or internal tile grid. The same original symbol is the listing logo and small icon. the host's native manifest declares an icon; the OpenAI and Cursor adapters retain their own supported icon/logo fields. No Anthropic logo, provider mark or claim of official affiliation is part of the artwork.
 
 The selected PNG is 1254 × 1254, RGB, 816,923 bytes, below the directory's 5 MiB per-file limit. Full PNG decoding and both small/light/dark visual inspection are release checks. Earlier logo candidates remain preserved; only v8 is selected in current host manifests.
 

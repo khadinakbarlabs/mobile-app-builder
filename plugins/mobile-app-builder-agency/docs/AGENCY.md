@@ -58,7 +58,7 @@ The taxonomy is an organization of resources, not a Git checkout layout. Calling
 | `growth` | `growth-strategist`, `seo-strategist` | Measurable acquisition/retention experiments and readouts |
 | `operations` | `agency-director`, `release-manager` | File ownership, dependency coordination, evidence and external-state closure |
 
-Native agents can be discovered by a host that supports the plugin's agent format. OpenAI per-skill UI metadata remains in canonical source and the OpenAI distribution; Claude packages omit it and use native skill and agent discovery. UI metadata does not establish native subagent execution. The standalone `mobile-app-agency` skill carries every role card locally so the same workflow works when only that skill is installed.
+Native agents can be discovered by a host that supports the plugin's agent format. OpenAI per-skill UI metadata remains in canonical source and the OpenAI distribution; Native packages omit it and use native skill and agent discovery. UI metadata does not establish native subagent execution. The standalone `mobile-app-agency` skill carries every role card locally so the same workflow works when only that skill is installed.
 
 ## How a project moves
 

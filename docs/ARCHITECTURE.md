@@ -21,6 +21,6 @@ The declared token is substituted only into the Apify MCP header. It is never in
 
 ## Release evidence
 
-Before publication, validate complete source containment and file sizes, all YAML frontmatter, Markdown links, local module imports, supported media, credential boundaries and every file's hash. Test rejection cases first. Compare migrated file hashes and disclose every changed or relocated file. Run official Claude manifest and marketplace validators plus actual Claude host discovery. Produce reproducible archives and verify their content against the inventory.
+Before publication, validate complete source containment and file sizes, all YAML frontmatter, Markdown links, local module imports, supported media, credential boundaries and every file's hash. Test rejection cases first. Compare migrated file hashes and disclose every changed or relocated file. Run official native manifest and marketplace validators plus actual native host discovery. Produce reproducible archives and verify their content against the inventory.
 
 Manifest checks, host discovery, GitHub publication, live Actor behavior and Anthropic directory approval are separate evidence. The old v1.3.9 remains in review and is not withdrawn. This edition is prepared for owner verification before any new directory submission.

@@ -1,14 +1,14 @@
 {
   "name": "mobile-app-builder-agency",
   "displayName": "Mobile App Builder Agency",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Research, design, build and grow iOS and Android apps",
   "author": {
     "name": "Khadin Akbar Ventures LLC",
-    "url": "https://github.com/khadinakbarlabs/mobile-app-builder-claude"
+    "url": "https://github.com/khadinakbarlabs/mobile-app-builder-agency"
   },
-  "homepage": "https://github.com/khadinakbarlabs/mobile-app-builder-claude",
-  "repository": "https://github.com/khadinakbarlabs/mobile-app-builder-claude",
+  "homepage": "https://github.com/khadinakbarlabs/mobile-app-builder-agency",
+  "repository": "https://github.com/khadinakbarlabs/mobile-app-builder-agency",
   "license": "MIT",
   "keywords": [
     "expo",
@@ -32,8 +32,8 @@
     "store-assets"
   ],
   "icon": "./assets/mobile-app-builder-logo-v8.png",
-  "documentationUrl": "https://github.com/khadinakbarlabs/mobile-app-builder-claude#readme",
-  "supportUrl": "https://github.com/khadinakbarlabs/mobile-app-builder-claude/issues",
-  "privacyPolicyUrl": "https://github.com/khadinakbarlabs/mobile-app-builder-claude/blob/main/plugins/mobile-app-builder-agency/PRIVACY.md",
-  "termsOfServiceUrl": "https://github.com/khadinakbarlabs/mobile-app-builder-claude/blob/main/plugins/mobile-app-builder-agency/TERMS.md"
+  "documentationUrl": "https://github.com/khadinakbarlabs/mobile-app-builder-agency#readme",
+  "supportUrl": "https://github.com/khadinakbarlabs/mobile-app-builder-agency/issues",
+  "privacyPolicyUrl": "https://github.com/khadinakbarlabs/mobile-app-builder-agency/blob/main/plugins/mobile-app-builder-agency/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/khadinakbarlabs/mobile-app-builder-agency/blob/main/plugins/mobile-app-builder-agency/TERMS.md"
 }

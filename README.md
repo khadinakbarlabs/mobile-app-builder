@@ -1,4 +1,4 @@
-# Mobile App Builder for Claude
+# Mobile App Builder Agency
 
 ![Mobile App Builder](plugins/mobile-app-builder-agency/assets/mobile-app-builder-banner.png)
 
@@ -9,7 +9,7 @@ Start with an idea or bring an existing app. Keep the established product direct
 ## Install the agency
 
 ```text
-/plugin marketplace add khadinakbarlabs/mobile-app-builder-claude
+/plugin marketplace add khadinakbarlabs/mobile-app-builder-agency
 /plugin install mobile-app-builder-agency@khadin-mobile-agency
 ```
 
@@ -20,7 +20,7 @@ For live Apify collection, independently install the optional research connectio
 /plugin configure mobile-app-builder-research@khadin-mobile-agency
 ```
 
-Configure the token through Claude's secure plugin configuration. Do not paste it into chat, a shell command or a public repository. Read the [research connection guide](plugins/mobile-app-builder-research/README.md) before running any Actor. The agency can plan research and analyze exports without that connection.
+Configure the token through the host's secure plugin configuration. Do not paste it into chat, a shell command or a public repository. Read the [research connection guide](plugins/mobile-app-builder-research/README.md) before running any Actor. The agency can plan research and analyze exports without that connection.
 
 ## What changed
 
@@ -34,4 +34,4 @@ This edition is prepared for owner review. GitHub publication is separate from A
 
 The optional research configuration is structurally validated. Live authenticated Actor execution still needs an owner-selected account and approved run budget. The original iOS/Android workflows are development guidance; manifest validation is not device QA.
 
-[License](LICENSE) · [Core privacy](plugins/mobile-app-builder-agency/PRIVACY.md) · [Research privacy](plugins/mobile-app-builder-research/PRIVACY.md) · [Support](https://github.com/khadinakbarlabs/mobile-app-builder-claude/issues)
+[License](LICENSE) · [Core privacy](plugins/mobile-app-builder-agency/PRIVACY.md) · [Research privacy](plugins/mobile-app-builder-research/PRIVACY.md) · [Support](https://github.com/khadinakbarlabs/mobile-app-builder-agency/issues)

@@ -6,6 +6,6 @@ The material product change is opt-in authentication: core has no declared conne
 
 Publisher tooling is outside the install folders. Four original readable helpers remain in core because the workflows use them; they only print plans or inspect a bounded prepared catalog and cannot read credentials or call a service. No workflow capability or original image is silently removed.
 
-Local regression tests, full inventory/hash validation, skill/agent frontmatter checks, public audits, media decoding, official strict manifests and real Claude host discovery are required before the release. Receipt files record the results. Host model output, authenticated research execution, consuming-app device QA and actual directory approval remain separate gates; do not infer them from passing local checks.
+Local regression tests, full inventory/hash validation, skill/agent frontmatter checks, public audits, media decoding, official strict manifests and real native host discovery are required before the release. Receipt files record the results. Host model output, authenticated research execution, consuming-app device QA and actual directory approval remain separate gates; do not infer them from passing local checks.
 
 The previous v1.3.9 remains with Anthropic for review. The new edition has not been submitted and has no live directory listing. It is ready for owner verification after the repository and release checks finish; a new repository does not guarantee clearance of the earlier generic inventory hold.
