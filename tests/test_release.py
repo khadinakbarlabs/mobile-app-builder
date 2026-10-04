@@ -159,6 +159,25 @@ class ReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'environment'):
             release.validate_folder(self.root, core=True)
 
+    def test_documented_build_config_cannot_serialize_credentials(self):
+        for key, value in [('SENTRY_AUTH_TOKEN', '@sentry-auth-token'),
+                           ('SERVICE_API_KEY', '<replace-with-secret>'),
+                           ('CLIENT_SECRET', '${CLIENT_SECRET}'),
+                           ('EXPO_PUBLIC_SERVICE_API_KEY', '<replace-with-secret>'),
+                           ('EXPO_PUBLIC_FIREBASE_API_KEY', 'not-a-documented-placeholder')]:
+            with self.subTest(key=key):
+                example = {'build': {'production': {'env': {key: value}}}}
+                self.write('docs/build.md', '```json\n' + json.dumps(example) + '\n```\n')
+                with self.assertRaisesRegex(ValueError, 'documented build environment'):
+                    release.validate_folder(self.root, core=True)
+
+    def test_documented_build_config_allows_public_values_and_environment_selection(self):
+        example = {'build': {'production': {'environment': 'production', 'env': {
+            'EXPO_PUBLIC_API_URL': 'https://api.example.com', 'APP_VARIANT': 'production',
+            'EXPO_PUBLIC_FIREBASE_API_KEY': '<firebase-public-web-api-key>'}}}}
+        self.write('docs/build.md', '```json\n' + json.dumps(example) + '\n```\n')
+        self.assertEqual(release.validate_folder(self.root, core=True)['skills'], ['example'])
+
     def test_research_auth_is_explicit_and_fixed_to_apify(self):
         manifest = json.loads((self.root / '.claude-plugin/plugin.json').read_text())
         manifest['userConfig'] = {'apify_token': {

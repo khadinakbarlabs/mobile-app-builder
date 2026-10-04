@@ -22,17 +22,17 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "fac168d7bbdf9402292e9b1b8e6d358122404f9f469ca548295f02989d986cd6",
+      "targetSha256": "ce2cbb9ccb20364a8f5f3882e1161a48c659f259216d49690ea429e9eaa6b55c",
       "status": "adapted",
-      "reason": "Accurate backend CLI data-flow disclosures and current neutral product metadata; workflows preserved."
+      "reason": "Corrected Sentry build secret configuration and patch release metadata; all workflow IDs and capabilities retained."
     },
     {
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
-      "status": "unchanged",
-      "reason": "Original bytes preserved."
+      "targetSha256": "661b45ce63ff77ce37ab4be04e35fd950f0e58ba7667e49ea0e507aa071bda35",
+      "status": "adapted",
+      "reason": "Corrected Sentry build secret configuration and patch release metadata; all workflow IDs and capabilities retained."
     },
     {
       "source": "LICENSE",
@@ -814,17 +814,17 @@
       "source": "skills/add-sentry-rn/SKILL.md",
       "sourceSha256": "5bf5f69f8e1314499b574baa82b60f02c11371f4db4825cffefdd7b36e96ccb7",
       "target": "plugins/mobile-app-builder/skills/add-sentry-rn/SKILL.md",
-      "targetSha256": "5bf5f69f8e1314499b574baa82b60f02c11371f4db4825cffefdd7b36e96ccb7",
-      "status": "unchanged",
-      "reason": "Original bytes preserved."
+      "targetSha256": "74c5554574b32ed16d96b8d4bf3bf5975f57aa5abe5f3818ad2e821dbce64fe4",
+      "status": "adapted",
+      "reason": "Corrected Sentry build secret configuration and patch release metadata; all workflow IDs and capabilities retained."
     },
     {
       "source": "skills/add-sentry-rn-android/SKILL.md",
       "sourceSha256": "3331b493fa96ca8646cd5c51c1b98cb46910975a8112a42b1462c36ce6858db8",
       "target": "plugins/mobile-app-builder/skills/add-sentry-rn-android/SKILL.md",
-      "targetSha256": "3331b493fa96ca8646cd5c51c1b98cb46910975a8112a42b1462c36ce6858db8",
-      "status": "unchanged",
-      "reason": "Original bytes preserved."
+      "targetSha256": "8e57b3471e94ac8ad68720724de48d1ff553203c6356150daaf27b098546ca74",
+      "status": "adapted",
+      "reason": "Corrected Sentry build secret configuration and patch release metadata; all workflow IDs and capabilities retained."
     },
     {
       "source": "skills/add-supabase-auth/SKILL.md",

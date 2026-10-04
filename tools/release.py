@@ -23,6 +23,10 @@ RESERVED = re.compile(r'(?:con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\..*)?', re.I)
 SECRET_FILE = re.compile(r'(?:\.env.*|\.dev\.vars.*|credentials.*|service-account.*|GoogleService-Info\.plist|google-services\.json|.*\.(?:p8|p12|pem|key|jks|keystore))', re.I)
 SECRET_CONTENT = re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\b(?:sk-[A-Za-z0-9_-]{16,}|apify_api_[A-Za-z0-9_-]{16,}|gh[pousr]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z_-]{20,})\b')
 ENV_READ = re.compile(r'process\s*\.\s*env|os\s*\.\s*environ|\$(?:\{)?[A-Z_]*(?:TOKEN|SECRET|PASSWORD|API_KEY)')
+PRIVATE_ENV_KEY = re.compile(r'(?:^|_)(?:TOKEN|SECRET|PASSWORD|API_KEY|PRIVATE_KEY)(?:$|_)', re.I)
+# Firebase client keys are public app configuration; allow only this fake example,
+# never arbitrary values or a blanket EXPO_PUBLIC_* credential exception.
+PUBLIC_ENV_EXAMPLES = {'EXPO_PUBLIC_FIREBASE_API_KEY': '<firebase-public-web-api-key>'}
 
 
 class UniqueLoader(yaml.SafeLoader):
@@ -100,6 +104,31 @@ def validate_connectors(folder, manifest):
     return sorted(servers)
 
 
+def validate_documented_build_environments(text, relative):
+    """Keep copyable JSON build examples from embedding private credentials."""
+    def inspect(value):
+        if isinstance(value, dict):
+            environment = value.get('env')
+            if isinstance(environment, dict):
+                for key, example in environment.items():
+                    if PRIVATE_ENV_KEY.search(key) and not (
+                            key in PUBLIC_ENV_EXAMPLES and example == PUBLIC_ENV_EXAMPLES[key]):
+                        raise ValueError(f'Credential in documented build environment: {relative}: {key}')
+            for child in value.values():
+                inspect(child)
+        elif isinstance(value, list):
+            for child in value:
+                inspect(child)
+
+    for example in re.findall(r'^```json\s*\n(.*?)^```\s*$', text, re.M | re.S):
+        try:
+            value = json.loads(example)
+        except json.JSONDecodeError:
+            # Partial examples are not executable JSON configurations.
+            continue
+        inspect(value)
+
+
 def validate_folder(folder, core=False):
     folder = Path(folder)
     if folder.is_symlink() or not folder.is_dir():
@@ -154,6 +183,8 @@ def validate_folder(folder, core=False):
             if core and path.suffix == '.mjs' and ENV_READ.search(text):
                 raise ValueError('Core helper must not read installer environment credentials')
             if path.suffix == '.md':
+                if core:
+                    validate_documented_build_environments(text, relative)
                 resource_patterns = [
                     r'\b(?:node|python3)\s+["\']?((?:\./)?scripts/[A-Za-z0-9_./-]+\.(?:mjs|js|py|sh))',
                     r'`((?:references|scripts)/[A-Za-z0-9_./-]+\.(?:md|json|yaml|mjs|js|py|sh))`',

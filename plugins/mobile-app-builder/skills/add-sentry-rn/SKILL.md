@@ -64,21 +64,21 @@ export default Sentry.wrap(RootLayout);
 
 ## EAS Build integration
 
-Add to `eas.json`:
+In the consuming app's `eas.json`, select the build environment:
 
 ```json
 {
   "build": {
     "production": {
-      "env": {
-        "SENTRY_AUTH_TOKEN": "@sentry-auth-token"
-      }
+      "environment": "production"
     }
   }
 }
 ```
 
-After the owner has approved the target project, configure `SENTRY_AUTH_TOKEN` through an owner-managed EAS or CI secret store. This makes EAS upload source maps on each approved production build; do not store the token in `eas.json`.
+The app owner configures `SENTRY_AUTH_TOKEN` in that project's production EAS environment with sensitive visibility, or in the selected CI secret store, following [Expo's Sentry guide](https://docs.expo.dev/guides/using-sentry/#usage-with-eas-build). A string beginning with `@` in `eas.json` is not a secret lookup. Do not copy the token into JSON, source, command arguments or this plugin, and do not inspect the installer's environment for it. Authentication and source-map upload belong to the owner's approved build environment.
+
+Review the wizard's generated changes before a build. After an authorized build, verify the source-map upload and a sanitized test error against the exact release. Environment selection alone does not prove that upload succeeded.
 
 ## Manual error capture
 

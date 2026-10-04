@@ -5,7 +5,7 @@ description: "Add Sentry for crash reporting + source map upload on Android. Use
 
 # Sentry (Android)
 
-Same as iOS plugin. Android-specific notes.
+Use the shared [Sentry workflow](../add-sentry-rn/SKILL.md), including its privacy and external-action boundaries. The following notes apply to Android in the consuming app; they do not configure this plugin.
 
 ## Install
 ```bash
@@ -14,17 +14,22 @@ npx @sentry/wizard@8.0.0 -i reactNative
 ```
 
 ## Source maps in EAS
+
+Select the owner's intended build environment in the consuming app's `eas.json`:
+
 ```json
 {
   "build": {
     "production": {
-      "env": { "SENTRY_AUTH_TOKEN": "@sentry-auth-token" }
+      "environment": "production"
     }
   }
 }
 ```
 
-EAS auto-uploads source maps on production builds.
+The app owner sets `SENTRY_AUTH_TOKEN` in that production EAS environment with sensitive visibility or in the approved CI secret store. A string beginning with `@` in JSON is not a secret lookup. Never place the token in `eas.json`, source, command arguments or this plugin, and never borrow installer credentials. See [Expo's Sentry build guidance](https://docs.expo.dev/guides/using-sentry/#usage-with-eas-build).
+
+With the SDK and build integration configured, an authorized build can upload source maps. Verify the actual upload and release match; do not infer success from a production profile alone.
 
 ## Native crashes
 Native Android crashes also captured. Set up symbol upload via Sentry Android SDK (auto with wizard).

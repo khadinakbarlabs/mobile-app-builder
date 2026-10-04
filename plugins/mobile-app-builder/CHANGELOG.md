@@ -1,3 +1,9 @@
+## 2.1.2 — 2026-10-05
+
+- Correct the iOS and Android Sentry build examples: select an EAS environment and keep source-map credentials in the app owner's build service. Remove invalid JSON secret aliases.
+- Validate copyable JSON environment examples during packaging so private credential fields cannot return.
+- Preserve all 190 workflows, 16 agents and original assets. Directory review remains separate from source validation.
+
 # 1.2.1 — Anthropic review preparation (local candidate, 2026-10-03)
 
 - Add Anthropic directory metadata, regenerated phone/M/UI-tile logo, brand guide and owner review brief.
