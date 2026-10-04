@@ -1,3 +1,10 @@
+## 2.2.0 — 2026-10-05
+
+- Consolidate 190 detailed workflow guides into 30 entry skills; retain every guide and supporting reference with catalog routes.
+- Consolidate 16 original role cards into eight specialist lead agents and add eight task commands for new apps, existing apps, research, design, build, QA, launch and growth.
+- Keep host-discovered skill-like components below 40, including commands, and validate every route, migration target and installed component before release.
+- Directory review and public availability still require an exact-commit external scan and reviewer decision.
+
 ## 2.1.2 — 2026-10-05
 
 - Correct the iOS and Android Sentry build examples: select an EAS environment and keep source-map credentials in the app owner's build service. Remove invalid JSON secret aliases.

@@ -2,6 +2,8 @@
 
 You can begin with an idea, a research question or a working app. Tell the assistant what you want to achieve in ordinary language. It should choose the relevant roles and workflows for you; you do not need to learn the department names or install every skill separately.
 
+If you prefer a direct command, use `/mobile-app-builder:new-app` for an idea or `/mobile-app-builder:improve-app` for an existing project. Focused commands are `/mobile-app-builder:research-app`, `/mobile-app-builder:design-app`, `/mobile-app-builder:build-app`, `/mobile-app-builder:test-app`, `/mobile-app-builder:launch-app` and `/mobile-app-builder:grow-app`. Each command routes to only the relevant detailed guides.
+
 ## I have an idea or want to research an opportunity
 
 Say:

@@ -1,6 +1,6 @@
 # Anthropic review boundary
 
-The core has 190 workflows, 16 agents, eight departments, references, templates, two original PNGs and four readable local helpers. The catalog browser reads one bounded prepared JSON file. The scaffold helpers only print a plan. There are no startup hooks, declared MCP servers, ambient environment token reads, dependency lockfiles, binary executables, dynamically evaluated downloads or automatic paid research in core.
+The core has 30 entry skills, eight lead agents, eight commands and eight departments. All 190 detailed workflow guides and 16 original role cards remain readable as references, along with templates, two original PNGs and four readable local helpers. The catalog browser reads one bounded prepared JSON file. The scaffold helpers only print a plan. There are no startup hooks, declared MCP servers, ambient environment token reads, dependency lockfiles, binary executables, dynamically evaluated downloads or automatic paid research in core.
 
 The optional research integration declares one HTTPS Apify MCP destination and obtains a token through sensitive userConfig. It does not read existing CLI authentication, files or environment credentials. Selected tools support Actor discovery, explicitly authorized Actor runs and retrieval or stopping of those runs. Project/query input and results flow through that declared connection; run costs are separate from plugin installation.
 

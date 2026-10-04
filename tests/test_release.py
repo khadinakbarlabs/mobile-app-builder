@@ -146,9 +146,22 @@ class ReleaseBoundaryTests(unittest.TestCase):
 
     def test_workflow_extensions_preserve_every_original_skill(self):
         previous = {'files': [{'path': 'skills/example/SKILL.md'}]}
-        release.validate_preserved_skills(['example', 'build-web-app'], previous)
+        routes = [{'id': 'example', 'path': 'skills/example/guide.md',
+                   'entrySkill': 'guide-example'}]
+        self.write('skills/example/guide.md', 'Original guide\n')
+        release.validate_preserved_skills(self.root, ['guide-example'], routes, previous)
         with self.assertRaisesRegex(ValueError, 'original'):
-            release.validate_preserved_skills(['build-web-app'], previous)
+            release.validate_preserved_skills(self.root, ['guide-example'], [], previous)
+
+    def test_real_core_has_fewer_entry_points_and_all_workflows_routed(self):
+        core = ROOT / 'plugins/mobile-app-builder'
+        report = release.validate_folder(core, core=True)
+        catalog = json.loads((core / 'agency/catalog.json').read_text())
+        source = json.loads((ROOT / 'migration/source.json').read_text())
+        self.assertLess(len(report['skills']) + len(report['commands']), 40)
+        self.assertLess(len(report['agents']), 10)
+        self.assertGreaterEqual(len(report['commands']), 8)
+        release.validate_preserved_skills(core, report['skills'], catalog['skills'], source)
 
     def test_core_refuses_mcp_or_environment_reading_helpers(self):
         self.write('.mcp.json', json.dumps({'apify': {'type': 'http', 'url': 'https://mcp.apify.com'}}))

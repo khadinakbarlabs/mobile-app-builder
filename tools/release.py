@@ -82,6 +82,15 @@ def frontmatter(text, identifier):
     return value
 
 
+def command_frontmatter(text):
+    match = re.match(r'\A---\r?\n(.*?)\r?\n---(?:\r?\n|$)', text, re.S)
+    if not match:
+        raise ValueError('Missing command frontmatter')
+    value = yaml.load(match[1], Loader=UniqueLoader)
+    if not isinstance(value, dict) or not isinstance(value.get('description'), str) or not value['description'].strip():
+        raise ValueError('Command description is required')
+
+
 def validate_connectors(folder, manifest):
     config = folder / '.mcp.json'
     if not config.exists():
@@ -152,7 +161,7 @@ def validate_folder(folder, core=False):
     if core and (set(manifest) & {'mcpServers', 'hooks', 'dependencies', 'userConfig'}
                  or (folder / '.mcp.json').exists() or (folder / 'hooks').exists()):
         raise ValueError('Core must not declare connectors, hooks, dependencies or credentials')
-    skills, agents, inventory = [], [], []
+    skills, agents, commands, inventory = [], [], [], []
     for path in entries:
         if not path.is_file():
             continue
@@ -209,6 +218,9 @@ def validate_folder(folder, core=False):
             if relative.parts[:1] == ('agents',) and path.suffix == '.md':
                 frontmatter(text, path.stem)
                 agents.append(path.stem)
+            if relative.parts[:1] == ('commands',) and path.suffix == '.md':
+                command_frontmatter(text)
+                commands.append(path.stem)
         inventory.append({'path': relative.as_posix(), 'bytes': len(data),
                           'sha256': hashlib.sha256(data).hexdigest()})
     if len(inventory) > 512:
@@ -217,7 +229,7 @@ def validate_folder(folder, core=False):
     if len(prose.split()) < 40:
         raise ValueError('Plugin README requires at least 40 words')
     return {'name': manifest['name'], 'version': manifest['version'],
-            'skills': sorted(skills), 'agents': sorted(agents), 'files': inventory,
+            'skills': sorted(skills), 'agents': sorted(agents), 'commands': sorted(commands), 'files': inventory,
             'connectors': validate_connectors(folder, manifest), 'directoryApproval': False}
 
 
@@ -261,11 +273,16 @@ def validate_migration(root, migration, source):
             raise ValueError('Migration target differs from the recorded content')
 
 
-def validate_preserved_skills(current, source):
+def validate_preserved_skills(root, current, routes, source):
     original = {Path(entry['path']).parent.name for entry in source['files']
                 if entry['path'].startswith('skills/') and entry['path'].endswith('/SKILL.md')}
-    if not original.issubset(set(current)):
-        raise ValueError('Every original workflow must remain discoverable')
+    by_id = {entry['id']: entry for entry in routes}
+    if len(by_id) != len(routes) or not original.issubset(by_id):
+        raise ValueError('Every original workflow must have a unique route')
+    for identifier, entry in by_id.items():
+        if entry.get('entrySkill') not in current or entry.get('path') != f'skills/{identifier}/guide.md':
+            raise ValueError('Every original workflow must route to an installed entry skill and guide')
+        contained_file(Path(root), Path(root) / entry['path'], 'workflow guide')
 
 
 def validate_repository(root=ROOT):
@@ -275,12 +292,14 @@ def validate_repository(root=ROOT):
     reports = [validate_folder(root / 'plugins' / name, core=name == CORE) for name in PLUGINS]
     core = reports[0]
     catalog = json.loads((root / 'plugins' / CORE / 'agency/catalog.json').read_text())
-    if sorted(item['id'] for item in catalog['skills']) != core['skills']:
-        raise ValueError('The full migrated workflow library must remain discoverable')
+    if not 0 < len(core['skills']) + len(core['commands']) < 40 or not 0 < len(core['agents']) < 10 or len(core['commands']) < 8:
+        raise ValueError('Consolidated entry-point limits or command set are incomplete')
+    if sorted({item['entrySkill'] for item in catalog['skills']}) != core['skills']:
+        raise ValueError('Every entry skill must serve a catalog workflow')
     if sorted({agent for dept in catalog['departments'] for agent in dept['agents']}) != core['agents']:
         raise ValueError('The full migrated agent team must remain discoverable')
-    if len(core['agents']) != 16 or len(catalog['departments']) != 8:
-        raise ValueError('The agency team or classification was lost')
+    if len(catalog['departments']) != 8:
+        raise ValueError('The specialist classification was lost')
     taxonomy = json.loads((root / 'plugins' / CORE / 'agency/taxonomy.json').read_text())
     classified = [(skill, group['department'], group['id'])
                   for group in taxonomy['groups'] for skill in group['skills']]
@@ -294,7 +313,7 @@ def validate_repository(root=ROOT):
         raise ValueError('Marketplace must point at the exact two installed roots')
     migration = json.loads((root / 'migration/report.json').read_text())
     source = json.loads((root / 'migration/source.json').read_text())
-    validate_preserved_skills(core['skills'], source)
+    validate_preserved_skills(root / 'plugins' / CORE, core['skills'], catalog['skills'], source)
     validate_migration(root, migration, source)
     return reports
 

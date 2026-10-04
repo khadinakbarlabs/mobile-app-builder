@@ -2,7 +2,7 @@
 
 ![Mobile App Builder](assets/mobile-app-builder-logo-v8.png)
 
-Research, design, build and grow iOS, Android and web apps with 190 workflows and 16 specialist agents. Start with a new idea, improve an existing app, or request one focused task. The assistant selects relevant procedures and returns concrete work and verification evidence.
+Research, design, build and grow iOS, Android and web apps with 30 focused skills, 8 specialist leads and 8 commands. All 190 detailed workflows remain as readable references. Start with a new idea, improve an existing app, or request one focused task. The assistant selects relevant procedures and returns concrete work and verification evidence.
 
 ## Choose your outcome
 
@@ -10,7 +10,7 @@ Research, design, build and grow iOS, Android and web apps with 190 workflows an
 - **Existing app:** inspect the actual stack, preserve working features and design, reproduce issues, and verify focused fixes.
 - **One task:** improve UI/UX, research competitors or creators, prepare screenshots and metadata, check quality, or improve SEO.
 
-See [Start here](docs/START-HERE.md), [workflow index](agency/INDEX.md), [web development](skills/build-web-app/SKILL.md), [resources](docs/RESOURCES.md) and [prompt examples](docs/PROMPTS.md).
+See [Start here](docs/START-HERE.md), [workflow index](agency/INDEX.md), [web development](skills/build-web-app/guide.md), [resources](docs/RESOURCES.md) and [prompt examples](docs/PROMPTS.md). Start with `/mobile-app-builder:new-app` or `/mobile-app-builder:improve-app`; the other commands cover research, design, build, testing, launch and growth.
 
 ## Platforms and workflow
 

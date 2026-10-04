@@ -34,7 +34,7 @@ function validCatalog(catalog) {
   }
   const skills = new Set();
   for (const item of catalog.skills) {
-    if (!item || !isIdentifier(item.id) || skills.has(item.id) || !isText(item.description) || item.path !== `skills/${item.id}/SKILL.md` || !['ios', 'android', 'web', 'shared'].includes(item.platform)) return false;
+    if (!item || !isIdentifier(item.id) || skills.has(item.id) || !isText(item.description) || item.path !== `skills/${item.id}/guide.md` || !isIdentifier(item.entrySkill) || !['ios', 'android', 'web', 'shared'].includes(item.platform)) return false;
     const category = categories.get(`${item.department}/${item.category}`);
     if (!category) return false;
     category.actual++;

@@ -5,74 +5,98 @@
       "id": "research",
       "title": "Research & intelligence",
       "agents": [
+        "research-lead"
+      ],
+      "outcome": "Evidence for demand, competitors, user pain, ads and inspiration.",
+      "sourceRoles": [
         "market-researcher",
         "store-intelligence-analyst",
         "creator-researcher",
         "ads-intelligence-analyst"
-      ],
-      "outcome": "Evidence for demand, competitors, user pain, ads and inspiration."
+      ]
     },
     {
       "id": "strategy",
       "title": "Product & business strategy",
       "agents": [
-        "product-strategist"
+        "strategy-lead"
       ],
-      "outcome": "A focused brief, MVP, positioning and monetization contract."
+      "outcome": "A focused brief, MVP, positioning and monetization contract.",
+      "sourceRoles": [
+        "product-strategist"
+      ]
     },
     {
       "id": "design",
       "title": "UX, visual design & inspiration",
       "agents": [
+        "design-lead"
+      ],
+      "outcome": "Accessible journeys, coherent visuals and an implementation-ready design handoff.",
+      "sourceRoles": [
         "ux-designer",
         "visual-designer"
-      ],
-      "outcome": "Accessible journeys, coherent visuals and an implementation-ready design handoff."
+      ]
     },
     {
       "id": "engineering",
       "title": "Architecture & development",
       "agents": [
+        "engineering-lead"
+      ],
+      "outcome": "A complete tested vertical slice with clear data, native and platform boundaries.",
+      "sourceRoles": [
         "mobile-architect",
         "expo-engineer"
-      ],
-      "outcome": "A complete tested vertical slice with clear data, native and platform boundaries."
+      ]
     },
     {
       "id": "quality",
       "title": "QA, security & performance",
       "agents": [
+        "quality-lead"
+      ],
+      "outcome": "Reproducible behavioral evidence and reviewed security/privacy boundaries.",
+      "sourceRoles": [
         "qa-engineer",
         "security-reviewer"
-      ],
-      "outcome": "Reproducible behavioral evidence and reviewed security/privacy boundaries."
+      ]
     },
     {
       "id": "launch",
       "title": "Store production & release",
       "agents": [
+        "launch-lead"
+      ],
+      "outcome": "Verified metadata, screenshots, localization and owner-authorized release preparation.",
+      "sourceRoles": [
         "store-producer",
         "release-manager"
-      ],
-      "outcome": "Verified metadata, screenshots, localization and owner-authorized release preparation."
+      ]
     },
     {
       "id": "growth",
       "title": "Marketing, ads & experimentation",
       "agents": [
+        "growth-lead"
+      ],
+      "outcome": "Measurable activation, retention, acquisition and revenue experiments.",
+      "sourceRoles": [
         "growth-strategist",
         "seo-strategist"
-      ],
-      "outcome": "Measurable activation, retention, acquisition and revenue experiments."
+      ]
     },
     {
       "id": "operations",
       "title": "Project direction & operations",
       "agents": [
+        "delivery-lead"
+      ],
+      "outcome": "Clear ownership, coordination, continuity and release evidence.",
+      "sourceRoles": [
         "agency-director",
         "release-manager"
-      ],
-      "outcome": "Clear ownership, coordination, continuity and release evidence."
+      ]
     }
   ],
   "groups": [
@@ -118,7 +142,7 @@
     {
       "department": "research",
       "id": "actor-research",
-      "title": "Apify & evidence",
+      "title": "Research tools & evidence",
       "skills": [
         "apify-mobile-research",
         "command-research",

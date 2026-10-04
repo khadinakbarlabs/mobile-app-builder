@@ -1253,9 +1253,9 @@ Use [GitHub's private vulnerability-reporting flow](https://github.com/khadinakb
 
 ```text
 mobile-app-builder/
-├── .claude-plugin/          Native plugin and marketplace manifests
-├── agents/                  16 specialist agents, discovered by Claude
-├── skills/                  189 portable Agent Skills with bundled resources
+├── .claude-plugin/          Native plugin manifest
+├── agents/                  8 specialist leads, discovered by Claude
+├── skills/                  30 entry skills and 190 detailed guides
 ├── agency/                  Prepared catalog, taxonomy, roles and contracts
 ├── assets/                  Selected logo and banner
 ├── docs/                    User guides and versioned references

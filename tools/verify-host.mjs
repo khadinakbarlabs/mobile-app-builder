@@ -8,7 +8,9 @@ try {
   const root = path.resolve(process.argv[2]);
   const manifest = JSON.parse(fs.readFileSync(path.join(root, '.claude-plugin/plugin.json'), 'utf8'));
   const expected = {
-    skills: fs.readdirSync(path.join(root, 'skills')).filter(name => fs.existsSync(path.join(root, 'skills', name, 'SKILL.md'))).sort(),
+    skills: fs.readdirSync(path.join(root, 'skills')).filter(name => fs.existsSync(path.join(root, 'skills', name, 'SKILL.md'))).concat(
+      fs.existsSync(path.join(root, 'commands')) ? fs.readdirSync(path.join(root, 'commands')).filter(name => name.endsWith('.md')).map(name => name.slice(0, -3)) : [],
+    ).sort(),
     agents: fs.existsSync(path.join(root, 'agents')) ? fs.readdirSync(path.join(root, 'agents')).filter(name => name.endsWith('.md')).map(name => name.slice(0, -3)).sort() : [],
   };
   const output = execFileSync('npx', ['--yes', '@anthropic-ai/claude-code@2.1.287', '--plugin-dir', root, 'plugin', 'details', `${manifest.name}@inline`], { encoding: 'utf8', timeout: 60000, maxBuffer: 2 * 1024 * 1024 });
