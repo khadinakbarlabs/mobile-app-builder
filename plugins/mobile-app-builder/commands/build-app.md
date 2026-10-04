@@ -5,6 +5,8 @@ argument-hint: "feature and platform"
 
 # build-app
 
+Apply [the context and reporting workflow](../docs/INTELLIGENT-WORKFLOW.md). Identify the first observable result, inspect the current stack and report what behavior is actually verified.
+
 Read only the entry skills relevant to the request: [guide-architecture-tooling](../skills/guide-architecture-tooling/SKILL.md), [guide-interface-media](../skills/guide-interface-media/SKILL.md), [guide-auth-backend](../skills/guide-auth-backend/SKILL.md), [guide-state-storage](../skills/guide-state-storage/SKILL.md), [guide-native-extensions](../skills/guide-native-extensions/SKILL.md).
 
 Inspect the real stack and constraints; select only relevant implementation guides; implement one vertical slice; test its affected behavior on all affected platforms.

@@ -2,6 +2,8 @@
 
 You can begin with an idea, a research question or a working app. Tell the assistant what you want to achieve in ordinary language. It should choose the relevant roles and workflows for you; you do not need to learn the department names or install every skill separately.
 
+The assistant can keep a small, user-owned project context card so later tasks reuse your goals, stack and accepted decisions. For a repository, the local manifest snapshot provides safe starting clues; it does not replace reading the actual app. See [how context and reporting work](INTELLIGENT-WORKFLOW.md).
+
 If you prefer a direct command, use `/mobile-app-builder:new-app` for an idea or `/mobile-app-builder:improve-app` for an existing project. Focused commands are `/mobile-app-builder:research-app`, `/mobile-app-builder:design-app`, `/mobile-app-builder:build-app`, `/mobile-app-builder:test-app`, `/mobile-app-builder:launch-app` and `/mobile-app-builder:grow-app`. Each command routes to only the relevant detailed guides.
 
 ## I have an idea or want to research an opportunity
@@ -47,3 +49,5 @@ Research, design, development, QA, release and growth are independent entry poin
 The assistant states the outcome it understands, the next concrete action and any meaningful assumption. It gathers context from available files before asking for it again. If one missing choice blocks the work, it asks one short question with sensible choices and continues independent preparation. It keeps technical setup details secondary unless they help you resolve a real blocker.
 
 At completion you receive the result, what changed, how it was checked and any remaining decision. Source changes, device evidence, deployments, paid runs and store approval are reported separately. Publication, outreach, payments, account changes and submissions follow your actual authorized scope.
+
+If you ask for a broader audit or comparison, request a [visual decision report](INTELLIGENT-WORKFLOW.md#report-the-result-at-the-right-depth). If you want the app checked again later, choose a [recurring-work recipe](RECURRING-WORK.md); the plugin does not set one up on its own. You can also [share feedback](FEEDBACK.md) with the maintainer if a workflow missed your goal.

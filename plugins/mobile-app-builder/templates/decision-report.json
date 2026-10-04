@@ -1,0 +1,20 @@
+{
+  "title": "Example onboarding review",
+  "project": "Example app",
+  "summary": "This is a format example. Replace every observation with evidence from the actual app before sharing a report.",
+  "signals": [
+    {"label": "Journey coverage", "value": "2 screens"}
+  ],
+  "findings": [
+    {
+      "title": "Example finding",
+      "status": "unknown",
+      "detail": "Describe the observed behavior and its effect on the user.",
+      "evidence": "Name the source, build or screen reviewed"
+    }
+  ],
+  "nextActions": [
+    {"title": "Verify the first journey", "why": "The key behavior needs direct observation.", "priority": "high"}
+  ],
+  "limitations": ["No current device or production evidence is supplied in this example."]
+}

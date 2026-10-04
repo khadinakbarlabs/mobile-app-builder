@@ -1,3 +1,10 @@
+## 2.3.0 — 2026-10-05
+
+- Add a read-only project snapshot for routing idea, existing-app and focused-task work without exposing configuration values.
+- Add a bounded, self-contained visual decision report for evidenced findings, next actions and limitations.
+- Add an opt-in context, feedback and recurring-work protocol across the eight existing commands and delivery lead. No telemetry or schedules are installed automatically.
+- Keep 30 entry skills, eight commands and eight lead agents; directory review and publication remain external states.
+
 ## 2.2.0 — 2026-10-05
 
 - Consolidate 190 detailed workflow guides into 30 entry skills; retain every guide and supporting reference with catalog routes.

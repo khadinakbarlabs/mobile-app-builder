@@ -5,6 +5,8 @@ description: "Coordinate new or existing app work across research, design, devel
 
 # Coordination & workflow
 
+Begin with [the context and reporting workflow](../../docs/INTELLIGENT-WORKFLOW.md): identify the outcome, inspect the available project evidence, choose one lead and the smallest useful guide set, then return a concrete result. Use the local manifest snapshot only when a consuming app repository is available. Preserve a concise, user-owned context card when decisions should carry into later sessions. Offer [recurring-work recipes](../../docs/RECURRING-WORK.md) only for a user-chosen repeated outcome; never create a schedule during installation.
+
 Choose the smallest relevant workflow below. Read its detailed guide and supporting references before acting. Preserve the existing app and verified product direction when one exists. Check current platform documentation for changing APIs, policies and store rules.
 
 Keep observed evidence separate from assumptions. Verify affected behavior and report source, build, device, store and publication states separately. Commands and guides never expand the user's authorization.

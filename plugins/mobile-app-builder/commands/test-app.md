@@ -5,6 +5,8 @@ argument-hint: "app, feature or release candidate"
 
 # test-app
 
+Apply [the context and reporting workflow](../docs/INTELLIGENT-WORKFLOW.md). Use a visual report for multi-platform or multi-finding audits, while keeping source, build and device evidence distinct.
+
 Read only the entry skills relevant to the request: [guide-behavior-device](../skills/guide-behavior-device/SKILL.md), [guide-accessibility](../skills/guide-accessibility/SKILL.md), [guide-privacy-compliance](../skills/guide-privacy-compliance/SKILL.md), [guide-reliability](../skills/guide-reliability/SKILL.md).
 
 Choose checks based on the change and risk; reproduce reported defects; verify on available devices or simulators; report untested device and store gates explicitly.

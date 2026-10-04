@@ -1,6 +1,6 @@
 # Technical CLI and data handling
 
-This page documents optional development-tool behavior for reviewers and people configuring the backend. Service names here identify real data destinations; they are not product branding. No remote service, credential reader or startup hook is declared by the core plugin. Its four helpers inspect local prepared metadata or print plans. The workflows can guide separately authorized operations in a consuming project.
+This page documents optional development-tool behavior for reviewers and people configuring the backend. Service names here identify real data destinations; they are not product branding. No remote service, credential reader or startup hook is declared by the core plugin. Its on-demand local helpers browse prepared metadata, print plans, inspect a bounded set of selected app manifests or turn a supplied JSON report into an offline HTML file. They do not read environment files, installer credentials or remote services. The workflows can guide separately authorized operations in a consuming project.
 
 ## Research
 
@@ -17,3 +17,5 @@ A consuming app can use its own selected authentication, database, analytics, pa
 ## Storage and disclosure
 
 Host-authorized file tools may read project or user-supplied data and save research summaries and artifacts in the user's workspace. This may include personal data. Minimize collection, redact unnecessary identifiers, avoid public logs and repositories, and keep raw research ignored by source control. The plugin publisher operates no receiver, telemetry collector or research datastore and retains no copy. Configuring an account does not authorize outreach, paid runs, deployment or store publication. Report actual source uploads and network destinations with the work performed.
+
+The project snapshot helper reads only `package.json` and `app.json` contents plus the existence of a small set of platform and instruction files, and returns recognized framework/check names without echoing configuration values. The report renderer reads a user-selected JSON report and writes a self-contained local HTML file to a user-selected path; it does not open or upload that file. Review report inputs for private information before creating or sharing output. A schedule is never installed with the plugin; a user-owned host routine has its own repository, connector and access scope.

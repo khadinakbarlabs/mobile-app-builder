@@ -5,6 +5,8 @@ argument-hint: "market, competitors or research question"
 
 # research-app
 
+Apply [the context and reporting workflow](../docs/INTELLIGENT-WORKFLOW.md). Frame research around one user decision, and present evidence, confidence and the next useful action visually when the comparison has several findings.
+
 Read only the entry skills relevant to the request: [guide-market-discovery](../skills/guide-market-discovery/SKILL.md), [guide-competitor-intelligence](../skills/guide-competitor-intelligence/SKILL.md), [guide-market-intelligence](../skills/guide-market-intelligence/SKILL.md).
 
 State the decision the research will inform; use public sources or explicitly configured bounded tooling; distinguish observed facts from estimates; deliver dated evidence and next experiments.

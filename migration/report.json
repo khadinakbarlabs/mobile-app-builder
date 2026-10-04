@@ -230,7 +230,7 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "8ef7565b0dacddc2c6e9bec9b913b6d01f12a40fae4082af1e56e5a27f71ba44",
+      "targetSha256": "d07ab637749fdeb23eeae22685925a9d050e92f44c94550c09a97969ab932148",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -238,7 +238,7 @@
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "2d1ba3b3a79a8d3fdafefc6061f506cef50bce3fde264d6cecb655c25c77fe0f",
+      "targetSha256": "4d2531fd39d94926ef156ea072381b8419538e584f141cee955b03af362a6fd1",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -518,7 +518,7 @@
       "source": "docs/START-HERE.md",
       "sourceSha256": "69e5fb3ddb5dccac1503c6180ca29716c1c7589cb9a9a58c6f38933ec271ee71",
       "target": "plugins/mobile-app-builder/docs/START-HERE.md",
-      "targetSha256": "121f96dcee067ddd4011a43f2b2c498a137325b4126e260192bd32087bb82105",
+      "targetSha256": "9e5e51726124c1431979977d6118d460f0fcfafedffc936363a1476d21dd570c",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },

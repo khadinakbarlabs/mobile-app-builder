@@ -5,6 +5,8 @@ argument-hint: "repository and desired improvement"
 
 # improve-app
 
+Apply [the context and reporting workflow](../docs/INTELLIGENT-WORKFLOW.md). Reuse established product decisions and inspect the existing app before choosing the next improvement.
+
 Read only the entry skills relevant to the request: [guide-workflow-coordination](../skills/guide-workflow-coordination/SKILL.md), [guide-architecture-tooling](../skills/guide-architecture-tooling/SKILL.md), [guide-behavior-device](../skills/guide-behavior-device/SKILL.md), [guide-reliability](../skills/guide-reliability/SKILL.md).
 
 Inspect current stack, instructions and working changes; reproduce the issue or evaluate the real flow; make a focused improvement and verify affected behavior.

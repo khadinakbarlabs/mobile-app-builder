@@ -5,6 +5,8 @@ argument-hint: "journey, screen or design problem"
 
 # design-app
 
+Apply [the context and reporting workflow](../docs/INTELLIGENT-WORKFLOW.md). Base the design direction on the actual app, its audience and the user journey rather than a generic inspiration set.
+
 Read only the entry skills relevant to the request: [guide-platform-design](../skills/guide-platform-design/SKILL.md), [guide-journeys-conversion](../skills/guide-journeys-conversion/SKILL.md), [guide-design-handoff](../skills/guide-design-handoff/SKILL.md), [guide-accessibility](../skills/guide-accessibility/SKILL.md).
 
 Inspect the existing product direction and platform conventions; design states, accessibility and responsive behavior; deliver a visual or implementation-ready specification and verify it in the actual app when possible.
