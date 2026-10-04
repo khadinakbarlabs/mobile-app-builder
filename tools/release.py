@@ -23,6 +23,9 @@ RESERVED = re.compile(r'(?:con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\..*)?', re.I)
 SECRET_FILE = re.compile(r'(?:\.env.*|\.dev\.vars.*|credentials.*|service-account.*|GoogleService-Info\.plist|google-services\.json|.*\.(?:p8|p12|pem|key|jks|keystore))', re.I)
 SECRET_CONTENT = re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\b(?:sk-[A-Za-z0-9_-]{16,}|apify_api_[A-Za-z0-9_-]{16,}|gh[pousr]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z_-]{20,})\b')
 ENV_READ = re.compile(r'process\s*\.\s*env|os\s*\.\s*environ|\$(?:\{)?[A-Z_]*(?:TOKEN|SECRET|PASSWORD|API_KEY)')
+CORE_OUTBOUND = re.compile(
+    r'\b(?:fetch\s*\(|new\s+WebSocket\s*\(|(?:from|import\s*\(|require\s*\()\s*[\'\"]'
+    r'(?:node:)?(?:https?|net|tls|dgram|child_process)(?:/[^\'\"]*)?[\'\"])', re.I)
 PRIVATE_ENV_KEY = re.compile(r'(?:^|_)(?:TOKEN|SECRET|PASSWORD|API_KEY|PRIVATE_KEY)(?:$|_)', re.I)
 # Firebase client keys are public app configuration; allow only this fake example,
 # never arbitrary values or a blanket EXPO_PUBLIC_* credential exception.
@@ -191,6 +194,8 @@ def validate_folder(folder, core=False):
                 json.loads(text)
             if core and path.suffix == '.mjs' and ENV_READ.search(text):
                 raise ValueError('Core helper must not read installer environment credentials')
+            if core and path.suffix == '.mjs' and CORE_OUTBOUND.search(text):
+                raise ValueError('Core helper must not use network or subprocess access')
             if path.suffix == '.md':
                 if core:
                     validate_documented_build_environments(text, relative)

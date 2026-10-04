@@ -230,7 +230,7 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "d07ab637749fdeb23eeae22685925a9d050e92f44c94550c09a97969ab932148",
+      "targetSha256": "2cb3a8ba000be73a6c564ee6a36c97b63544dfc24af6e3a5f1e08361a0177049",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -238,7 +238,7 @@
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "4d2531fd39d94926ef156ea072381b8419538e584f141cee955b03af362a6fd1",
+      "targetSha256": "d88bc6a295011797be2e6b44e0fbc91c66a4c555401aee57319d58c16d2bd494",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -294,7 +294,7 @@
       "source": "WORKFLOWS.md",
       "sourceSha256": "a50d48661a768eacfb5200914457033b318d750a83ed10fd0c98be735b32ea72",
       "target": "plugins/mobile-app-builder/WORKFLOWS.md",
-      "targetSha256": "91245aa3e0b7b741235c38f42ca3a8a34869088bcef5f54201bf06a0d4ba2338",
+      "targetSha256": "1c5ceb3c184a1c55b4f35b6992d79f3022dc46833d50a2a4d86ab1f782270a6f",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -445,7 +445,7 @@
     {
       "source": "assets/mobile-app-builder-banner.png",
       "sourceSha256": "113ded0016c656f3e8cfd06f8e67e55f1bab6d418329fdccc5e8b69119ee74af",
-      "target": "plugins/mobile-app-builder/assets/mobile-app-builder-banner.png",
+      "target": "migration/previous-assets/mobile-app-builder-banner.png",
       "targetSha256": "113ded0016c656f3e8cfd06f8e67e55f1bab6d418329fdccc5e8b69119ee74af",
       "status": "relocated",
       "reason": "Original bytes preserved."
@@ -453,7 +453,7 @@
     {
       "source": "assets/mobile-app-builder-logo-v8.png",
       "sourceSha256": "4a3663a826010f645c460ad9d732ffa44a39a2563cec1f543b3477df0a7a5cbf",
-      "target": "plugins/mobile-app-builder/assets/mobile-app-builder-logo-v8.png",
+      "target": "migration/previous-assets/mobile-app-builder-logo-v8.png",
       "targetSha256": "4a3663a826010f645c460ad9d732ffa44a39a2563cec1f543b3477df0a7a5cbf",
       "status": "relocated",
       "reason": "Original bytes preserved."
@@ -478,7 +478,7 @@
       "source": "docs/BRAND.md",
       "sourceSha256": "09f57acbf62f870530dcd952574d41ccb8191fbf2f7481ca629e02582161dd7f",
       "target": "plugins/mobile-app-builder/docs/BRAND.md",
-      "targetSha256": "ce1881cc8e7d9f76bbf499fd6a2d4c3716ab5d868f03d719323d1eeff92737a9",
+      "targetSha256": "e4867c180f7241fcdbbe04817bba21be7ccda16be35503c5edcee4c8fe165740",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },

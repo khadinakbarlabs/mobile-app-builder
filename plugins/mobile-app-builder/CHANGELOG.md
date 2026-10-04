@@ -1,3 +1,9 @@
+## 2.3.1 — 2026-10-05
+
+- Refine the logo and banner with a small UI design cue while keeping the mobile development symbol minimal and legible.
+- Correct an inherited security-reporting link, block network/subprocess calls in core helpers at packaging time, and clarify the core credential boundary for directory review.
+- Keep directory listing fields and the PNG icon because the directory explicitly reads them; they are informational scan notes, not broken runtime fields.
+
 ## 2.3.0 — 2026-10-05
 
 - Add a read-only project snapshot for routing idea, existing-app and focused-task work without exposing configuration values.

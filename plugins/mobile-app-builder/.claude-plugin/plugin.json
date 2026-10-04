@@ -1,7 +1,7 @@
 {
   "name": "mobile-app-builder",
   "displayName": "Mobile App Builder",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Research, design, build and grow iOS, Android and web apps",
   "author": {
     "name": "Khadin Akbar Ventures LLC",
@@ -23,7 +23,7 @@
     "seo",
     "store-assets"
   ],
-  "icon": "./assets/mobile-app-builder-logo-v8.png",
+  "icon": "./assets/mobile-app-builder-logo-v9.png",
   "documentationUrl": "https://github.com/khadinakbarlabs/mobile-app-builder#readme",
   "supportUrl": "https://github.com/khadinakbarlabs/mobile-app-builder/issues",
   "privacyPolicyUrl": "https://github.com/khadinakbarlabs/mobile-app-builder/blob/main/plugins/mobile-app-builder/PRIVACY.md",

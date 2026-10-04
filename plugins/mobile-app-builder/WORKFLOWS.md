@@ -1247,7 +1247,7 @@ That is why source review, history review when warranted, provider rotation, rel
 
 ### Security reporting
 
-Use [GitHub's private vulnerability-reporting flow](https://github.com/khadinakbarlabs/expo-mobile-app-builder/security/advisories/new) for a security issue. Do not open a public issue containing a live credential, exploitable customer detail, signing artifact, or unredacted private log. See [SECURITY.md](SECURITY.md) for the supported process.
+Use [GitHub's private vulnerability-reporting flow](https://github.com/khadinakbarlabs/mobile-app-builder/security/advisories/new) for a security issue. Do not open a public issue containing a live credential, exploitable customer detail, signing artifact, or unredacted private log. See [SECURITY.md](SECURITY.md) for the supported process.
 
 ## Installed Claude package
 

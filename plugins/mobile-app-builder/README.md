@@ -1,6 +1,6 @@
 # Mobile App Builder
 
-![Mobile App Builder](assets/mobile-app-builder-logo-v8.png)
+![Mobile App Builder](assets/mobile-app-builder-logo-v9.png)
 
 Research, design, build and grow iOS, Android and web apps with 30 focused skills, 8 specialist leads and 8 commands. All 190 detailed workflows remain as readable references. Start with a new idea, improve an existing app, or request one focused task. The assistant selects relevant procedures and returns concrete work and verification evidence.
 

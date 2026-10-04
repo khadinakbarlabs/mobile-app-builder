@@ -172,6 +172,16 @@ class ReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'environment'):
             release.validate_folder(self.root, core=True)
 
+    def test_core_refuses_network_and_subprocess_helpers(self):
+        for source in ["await fetch('https://example.com');",
+                       "import https from 'node:https';",
+                       "import { execFile } from 'node:child_process';"]:
+            with self.subTest(source=source):
+                helper = self.write('scripts/connect.mjs', source)
+                with self.assertRaisesRegex(ValueError, 'network or subprocess'):
+                    release.validate_folder(self.root, core=True)
+                helper.unlink()
+
     def test_documented_build_config_cannot_serialize_credentials(self):
         for key, value in [('SENTRY_AUTH_TOKEN', '@sentry-auth-token'),
                            ('SERVICE_API_KEY', '<replace-with-secret>'),

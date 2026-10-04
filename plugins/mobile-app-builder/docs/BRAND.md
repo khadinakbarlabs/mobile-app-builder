@@ -1,14 +1,14 @@
 # Mobile App Builder brand guide
 
-Prepared for owner review, 2026-10-03. Stable identity: **mobile-app-builder**. Visible name: **Mobile App Builder**. Publisher remains **Khadin Akbar Ventures LLC** as declared in the existing source; directory account verification is an owner step.
+Updated for owner review, 2026-10-05. Stable identity: **mobile-app-builder**. Visible name: **Mobile App Builder**. Publisher remains **Khadin Akbar Ventures LLC** as declared in the existing source; directory account verification is an owner step.
 
-![Mobile App Builder symbol and listing logo](../assets/mobile-app-builder-logo-v8.png)
+![Mobile App Builder symbol and listing logo](../assets/mobile-app-builder-logo-v9.png)
 
 ## Original artwork
 
-Use the new slim cobalt smartphone outline with a restrained pair of code chevrons and a short home stroke. Generous negative space communicates a modern developer/designer identity without a screen mockup or internal tile grid. The same original symbol is the listing logo and small icon. the host's native manifest declares an icon; the OpenAI and Cursor adapters retain their own supported icon/logo fields. No Anthropic logo, provider mark or claim of official affiliation is part of the artwork.
+Use the slim cobalt smartphone outline with code chevrons, a short home stroke, and one small cyan design-selection corner. The blue shapes represent mobile development; the quiet cyan detail suggests UI design without turning the icon into a screen mockup. The same symbol appears in the listing logo and horizontal banner. The native manifest declares the listing icon. Host-specific adapters require their own asset updates; the submitted OpenAI v2.3.0 package is a separate version. No platform or provider mark is part of the artwork.
 
-The selected PNG is 1254 × 1254, RGB, 816,923 bytes, below the directory's 5 MiB per-file limit. Full PNG decoding and both small/light/dark visual inspection are release checks. Earlier logo candidates remain preserved; only v8 is selected in current host manifests.
+The selected logo PNG is 1254 × 1254, RGB, 983,281 bytes, below the directory's 5 MiB per-file limit. The matching banner is 2172 × 724, RGB. Full PNG decoding and small/light/dark visual inspection are release checks. Earlier candidates remain available in Git history; only v9 ships in the core package.
 
 ## Palette and typography
 
@@ -20,7 +20,7 @@ The selected PNG is 1254 × 1254, RGB, 816,923 bytes, below the directory's 5 Mi
 | Light surface | #F5F8FF | Review cards and documents |
 | Text | #10213C / #FFFFFF | Light/dark presentation text |
 
-The written wordmark is “Mobile App Builder”, set in a system sans-serif with a semibold weight. Keep readable text beside the symbol; don't bake tiny text into the icon. Use at least one quarter of the symbol width as clear space. Preserve proportions, phone outline, code chevrons and colors; do not stretch, crop, add badges or substitute platform logos. This palette describes presentation intent, not an asserted extraction of every pixel from the icon.
+The written wordmark is “Mobile App Builder”, set in a system sans-serif with a semibold weight. Keep readable text beside the symbol; don't bake tiny text into the icon. Use at least one quarter of the symbol width as clear space. Preserve proportions, phone outline, code chevrons, cyan detail and colors; do not stretch, crop, add badges or substitute platform logos. This palette describes presentation intent, not an asserted extraction of every pixel from the icon.
 
 ## Listing language
 
