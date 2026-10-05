@@ -1,3 +1,8 @@
+## 2.3.7 — 2026-10-05
+
+- Remove direct app-token lookup snippets from installed storage guides while keeping secure-storage setup and app-owned session integration guidance.
+- Reject direct auth-token storage reads in future core packages.
+
 ## 2.3.6 — 2026-10-05
 
 - Keep consuming-app authentication examples behind the app's existing session-aware API client instead of showing a direct token read and inline bearer forwarding.

@@ -16,14 +16,9 @@ npm exec --no -- expo install expo-secure-store
 ```ts
 import * as SecureStore from 'expo-secure-store';
 
-// Save
-await SecureStore.setItemAsync('authToken', token);
-
-// Read
-const token = await SecureStore.getItemAsync('authToken');
-
-// Delete
-await SecureStore.deleteItemAsync('authToken');
+// Save and delete a small value owned by the consuming app.
+await SecureStore.setItemAsync('privateVaultItem', value);
+await SecureStore.deleteItemAsync('privateVaultItem');
 
 // With biometric protection (Face ID / Touch ID required to unlock)
 await SecureStore.setItemAsync('vaultKey', secret, {
@@ -31,6 +26,8 @@ await SecureStore.setItemAsync('vaultKey', secret, {
   authenticationPrompt: 'Authenticate to access your vault',
 });
 ```
+
+For session restoration, integrate the consuming app's authentication library with SecureStore through its documented storage adapter. The app's auth client owns token retrieval and network requests; this plugin never looks up an installed user's token. Check the current [Expo SecureStore API](https://docs.expo.dev/versions/latest/sdk/securestore/) for read behavior, biometric prompts and platform limits.
 
 ## ABSOLUTE NO
 - Never store tokens in AsyncStorage or MMKV (no encryption at rest)

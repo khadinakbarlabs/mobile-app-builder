@@ -28,6 +28,7 @@ CORE_OUTBOUND = re.compile(
     r'(?:node:)?(?:https?|net|tls|dgram|child_process)(?:/[^\'\"]*)?[\'\"])', re.I)
 AUTHENTICATED_RESEARCH_CLI = re.compile(r'\bapify\s+(?:actors|runs|datasets)\s+(?:info|start|get-items)\b', re.I)
 INLINE_BEARER_FORWARDING = re.compile(r'\bAuthorization\s*:\s*[`\'\"]Bearer\s', re.I)
+SESSION_STORAGE_LOOKUP = re.compile(r'\bgetItemAsync\s*\(\s*[\'\"](?:auth|access|refresh)[_-]?token[\'\"]', re.I)
 PRIVATE_ENV_KEY = re.compile(r'(?:^|_)(?:TOKEN|SECRET|PASSWORD|API_KEY|PRIVATE_KEY)(?:$|_)', re.I)
 # Firebase client keys are public app configuration; allow only this fake example,
 # never arbitrary values or a blanket EXPO_PUBLIC_* credential exception.
@@ -213,6 +214,8 @@ def validate_folder(folder, core=False):
                         raise ValueError('Core must not instruct authenticated research CLI execution')
                     if INLINE_BEARER_FORWARDING.search(text):
                         raise ValueError('Core must not include inline bearer forwarding examples')
+                    if SESSION_STORAGE_LOOKUP.search(text):
+                        raise ValueError('Core must not include direct auth-token storage reads')
                 resource_patterns = [
                     r'\b(?:node|python3)\s+["\']?((?:\./)?scripts/[A-Za-z0-9_./-]+\.(?:mjs|js|py|sh))',
                     r'`((?:references|scripts)/[A-Za-z0-9_./-]+\.(?:md|json|yaml|mjs|js|py|sh))`',

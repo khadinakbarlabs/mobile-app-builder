@@ -230,17 +230,17 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "319b3345da064af80b136116f5a3528475cd0ca53e4d6de483f2b2b2435ebb69",
+      "targetSha256": "820911f41d98d919ed7fcfdf068af885745fbacbc7100ab94376bbe2f94371b0",
       "status": "adapted",
-      "reason": "App authentication examples now rely on the consuming app session-aware client without inline token forwarding."
+      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
     },
     {
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "e7cf1be12691442fc42cdbc45b518434b5307730ffef46833dd10748c78bb25e",
+      "targetSha256": "5b18bdc4e7edba14514eeeb48a8193d9c5003d87659da65fb5a0a6fb6c088e80",
       "status": "adapted",
-      "reason": "App authentication examples now rely on the consuming app session-aware client without inline token forwarding."
+      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
     },
     {
       "source": "LICENSE",
@@ -830,9 +830,9 @@
       "source": "skills/add-expo-secure-store/SKILL.md",
       "sourceSha256": "9e300318899477e1973566276bae390f02aeeae056d7efc1ad1d0797fb1c7d15",
       "target": "plugins/mobile-app-builder/skills/add-expo-secure-store/guide.md",
-      "targetSha256": "9e300318899477e1973566276bae390f02aeeae056d7efc1ad1d0797fb1c7d15",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "7b606f19fdae9db21adad9f6196569a9129229dc464d6b12e91a2a2cfc75e391",
+      "status": "adapted",
+      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
     },
     {
       "source": "skills/add-expo-secure-store/references/01-expo-sdk-54.md",
@@ -846,9 +846,9 @@
       "source": "skills/add-expo-secure-store-keystore/SKILL.md",
       "sourceSha256": "763e245c1281b67eacc8d4fe5dcbcaeb37489766a154ba08c1881a7c7e0f42b2",
       "target": "plugins/mobile-app-builder/skills/add-expo-secure-store-keystore/guide.md",
-      "targetSha256": "763e245c1281b67eacc8d4fe5dcbcaeb37489766a154ba08c1881a7c7e0f42b2",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "028ba2eec36460b4b1f30bc7c74837f27170ab28727f9225cfb49576541e3c84",
+      "status": "adapted",
+      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
     },
     {
       "source": "skills/add-firebase-android/SKILL.md",
@@ -1422,9 +1422,9 @@
       "source": "skills/choose-storage/SKILL.md",
       "sourceSha256": "78fecae385efe39329409d93bae5bcfe235c43c9c33ec12c7e6c585ed219f58e",
       "target": "plugins/mobile-app-builder/skills/choose-storage/guide.md",
-      "targetSha256": "78fecae385efe39329409d93bae5bcfe235c43c9c33ec12c7e6c585ed219f58e",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "717a2e3f8b7dab75ef816b428b1fead737477c1e3343c07dee3172beb67af151",
+      "status": "adapted",
+      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
     },
     {
       "source": "skills/code-signing/SKILL.md",

@@ -16,10 +16,11 @@ npm exec --no -- expo install expo-secure-store
 ```tsx
 import * as SecureStore from 'expo-secure-store';
 
-await SecureStore.setItemAsync('auth_token', 'jwt...');
-const token = await SecureStore.getItemAsync('auth_token');
-await SecureStore.deleteItemAsync('auth_token');
+await SecureStore.setItemAsync('privateVaultItem', value);
+await SecureStore.deleteItemAsync('privateVaultItem');
 ```
+
+For app sessions, connect the consuming app's auth library to its documented secure-storage adapter. That app's auth client owns token retrieval and authenticated requests; the plugin never reads an installed user's credential. Check the current [Expo SecureStore API](https://docs.expo.dev/versions/latest/sdk/securestore/) before implementation.
 
 ## Android-specific options
 
