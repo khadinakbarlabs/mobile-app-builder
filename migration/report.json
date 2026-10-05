@@ -230,17 +230,17 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "820911f41d98d919ed7fcfdf068af885745fbacbc7100ab94376bbe2f94371b0",
+      "targetSha256": "bd8a33a2f8d63bde154dc26a015024e8f971114d253f85145de18b78cc01531a",
       "status": "adapted",
-      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "5b18bdc4e7edba14514eeeb48a8193d9c5003d87659da65fb5a0a6fb6c088e80",
+      "targetSha256": "b1fcd41c489703d63ed225de4b91d0f91f808352227afedff1b31d942a5ffbb2",
       "status": "adapted",
-      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "LICENSE",
@@ -302,9 +302,9 @@
       "source": "agency/catalog.json",
       "sourceSha256": "c5df5fcdcb94c4f5bb9caa91432830f525b0d1173a9dce2412492ab19e81d6ba",
       "target": "plugins/mobile-app-builder/agency/catalog.json",
-      "targetSha256": "42d3b0d52c2df914a3e99ba03c4c76b9fbc8e971a1eca3b91fdbb73d4250f10f",
+      "targetSha256": "69293fd4284be65630dcbe2cbcb1b83cca5869b8fd0f03b8b2ddfee6da8be6e0",
       "status": "adapted",
-      "reason": "Guide updated to keep credentialed research behind explicit user configuration or user-provided exports."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "agency/taxonomy.json",
@@ -358,9 +358,9 @@
       "source": "agents/market-researcher.md",
       "sourceSha256": "bec3227168afe172f3431838e2ce1361c0b25585b7ce9866e2bfce0106bb718e",
       "target": "plugins/mobile-app-builder/agency/roles/market-researcher.md",
-      "targetSha256": "47c3c8cee4e8eee56ef194e99b6b00fe38594b3d6d2b1b72576cb4e2600ed77c",
+      "targetSha256": "682925989939db0832575af6d24f141f6ebdde615b36704d36a52cb103133588",
       "status": "adapted",
-      "reason": "Guide updated to keep credentialed research behind explicit user configuration or user-provided exports."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "agents/mobile-architect.md",
@@ -502,9 +502,9 @@
       "source": "docs/RESOURCES.md",
       "sourceSha256": "356f918a931698564e91594453551affee53949c8df56c75c0a48634b17ed086",
       "target": "plugins/mobile-app-builder/docs/RESOURCES.md",
-      "targetSha256": "81676dd32380fabd7f8680e3a0555a13cef8aff97b862f973d8b9a0a9107ff5f",
+      "targetSha256": "356f918a931698564e91594453551affee53949c8df56c75c0a48634b17ed086",
       "status": "adapted",
-      "reason": "Research guidance now uses explicit connected access or public and user-provided evidence."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "docs/SKILL-CATALOG.md",
@@ -830,9 +830,9 @@
       "source": "skills/add-expo-secure-store/SKILL.md",
       "sourceSha256": "9e300318899477e1973566276bae390f02aeeae056d7efc1ad1d0797fb1c7d15",
       "target": "plugins/mobile-app-builder/skills/add-expo-secure-store/guide.md",
-      "targetSha256": "7b606f19fdae9db21adad9f6196569a9129229dc464d6b12e91a2a2cfc75e391",
+      "targetSha256": "9e300318899477e1973566276bae390f02aeeae056d7efc1ad1d0797fb1c7d15",
       "status": "adapted",
-      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/add-expo-secure-store/references/01-expo-sdk-54.md",
@@ -846,9 +846,9 @@
       "source": "skills/add-expo-secure-store-keystore/SKILL.md",
       "sourceSha256": "763e245c1281b67eacc8d4fe5dcbcaeb37489766a154ba08c1881a7c7e0f42b2",
       "target": "plugins/mobile-app-builder/skills/add-expo-secure-store-keystore/guide.md",
-      "targetSha256": "028ba2eec36460b4b1f30bc7c74837f27170ab28727f9225cfb49576541e3c84",
+      "targetSha256": "763e245c1281b67eacc8d4fe5dcbcaeb37489766a154ba08c1881a7c7e0f42b2",
       "status": "adapted",
-      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/add-firebase-android/SKILL.md",
@@ -1166,9 +1166,9 @@
       "source": "skills/apify-mobile-research/SKILL.md",
       "sourceSha256": "3bee43b35c09eeabaf51724aa5e637a6a0a287584d3979ac90fe60dc2f5c0a08",
       "target": "plugins/mobile-app-builder/skills/apify-mobile-research/guide.md",
-      "targetSha256": "e605a5f37e01d72bedf0d19080be3fba9fdb3fb7bf9a0ee7f4fb68fc8f2be9a0",
+      "targetSha256": "1c6874808366556e2c74fc2e0de314ec895fee525b89e9485e0f675bb2268c78",
       "status": "adapted",
-      "reason": "Guide updated to keep credentialed research behind explicit user configuration or user-provided exports."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/apify-mobile-research/references/actor-catalog.json",
@@ -1181,7 +1181,7 @@
     {
       "source": "skills/apify-mobile-research/references/cli-workflow.md",
       "sourceSha256": "75527bb751d45acd417a1c88633f4eeeb18d48eb0ba279dda517d48032a8439f",
-      "target": "docs/BACKEND-RESEARCH-CLI.md",
+      "target": "plugins/mobile-app-builder/skills/apify-mobile-research/references/cli-workflow.md",
       "targetSha256": "1250692b5c19b56fbfcfce12b8810751f62bc51385239d328c8c06cbbb62084c",
       "status": "adapted",
       "reason": "Owner-operated CLI playbook remains readable in source docs but is excluded from the installed core credential boundary."
@@ -1190,9 +1190,9 @@
       "source": "skills/apify-mobile-research/references/research-protocol.md",
       "sourceSha256": "dae0b2ef2d94c0b79de3b7aaf19dbe4ac09344b7547aa9cc36914662b446eec2",
       "target": "plugins/mobile-app-builder/skills/apify-mobile-research/references/research-protocol.md",
-      "targetSha256": "20dadb1699294595c92dc499a142882292fbb63955cbd5316afca44bd37c16a9",
+      "targetSha256": "dae0b2ef2d94c0b79de3b7aaf19dbe4ac09344b7547aa9cc36914662b446eec2",
       "status": "adapted",
-      "reason": "Guide updated to keep credentialed research behind explicit user configuration or user-provided exports."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/apify-mobile-research/templates/actor-registry.json",
@@ -1422,9 +1422,9 @@
       "source": "skills/choose-storage/SKILL.md",
       "sourceSha256": "78fecae385efe39329409d93bae5bcfe235c43c9c33ec12c7e6c585ed219f58e",
       "target": "plugins/mobile-app-builder/skills/choose-storage/guide.md",
-      "targetSha256": "717a2e3f8b7dab75ef816b428b1fead737477c1e3343c07dee3172beb67af151",
+      "targetSha256": "78fecae385efe39329409d93bae5bcfe235c43c9c33ec12c7e6c585ed219f58e",
       "status": "adapted",
-      "reason": "Secure storage guidance retains app implementation detail without installer credential reads."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/code-signing/SKILL.md",
@@ -2302,9 +2302,9 @@
       "source": "skills/mobile-ad-intelligence/SKILL.md",
       "sourceSha256": "85452368a9ef6f79d6e4ca48128efcf8785eb3d1263cc148b8c817f63c0b8165",
       "target": "plugins/mobile-app-builder/skills/mobile-ad-intelligence/guide.md",
-      "targetSha256": "bc524e3a9251ece28564c4f37119c89269829cf3ff55a78336f15d26f452643e",
+      "targetSha256": "85452368a9ef6f79d6e4ca48128efcf8785eb3d1263cc148b8c817f63c0b8165",
       "status": "adapted",
-      "reason": "Research guidance now uses explicit connected access or public and user-provided evidence."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/mobile-app-agency/SKILL.md",
@@ -2326,9 +2326,9 @@
       "source": "skills/mobile-app-agency/references/roles.md",
       "sourceSha256": "38d5eda55ac281dfb165e8ada052e2fdfcbfd9f024ed509b9e2df743a9857dc0",
       "target": "plugins/mobile-app-builder/skills/mobile-app-agency/references/roles.md",
-      "targetSha256": "72cbd172b81ca1a1dbdb2d711caceb5243ec236a0b03a8769c2993a2748755e8",
+      "targetSha256": "38d5eda55ac281dfb165e8ada052e2fdfcbfd9f024ed509b9e2df743a9857dc0",
       "status": "adapted",
-      "reason": "Guide updated to keep credentialed research behind explicit user configuration or user-provided exports."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/mobile-app-agency/references/stage-gates.md",
@@ -2390,17 +2390,17 @@
       "source": "skills/mobile-influencer-intelligence/SKILL.md",
       "sourceSha256": "0c05463e76cf32164ebaa0952060a6f4ce06d690c2ca5e266e2b99ae7b16f810",
       "target": "plugins/mobile-app-builder/skills/mobile-influencer-intelligence/guide.md",
-      "targetSha256": "b54e85ad713f889dacfb141e34dc57c9001bfa9373a85e81dc0dd3e8f015a7e3",
+      "targetSha256": "0c05463e76cf32164ebaa0952060a6f4ce06d690c2ca5e266e2b99ae7b16f810",
       "status": "adapted",
-      "reason": "Research guidance now uses explicit connected access or public and user-provided evidence."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/mobile-seo-intelligence/SKILL.md",
       "sourceSha256": "e95812915611e162a1436bc7c5f936c353a973843c84f0f4e82846600cfa23ee",
       "target": "plugins/mobile-app-builder/skills/mobile-seo-intelligence/guide.md",
-      "targetSha256": "6618c31201b084244e380eb5e23bc174576d40d3d0814587b9ff8df5bb540976",
+      "targetSha256": "e95812915611e162a1436bc7c5f936c353a973843c84f0f4e82846600cfa23ee",
       "status": "adapted",
-      "reason": "Research guidance now uses explicit connected access or public and user-provided evidence."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/mobile-store-asset-production/SKILL.md",
@@ -2438,9 +2438,9 @@
       "source": "skills/mobile-store-intelligence/SKILL.md",
       "sourceSha256": "fe9d728458398a752c17a71c0c0e2c6c792f4a0e414a577c9dc575d8f09b1c9b",
       "target": "plugins/mobile-app-builder/skills/mobile-store-intelligence/guide.md",
-      "targetSha256": "be77eb34f23d84c0f1eebc9795bd41ca7aa2408549a9520aff19e34d8d8e61af",
+      "targetSha256": "fe9d728458398a752c17a71c0c0e2c6c792f4a0e414a577c9dc575d8f09b1c9b",
       "status": "adapted",
-      "reason": "Research guidance now uses explicit connected access or public and user-provided evidence."
+      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
     },
     {
       "source": "skills/mom-test/SKILL.md",

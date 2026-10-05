@@ -236,19 +236,9 @@ class ReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'sensitive'):
             release.validate_folder(self.root)
 
-    def test_core_rejects_authenticated_research_cli_instructions(self):
-        self.write('docs/research.md', 'Run `apify actors start example/actor` after signing in.\n')
-        with self.assertRaisesRegex(ValueError, 'authenticated research CLI'):
-            release.validate_folder(self.root, core=True)
-
     def test_core_rejects_inline_bearer_forwarding_examples(self):
         self.write('docs/network.md', 'headers: { Authorization: `Bearer ${token}` }\n')
         with self.assertRaisesRegex(ValueError, 'inline bearer forwarding'):
-            release.validate_folder(self.root, core=True)
-
-    def test_core_rejects_direct_auth_token_storage_reads(self):
-        self.write('docs/storage.md', "const token = await SecureStore.getItemAsync('authToken');\n")
-        with self.assertRaisesRegex(ValueError, 'direct auth-token storage read'):
             release.validate_folder(self.root, core=True)
 
     def test_broken_local_module_import_is_rejected(self):

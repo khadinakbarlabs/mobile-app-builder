@@ -31,7 +31,7 @@ An ad swipe file records hook, problem, promise, format, visual device, offer, C
 
 ## Source pointers
 
-Checked 2026-10-03: [Actor runs/builds](https://docs.apify.com/actors/running/runs-and-builds), [usage/resources](https://docs.apify.com/actors/running/usage-and-resources). Recheck prices, schemas, data access, and limits on each collection date.
+Checked 2026-10-03: [Actor runs/builds](https://docs.apify.com/actors/running/runs-and-builds), [usage/resources](https://docs.apify.com/actors/running/usage-and-resources), and [CLI reference](https://docs.apify.com/cli/docs/reference). Recheck prices, schemas, data access, and limits on each collection date.
 
 ## Expanded intelligence routes
 

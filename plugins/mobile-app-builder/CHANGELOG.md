@@ -1,3 +1,9 @@
+## 2.3.8 — 2026-10-05
+
+- Restore the owner-operated CLI and secure-storage examples after three controlled directory scans showed they did not affect the manifest-only credential warning.
+- Retain the safer consuming-app auth examples from 2.3.6, which use the app's session-aware client rather than inline token forwarding.
+- Keep the exact scan history and reviewer boundary documented without claiming the directory warning is cleared.
+
 ## 2.3.7 — 2026-10-05
 
 - Remove direct app-token lookup snippets from installed storage guides while keeping secure-storage setup and app-owned session integration guidance.

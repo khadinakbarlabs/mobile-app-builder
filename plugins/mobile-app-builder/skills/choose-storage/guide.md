@@ -16,8 +16,11 @@ Pick the right Expo storage primitive.
 - **Cross-device sync** → CloudKit private DB (requires native bridge or expo-cloud-storage if available)
 
 ## expo-secure-store
-
-Use it for small sensitive values stored by the consuming app. Connect session persistence through that app's authentication library and its documented storage adapter. The app client owns credential retrieval; the plugin does not read installer secrets. See [Expo SecureStore](https://docs.expo.dev/versions/latest/sdk/securestore/) and the `add-expo-secure-store` guide for platform limits and setup.
+```ts
+import * as SecureStore from 'expo-secure-store';
+await SecureStore.setItemAsync('authToken', token);
+const token = await SecureStore.getItemAsync('authToken');
+```
 
 ## MMKV
 ```bash

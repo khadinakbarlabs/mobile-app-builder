@@ -6,13 +6,14 @@ Reviewed **2026-10-03**. This catalog classifies resources by agency desk, expla
 
 | Resource | Purpose | Skill route | Access / evidence rules |
 | --- | --- | --- | --- |
+| [Apify CLI reference](https://docs.apify.com/cli/docs/reference) | Discover selected existing Actors, inspect schema, execute bounded collection, read run/storage evidence | `apify-mobile-research` | CLI version/help first; remote runs require account, budget, and authorization |
 | [Actor runs and builds](https://docs.apify.com/actors/running/runs-and-builds) | Associate results with the actual run/build | `apify-mobile-research` | Record actual run/build/dataset, terminal status, coverage, and source dates |
 | [Actor usage and resources](https://docs.apify.com/actors/running/usage-and-resources) | Bound resources and inspect actual usage | `apify-mobile-research` | An input limit is not a universal spend cap; unknown charges stay unknown |
-| [Apify Store](https://apify.com/store) | Select a real Actor for review, web, community, ad, or inspiration collection | `apify-mobile-research` | Use public pages or an explicitly connected tool; inspect live schema, pricing and source rights |
+| [Apify Store](https://apify.com/store) | Select a real Actor for review, web, community, ad, or inspiration collection | `apify-mobile-research` | Registry ships disabled with no Actor IDs; inspect live schema/pricing/source rights |
 | [Reddit Data API terms](https://redditinc.com/policies/data-api-terms) | Understand source access and permitted use | `mine-reddit-pain-points`, `mine-reddit-android-pain-points` | An Actor does not grant unrestricted rights to underlying source data |
 | Public App Store / Play listings and permissioned app inspection | Competitor feature/positioning/paywall/onboarding comparisons | `mine-competitor-reviews`, `mine-play-reviews`, `competitor-feature-matrix`, `competitor-onboarding-teardown`, `competitor-paywall-analysis`, `competitor-paywall-analysis-android` | Store images are marketing; verify interaction on a real runtime before claiming behavior |
 
-Local resources: [Apify research protocol](../skills/apify-mobile-research/references/research-protocol.md), [unconfigured Actor registry](../skills/apify-mobile-research/templates/actor-registry.json), [run manifest](../skills/apify-mobile-research/templates/run-manifest.json), and [research brief](../skills/apify-mobile-research/templates/research-brief.md). Raw records remain in an ignored local folder; publish only rights-cleared, redacted findings.
+Local resources: [Apify research protocol](../skills/apify-mobile-research/references/research-protocol.md), [CLI workflow](../skills/apify-mobile-research/references/cli-workflow.md), [unconfigured Actor registry](../skills/apify-mobile-research/templates/actor-registry.json), [run manifest](../skills/apify-mobile-research/templates/run-manifest.json), and [research brief](../skills/apify-mobile-research/templates/research-brief.md). Raw records remain in an ignored local folder; publish only rights-cleared, redacted findings.
 
 ## UI/UX, accessibility, and design systems
 

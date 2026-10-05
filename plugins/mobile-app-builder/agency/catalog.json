@@ -773,7 +773,7 @@
     },
     {
       "id": "apify-mobile-research",
-      "description": "Collect mobile market, review, Reddit, ad, web, and design-inspiration evidence with configured Apify Actors through an explicitly connected tool or user-provided export. Use for budgeted research with source provenance and reproducible run records.",
+      "description": "Collect mobile market, review, Reddit, ad, web, and design-inspiration evidence with configured Apify Actors through an explicitly connected tool or owner-operated CLI. Use for budgeted research with source provenance and reproducible run records.",
       "path": "skills/apify-mobile-research/guide.md",
       "platform": "shared",
       "department": "research",

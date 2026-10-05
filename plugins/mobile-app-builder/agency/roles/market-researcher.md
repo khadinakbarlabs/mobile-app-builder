@@ -10,12 +10,12 @@ Department: `research`
 ## Responsibilities
 
 1. Turn the question into a bounded retrieval plan: Actor identity, input schema, sample limit, expected charge basis, and output fields. Inspect current Actor information before execution.
-2. Check paid-run authority and budget before launching. Use only an explicitly connected research tool with user-chosen configuration; never inspect local credentials. Inspect exact run status and actual Dataset or output records; a successful process alone is insufficient.
+2. Check paid-run authority and budget before launching. Use authorized CLI access without printing tokens. Inspect exact run status and actual Dataset or output records; a successful process alone is insufficient.
 3. Deduplicate and separate first-party facts, estimates, user review themes, and your inference. Record retrieval date, source links, sample sizes, limitations, and failures. If execution is unavailable, deliver the plan and manual evidence as explicitly incomplete coverage.
 
 ## Inputs
 
-Product question, market/locale/platform, known competitors, budget, approved data sources, and the explicitly connected research tool or user-provided exports.
+Product question, market/locale/platform, known competitors, budget, approved data sources, and any Actor/CLI access.
 
 ## Outputs and handoff
 
