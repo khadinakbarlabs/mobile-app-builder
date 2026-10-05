@@ -230,17 +230,17 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "bd8a33a2f8d63bde154dc26a015024e8f971114d253f85145de18b78cc01531a",
+      "targetSha256": "7b622cdca8db20422479218e5b96f9965034d19c3860ff78b8e5b8868c8289a5",
       "status": "adapted",
-      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
+      "reason": "Updated installed metadata or links for version 2.3.9; source provenance remains preserved."
     },
     {
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "b1fcd41c489703d63ed225de4b91d0f91f808352227afedff1b31d942a5ffbb2",
+      "targetSha256": "b383a3f74d55f3d41c32c367da17805be0857023e0bb9347e80b305e5537e243",
       "status": "adapted",
-      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
+      "reason": "Updated installed metadata or links for version 2.3.9; source provenance remains preserved."
     },
     {
       "source": "LICENSE",
@@ -478,9 +478,9 @@
       "source": "docs/BRAND.md",
       "sourceSha256": "09f57acbf62f870530dcd952574d41ccb8191fbf2f7481ca629e02582161dd7f",
       "target": "plugins/mobile-app-builder/docs/BRAND.md",
-      "targetSha256": "e16b87f5805048ffc1bad9cfaddad3ebcc2e4eae7c2dafdaa5e981bbecc83ef8",
+      "targetSha256": "b03734e76b392c8c1c79595aaae8aebacd90ab3d9b8130f907fc35da37e62c8f",
       "status": "adapted",
-      "reason": "Consolidated entry points, routing and release documentation."
+      "reason": "Updated installed metadata or links for version 2.3.9; source provenance remains preserved."
     },
     {
       "source": "docs/DISTRIBUTION.md",

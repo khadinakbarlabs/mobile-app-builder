@@ -1,3 +1,9 @@
+## 2.3.9 — 2026-10-05
+
+- Keep reviewer-only scan history and technical endpoint disclosures in repository documentation, outside the installed core. The core retains its user-facing privacy policy and links to the full technical disclosure.
+- Add optional, credential-isolated Apify CLI Actor discovery in Mobile App Builder Research 1.0.3. Authenticated collection remains on its explicit user-configured connection or the owner's CLI session.
+- Recheck the directory scan before claiming either reported warning is cleared.
+
 ## 2.3.8 — 2026-10-05
 
 - Restore the owner-operated CLI and secure-storage examples after three controlled directory scans showed they did not affect the manifest-only credential warning.

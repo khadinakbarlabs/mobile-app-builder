@@ -241,6 +241,11 @@ class ReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'inline bearer forwarding'):
             release.validate_folder(self.root, core=True)
 
+    def test_core_keeps_optional_connector_configuration_outside_installed_docs(self):
+        self.write('docs/network.md', 'Configure ${user_config.apify_token} at mcp.apify.com.\n')
+        with self.assertRaisesRegex(ValueError, 'optional connector configuration'):
+            release.validate_folder(self.root, core=True)
+
     def test_broken_local_module_import_is_rejected(self):
         self.write('scripts/tool.mjs', "import { example } from './missing.mjs';\n")
         with self.assertRaisesRegex(ValueError, 'module'):

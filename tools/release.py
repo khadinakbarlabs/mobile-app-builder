@@ -210,6 +210,8 @@ def validate_folder(folder, core=False):
                     validate_documented_build_environments(text, relative)
                     if INLINE_BEARER_FORWARDING.search(text):
                         raise ValueError('Core must not include inline bearer forwarding examples')
+                    if '${user_config.' in text or 'mcp.apify.com' in text:
+                        raise ValueError('Core must keep optional connector configuration outside installed docs')
                 resource_patterns = [
                     r'\b(?:node|python3)\s+["\']?((?:\./)?scripts/[A-Za-z0-9_./-]+\.(?:mjs|js|py|sh))',
                     r'`((?:references|scripts)/[A-Za-z0-9_./-]+\.(?:md|json|yaml|mjs|js|py|sh))`',
