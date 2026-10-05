@@ -45,11 +45,12 @@ Anthropic is a third-party AI provider. They will receive your input to generate
 ## Implementation pattern
 ```tsx
 // services/ai-consent.ts
-import * as SecureStore from 'expo-secure-store';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Alert } from 'react-native';
 
 export async function ensureAIConsent(provider: 'openai' | 'anthropic') {
   const key = `ai_consent_${provider}`;
-  const granted = await SecureStore.getItemAsync(key);
+  const granted = await AsyncStorage.getItem(key);
   if (granted === 'true') return true;
 
   return new Promise<boolean>((resolve) => {
@@ -59,8 +60,8 @@ export async function ensureAIConsent(provider: 'openai' | 'anthropic') {
       [
         { text: 'Cancel', onPress: () => resolve(false) },
         { text: 'Allow', onPress: async () => {
-          await SecureStore.setItemAsync(key, 'true');
-          resolve(true);
+          try { await AsyncStorage.setItem(key, 'true'); resolve(true); }
+          catch { resolve(false); }
         }},
       ]
     );
@@ -71,6 +72,8 @@ export async function ensureAIConsent(provider: 'openai' | 'anthropic') {
 const consented = await ensureAIConsent('anthropic');
 if (consented) await callExternalAIProvider(prompt);
 ```
+
+This preference is consent state, not a credential. Include the disclosure version and processing purpose in a production preference key, support revocation, and request consent again when that scope changes. A failed preference write must not silently grant permission.
 
 ## Privacy Policy update
 Add section:

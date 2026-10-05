@@ -1,0 +1,4 @@
+name: synthetic_app
+dependencies:
+  flutter:
+    sdk: flutter

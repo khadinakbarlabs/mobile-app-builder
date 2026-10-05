@@ -241,6 +241,26 @@ class ReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'inline bearer forwarding'):
             release.validate_folder(self.root, core=True)
 
+    def test_core_rejects_credential_file_uploads_and_stored_token_examples(self):
+        examples = [
+            '```bash\neas secret:create --type file --value "AuthKey.p8"\n```\n',
+            '```json\n{"android":{"serviceAccountKeyPath":"private.json"}}\n```\n',
+            "```ts\nconst token = await SecureStore.getItemAsync('auth_token');\n```\n",
+            "```ts\nconst { data } = await supabase.auth.getSession();\n```\n",
+            '```bash\nprintf "%s" "$GITHUB_TOKEN"\n```\n',
+        ]
+        for example in examples:
+            with self.subTest(example=example):
+                self.write('docs/auth-examples.md', example)
+                with self.assertRaisesRegex(ValueError, 'credential read or file upload'):
+                    release.validate_folder(self.root, core=True)
+
+    def test_core_allows_consent_preferences_and_owner_managed_signing_guidance(self):
+        self.write('docs/auth-examples.md',
+                   "Use owner-managed signing in the provider dashboard.\n"
+                   "```ts\nconst consent = await preferences.load('ai-consent');\n```\n")
+        self.assertEqual(release.validate_folder(self.root, core=True)['skills'], ['example'])
+
     def test_core_keeps_optional_connector_configuration_outside_installed_docs(self):
         self.write('docs/network.md', 'Configure ${user_config.apify_token} at mcp.apify.com.\n')
         with self.assertRaisesRegex(ValueError, 'optional connector configuration'):

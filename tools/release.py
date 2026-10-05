@@ -27,6 +27,12 @@ CORE_OUTBOUND = re.compile(
     r'\b(?:fetch\s*\(|new\s+WebSocket\s*\(|(?:from|import\s*\(|require\s*\()\s*[\'\"]'
     r'(?:node:)?(?:https?|net|tls|dgram|child_process)(?:/[^\'\"]*)?[\'\"])', re.I)
 INLINE_BEARER_FORWARDING = re.compile(r'\bAuthorization\s*:\s*[`\'\"]Bearer\s', re.I)
+CORE_SENSITIVE_READ = re.compile(
+    r'\bSecureStore\s*\.\s*getItem(?:Async)?\s*\('
+    r'|\.auth\s*\.\s*getSession\s*\('
+    r'|\bserviceAccountKeyPath\b'
+    r'|\beas\s+(?:secret|env):(?:create|push)[^\n]*--type\s+file'
+    r'|\bkeytool\b[^\n]*-keystore\b', re.I)
 PRIVATE_ENV_KEY = re.compile(r'(?:^|_)(?:TOKEN|SECRET|PASSWORD|API_KEY|PRIVATE_KEY)(?:$|_)', re.I)
 # Firebase client keys are public app configuration; allow only this fake example,
 # never arbitrary values or a blanket EXPO_PUBLIC_* credential exception.
@@ -208,6 +214,9 @@ def validate_folder(folder, core=False):
             if path.suffix == '.md':
                 if core:
                     validate_documented_build_environments(text, relative)
+                    examples = '\n'.join(re.findall(r'^```[^\n]*\n(.*?)^```\s*$', text, re.M | re.S))
+                    if CORE_SENSITIVE_READ.search(examples) or ENV_READ.search(examples):
+                        raise ValueError(f'Core credential read or file upload in example: {relative}')
                     if INLINE_BEARER_FORWARDING.search(text):
                         raise ValueError('Core must not include inline bearer forwarding examples')
                     if '${user_config.' in text or 'mcp.apify.com' in text:

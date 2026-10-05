@@ -1,6 +1,6 @@
 ---
 name: guide-positioning
-description: "Use for naming & positioning in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Name and position an app around its audience, problem, differentiated value and truthful store messaging."
 ---
 
 # Naming & positioning

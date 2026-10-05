@@ -1,6 +1,6 @@
 ---
 name: guide-launch-planning
-description: "Use for launch planning in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Prepare an app launch plan with audience, milestones, distribution, ownership and observable launch readiness."
 ---
 
 # Launch planning

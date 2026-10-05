@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Build Signing
+  short_description: Diagnose iOS and Android build failures and prepare owner-manage
+  default_prompt: Use $guide-build-signing for the relevant app task and return a
+    verified result.

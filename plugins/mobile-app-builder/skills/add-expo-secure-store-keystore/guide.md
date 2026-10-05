@@ -16,10 +16,15 @@ npm exec --no -- expo install expo-secure-store
 ```tsx
 import * as SecureStore from 'expo-secure-store';
 
-await SecureStore.setItemAsync('auth_token', 'jwt...');
-const token = await SecureStore.getItemAsync('auth_token');
-await SecureStore.deleteItemAsync('auth_token');
+export async function saveAppSession(sessionValue: string) {
+  await SecureStore.setItemAsync('app-session', sessionValue);
+}
+export async function clearAppSession() {
+  await SecureStore.deleteItemAsync('app-session');
+}
 ```
+
+The value is supplied by the consuming app's sign-in flow. Keep session retrieval in the app's storage adapter following [Expo's documented API](https://docs.expo.dev/versions/latest/sdk/securestore/), with missing-value, invalidation and authentication-cancellation handling. Never inspect the installer's credential store or use a real token in a plugin test. Verify app persistence and sign-out with synthetic fixtures, then on the intended Android build.
 
 ## Android-specific options
 
@@ -35,7 +40,7 @@ await SecureStore.setItemAsync('sensitive', 'value', {
 
 - Android: EncryptedSharedPreferences + Android Keystore (hardware-backed on TEE/StrongBox devices)
 - Each key encrypted with hardware-derived key
-- Survives app data clear (but NOT uninstall)
+- Android entries do not survive uninstall or app-data clearing; exclude encrypted entries from backups that cannot restore their Keystore key.
 
 ## When NOT to use SecureStore
 

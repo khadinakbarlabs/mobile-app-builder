@@ -1,6 +1,6 @@
 ---
 name: guide-monetization
-description: "Use for pricing & monetization in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Choose app pricing, subscriptions or freemium boundaries from user value, costs, conversion evidence and store requirements."
 ---
 
 # Pricing & monetization

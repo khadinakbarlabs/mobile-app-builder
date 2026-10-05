@@ -1,6 +1,6 @@
 ---
 name: guide-ai-capabilities
-description: "Use for ai integrations in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Add or repair on-device AI and hosted model features with streaming, cancellation, privacy, safe failures and a verified platform API."
 ---
 
 # AI integrations

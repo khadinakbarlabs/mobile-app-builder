@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Competitor Intelligence
+  short_description: Compare app competitors, store listings and user reviews to find
+  default_prompt: Use $guide-competitor-intelligence for the relevant app task and
+    return a verified result.

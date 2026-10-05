@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Organic Growth
+  short_description: Plan creator partnerships, referrals and website SEO for an app;
+  default_prompt: Use $guide-organic-growth for the relevant app task and return a
+    verified result.

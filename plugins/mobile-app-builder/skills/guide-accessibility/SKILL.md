@@ -1,6 +1,6 @@
 ---
 name: guide-accessibility
-description: "Use for accessibility verification in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Audit and fix screen-reader labels, focus, touch targets, contrast, dynamic text and keyboard access in app screens."
 ---
 
 # Accessibility verification

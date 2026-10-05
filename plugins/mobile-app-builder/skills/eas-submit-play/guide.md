@@ -9,27 +9,17 @@ Prepare an AAB upload to Play Console. The final upload and any promotion are ow
 
 ## External action gate
 
-Do not read, create, or upload a service-account key; run `eas submit`; or promote a track until the owner has confirmed the exact Play developer account, app, build, target track, release status, and upload action. A draft upload and a production release are separate decisions.
+Core never reads or uploads a local service-account key or borrows an installer login. Prepare the submission only within the owner’s authorized account, app, build, track and release status; execution belongs to their separately configured delivery environment. A draft upload and a production release are separate decisions.
 
 ## Prerequisites
 
-1. App created in Play Console (manual first upload required per Play policy)
-2. Service Account JSON (see `set-up-play-app-signing` for setup)
+1. App created in Play Console; verify the current first-submission requirements for this app
+2. Owner-managed service credentials configured in the selected EAS project
 3. `eas.json` configured
 
 ## Service Account setup
 
-Google Play Console → Setup → API access:
-1. "Choose existing Google Cloud project" OR create new
-2. "Create new service account" → grant Play Developer roles
-3. In Google Cloud Console → IAM → that account → Keys → Add Key → JSON
-4. Download the key only to owner-controlled secret storage outside the repository
-5. Configure its local path or CI secret reference without committing the file, its path, or its contents
-
-Play Console → Setup → API access → grant the account permissions:
-- "App access" → all
-- "Releases" → manage production releases
-- "Store presence" → manage
+The owner configures the Google service-account key in the EAS dashboard for the selected app, following [Expo's Android submission prerequisites](https://docs.expo.dev/submit/android/). Scope Play permissions to that app and the intended track; do not grant all-app or production-release access for an internal testing upload. Core never opens or uploads the local key file and does not configure a local credential-file path. Record only a redacted setup confirmation and the intended account/app.
 
 ## `eas.json` submit section
 ```json
@@ -37,7 +27,6 @@ Play Console → Setup → API access → grant the account permissions:
   "submit": {
     "production": {
       "android": {
-        "serviceAccountKeyPath": "<path-outside-the-repository>",
         "track": "internal",
         "releaseStatus": "draft"
       }
@@ -49,18 +38,20 @@ Play Console → Setup → API access → grant the account permissions:
 `track` options: `internal`, `alpha`, `beta`, `production`.
 `releaseStatus`: `draft` (review only), `inProgress` (start staged), `completed` (full release).
 
-## Submit after confirmation
+## Owner-controlled submission
+
+After the exact account, build and track are authorized, the owner or their separately configured delivery integration submits in its approved authenticated environment. The core can prepare this command without executing it using an installer's saved login:
 ```bash
-eas submit --platform android --profile production --latest
+eas submit --platform android --profile production --id <verified-build-id>
 ```
 
-Confirm the resolved build ID before running this command; `--latest` can select a different build than expected.
+Use the recorded build ID. Reconcile an uncertain submission by that build and the target track before another upload. A command plan is not a completed submission.
 
 ## Common gotchas
-- "Authentication failed" → service account JSON invalid OR API not enabled
-- "App not found" → must do FIRST upload manually via Play Console web UI
+- "Authentication failed" → owner checks the selected dashboard credential, app permissions and API enablement; core does not inspect the key
+- "App not found" → verify the package ID, app creation, selected account permissions and current first-submission requirements; do not assume a manual first upload is always required
 - "Track not available" → app not yet promoted to that track (rollout from lower track first)
-- "Already in review" → can't submit while previous version under review
+- "Already in review" → inspect the existing review and version status before another submission; do not cancel it automatically
 
 ## Track lifecycle
 ```

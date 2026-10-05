@@ -1,6 +1,6 @@
 ---
 name: guide-notifications-billing
-description: "Use for notifications & subscriptions in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Add or fix push notifications, deep-link delivery, subscriptions and purchase restoration with permission, cancellation and account isolation checks."
 ---
 
 # Notifications & subscriptions

@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Launch Planning
+  short_description: Prepare an app launch plan with audience, milestones, distributi
+  default_prompt: Use $guide-launch-planning for the relevant app task and return
+    a verified result.

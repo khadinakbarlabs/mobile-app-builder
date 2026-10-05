@@ -4,6 +4,10 @@ Mobile App Builder does not create a schedule on installation. A user may choose
 
 For every schedule, confirm the project, cadence and timezone, sources, allowed tools, cost boundary, output location, alert threshold and pause/delete path. Start with a read-only or draft-only run. If the host lacks scheduling, provide a reusable prompt instead of pretending a task was created. A completed run is not proof that the requested check succeeded; inspect its actual output.
 
+Use the scheduling capability exposed by the current host. In Codex Desktop, use its automation tool for a user-requested follow-up or recurring task, and read back its active status and saved scope. In a host without an available scheduling tool, including a Cursor session where none is exposed, leave the recipe as a reusable prompt and name the missing capability. Do not install a separate scheduler to fill that gap. These recipes work across hosts; their activation depends on the host's supported scheduling feature.
+
+Record the schedule identifier, timezone, next run when supplied, permitted inputs, pause/delete controls and activation readback in the user's existing project context. Keep secrets and private connector data out of it. An activation readback verifies the schedule exists; only a subsequent run with checked output verifies the recurring outcome. Notify the user for a meaningful change, failure or decision rather than every unchanged run, unless they request regular status updates.
+
 ## Weekly app health review
 
 ```text

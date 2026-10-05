@@ -145,7 +145,7 @@ export function useAuthLinks() {
 
 ## Session and protected routes (SDK 54)
 
-Call the session hook once at the layout/provider boundary. Subscribe before loading stored state so a completed callback cannot be overwritten by an older session read.
+Call the session hook once at the consuming app's layout/provider boundary. Use the SDK's `INITIAL_SESSION` and subsequent auth events; [Supabase documents that initial state is emitted after storage is loaded](https://supabase.com/docs/reference/javascript/auth-onauthstatechange). Do not separately pull or print a stored token. A missing initialization event is a recoverable app error, not evidence that the user is signed out.
 
 ```tsx
 import { useEffect, useState } from 'react';
@@ -160,14 +160,14 @@ export function useSession() {
   useEffect(() => {
     let mounted = true;
     let observedAuth = false;
+    const initializationTimeout = setTimeout(() => {
+      if (mounted && !observedAuth) { setFailed(true); setLoading(false); }
+    }, 10000);
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_, next) => {
       observedAuth = true;
+      clearTimeout(initializationTimeout);
       if (mounted) { setSession(next); setLoading(false); setFailed(false); }
     });
-    void supabase.auth.getSession().then(({ data, error }) => {
-      if (!mounted || observedAuth) return;
-      setSession(error ? null : data.session); setFailed(Boolean(error)); setLoading(false);
-    }).catch(() => { if (mounted && !observedAuth) { setFailed(true); setLoading(false); } });
     const refresh = (state: string) => {
       if (state === 'active') supabase.auth.startAutoRefresh();
       else supabase.auth.stopAutoRefresh();
@@ -175,6 +175,7 @@ export function useSession() {
     const listener = Platform.OS !== 'web' ? AppState.addEventListener('change', refresh) : null;
     if (Platform.OS !== 'web') refresh(AppState.currentState);
     return () => {
+      clearTimeout(initializationTimeout);
       mounted = false; subscription.unsubscribe(); listener?.remove();
       if (Platform.OS !== 'web') supabase.auth.stopAutoRefresh();
     };

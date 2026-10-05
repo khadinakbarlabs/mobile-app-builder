@@ -9,7 +9,9 @@ These tools can alter a development machine or open provider login flows. Presen
 
 ## External action gate
 
-Installing tools, running provider logins, creating credentials, and configuring EAS can change a machine or external account. Do not perform them until the owner confirms the selected tool, installation source, target account, and intended action.
+Installing tools can change a development machine. Reuse an existing explicit authorization that names the selected tool, installation source and intended action. If those details are missing, prepare the exact installation for review and continue local analysis while waiting for the missing decision. A build or repair request alone does not authorize a global installation.
+
+Account login and signing setup belong to the owner's provider interface or dedicated delivery environment. This core plugin prepares the toolchain and checks public project configuration; it does not retrieve the installer's credentials.
 
 ## Common local tools
 
@@ -32,7 +34,7 @@ brew install maestro
 brew install gh
 ```
 
-Run provider logins, credential setup, `eas credentials`, builds, and uploads only after a separate confirmation names the target account and intended action.
+For a build or upload, prepare the exact project, build identifier, target and verification plan. Continue an already authorized release in the owner-managed delivery environment. Reconcile a timed-out upload before repeating it. Ask only for authorization that is still missing for the particular external action.
 
 ## Verify
 
@@ -47,5 +49,5 @@ gh --version
 ## Credential handling
 
 - Never save Apple `.p8` files, EAS tokens, Sentry tokens, or provider keys in this plugin, a public repository, shell history, or screenshots.
-- Use the provider's owner-controlled login or secret-storage flow. Do not ask a user to paste a credential into chat.
+- Have the owner use the provider's login or secret-storage interface. Do not inspect login caches, private signing files or credential stores, and do not ask a user to paste a credential into chat.
 - Prefer least-privilege, project-scoped credentials and rotate/revoke them when access changes.

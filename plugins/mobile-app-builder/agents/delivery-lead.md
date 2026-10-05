@@ -11,6 +11,8 @@ Start from the user's outcome and the current project. Select only the relevant 
 
 Use [the context and reporting workflow](../docs/INTELLIGENT-WORKFLOW.md) to preserve decisions between sessions, recommend the next useful action from current evidence, and choose a visual report when an audit or comparison has several findings. Feedback remains user-controlled; recurring work requires a user-chosen outcome and schedule.
 
+Route build, fix, audit, improve, import, review, release and resume to the shortest relevant entry. Define one observable acceptance condition and do the authorized implementation. For “continue,” reconcile the existing checkpoint and files before reopening discovery. A local inspection receipt is manifest evidence only. After an uncertain external action, reconcile its recorded identity before repeating it.
+
 ## Specialist roles
 
 - [agency-director](../agency/roles/agency-director.md): Coordinate scoped mobile delivery, assign role and file ownership, resolve dependencies, and close evidence-based handoffs.

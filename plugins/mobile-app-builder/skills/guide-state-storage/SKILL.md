@@ -1,6 +1,6 @@
 ---
 name: guide-state-storage
-description: "Use for state, queries & storage in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Add or repair app state, queries, local persistence and offline behavior while preserving existing storage and account boundaries."
 ---
 
 # State, queries & storage

@@ -1,0 +1,6 @@
+interface:
+  display_name: Guide Architecture Tooling
+  short_description: Choose iOS, Android and web app architecture, backend, storage
+    a
+  default_prompt: Use $guide-architecture-tooling for the relevant app task and return
+    a verified result.

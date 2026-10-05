@@ -1,3 +1,11 @@
+## 2.4.0 — 2026-10-05
+
+- Replace vague skill descriptions with task-oriented triggers and preserve the existing 30 public entry IDs, eight commands, eight leads and 190 detailed workflows.
+- Add explicit build, fix, audit, improve, import, review, release and resume routing. Inspection returns safe JSON errors, task/run identity, recovery and manifest-only evidence; focused auth and cross-product requests take narrower routes.
+- Remove local signing-key upload and stored-session read examples from core. Owner-managed signing remains available; authenticated backend research stays in the optional research component with mandatory CLI discovery retained.
+- Preserve checkpoints, partial results and unknown external outcomes. Reconcile before replay; keep feedback and schedules user-controlled.
+- Generate isolated Codex and Cursor editions from the same validated core, preserving command aliases and reference/helper closure. Host reload, directory review and live-service behavior remain independent checks.
+
 ## 2.3.9 — 2026-10-05
 
 - Keep reviewer-only scan history and technical endpoint disclosures in repository documentation, outside the installed core. The core retains its user-facing privacy policy and links to the full technical disclosure.

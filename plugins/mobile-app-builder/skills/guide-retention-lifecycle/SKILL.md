@@ -1,6 +1,6 @@
 ---
 name: guide-retention-lifecycle
-description: "Use for retention & lifecycle in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Improve app activation, retention and lifecycle messaging from observed journey friction and consented user feedback."
 ---
 
 # Retention & lifecycle

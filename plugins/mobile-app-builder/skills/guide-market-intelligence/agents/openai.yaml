@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Market Intelligence
+  short_description: Research Apple App Store and Google Play listings, TikTok, Insta
+  default_prompt: Use $guide-market-intelligence for the relevant app task and return
+    a verified result.

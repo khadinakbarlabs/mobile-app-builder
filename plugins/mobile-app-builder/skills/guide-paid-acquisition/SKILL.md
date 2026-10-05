@@ -1,6 +1,6 @@
 ---
 name: guide-paid-acquisition
-description: "Use for advertising & acquisition in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Research app advertising and prepare measurable Apple, Google, Meta or TikTok acquisition experiments with separate spend authorization."
 ---
 
 # Advertising & acquisition

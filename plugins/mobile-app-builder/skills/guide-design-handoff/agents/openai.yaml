@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Design Handoff
+  short_description: Turn a supplied design or prototype into implementable app scree
+  default_prompt: Use $guide-design-handoff for the relevant app task and return a
+    verified result.

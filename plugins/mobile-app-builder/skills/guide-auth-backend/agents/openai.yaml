@@ -1,0 +1,6 @@
+interface:
+  display_name: Guide Auth Backend
+  short_description: Add or fix sign-in, sessions, account deletion, backend access
+    a
+  default_prompt: Use $guide-auth-backend for the relevant app task and return a verified
+    result.

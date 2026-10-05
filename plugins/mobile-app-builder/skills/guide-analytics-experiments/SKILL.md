@@ -1,6 +1,6 @@
 ---
 name: guide-analytics-experiments
-description: "Use for analytics & experiments in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Define app activation and retention events, instrument an authorized analytics integration and design measurable experiments."
 ---
 
 # Analytics & experiments

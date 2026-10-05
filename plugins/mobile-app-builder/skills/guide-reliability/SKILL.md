@@ -1,11 +1,13 @@
 ---
 name: guide-reliability
-description: "Diagnose app performance, crashes, monitoring, runtime errors and reliability on affected devices and platforms."
+description: "Fix an existing app's crash, stuck loading state, failed request, runtime error, slow screen or broken behavior. Reproduce the affected journey, preserve its stack and verify a focused repair. Also use for app performance and monitoring work."
 ---
 
 # Performance, monitoring and reliability
 
 Choose the smallest relevant workflow. Read its detailed guide and references before acting. Separate source-backed observations from hypotheses; check current platform and store documentation when rules may have changed. Preserve the existing app and verify affected behavior.
+
+For a focused defect, inspect the failing source path and existing checks first. Reproduce the failure with the smallest meaningful check, implement the repair, and rerun that check plus any affected existing checks. For a stuck login spinner, cover both rejection and success, settle the loading state on every completed path, and preserve the app's existing error presentation. Use its current framework and session adapter; no account setup is needed for a local mocked failure. Report source checks separately from a simulator or device observation. Use the specialist guides below only when they match the actual cause or requested work.
 
 | Workflow | Platform | Detailed guide |
 | --- | --- | --- |

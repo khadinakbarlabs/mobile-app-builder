@@ -1,0 +1,6 @@
+interface:
+  display_name: Guide Platform Design
+  short_description: Apply iOS and Android design principles, accessible patterns
+    and
+  default_prompt: Use $guide-platform-design for the relevant app task and return
+    a verified result.

@@ -29,6 +29,10 @@
 
 ## Next useful move
 
+- Task ID and accepted checkpoint:
+- Completed artifacts and verification:
+- Unresolved blocker or unknown external outcome, with non-sensitive run/build ID:
+- Existing authorization and its exact scope:
 - Action:
 - Why this action:
 - What evidence would change the recommendation:

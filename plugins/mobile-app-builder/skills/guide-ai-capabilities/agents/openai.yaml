@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Ai Capabilities
+  short_description: Add or repair on-device AI and hosted model features with stream
+  default_prompt: Use $guide-ai-capabilities for the relevant app task and return
+    a verified result.

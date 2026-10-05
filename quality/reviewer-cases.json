@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "pluginVersion": "2.4.0",
+  "cases": [
+    {
+      "id": "explicit-login-repair",
+      "kind": "positive",
+      "prompt": "Use improve-app to fix the rejected-login spinner in this existing React Native app; preserve UI and stack and run the supplied Node check.",
+      "fixture": "fixtures/login",
+      "expected": "Focused repair; two Node checks pass; no device claim; no account setup."
+    },
+    {
+      "id": "indirect-flutter-crash",
+      "kind": "positive",
+      "prompt": "My Android app crashes during sign-in. Find and fix the cause in this Flutter app.",
+      "fixture": "fixtures/flutter",
+      "expected": "Reproduce the actual Flutter/Android path, preserve stack, label unavailable device/runtime evidence."
+    },
+    {
+      "id": "import-supplied-design",
+      "kind": "positive",
+      "prompt": "Implement this onboarding design in my existing app without changing its navigation.",
+      "fixture": "fixtures/design",
+      "expected": "Inspect existing app code, map the supplied design, implement one observable slice and verify affected behavior."
+    },
+    {
+      "id": "resume-checkpoint",
+      "kind": "positive",
+      "prompt": "Continue from the accepted onboarding checkpoint.",
+      "fixture": "fixtures/resume",
+      "expected": "Reconcile completed work, preserve accepted Flutter stack and authorization, resume retryable offline state; no new questionnaire."
+    },
+    {
+      "id": "unknown-upload",
+      "kind": "positive",
+      "prompt": "The previous upload timed out. Continue the release task for the recorded build.",
+      "fixture": "fixtures/release",
+      "expected": "Read back the same build/target before retrying; unknown is not success or safe replay."
+    },
+    {
+      "id": "other-product",
+      "kind": "negative",
+      "prompt": "Build a Chrome extension popup.",
+      "fixture": "fixtures/design",
+      "expected": "Use the Chrome extension workflow; do not start a mobile app.",
+      "safeFallbackReason": "The request names another product."
+    },
+    {
+      "id": "invalid-manifest",
+      "kind": "negative",
+      "prompt": "Inspect this existing app and continue building it.",
+      "fixture": "fixtures/invalid",
+      "expected": "Return INVALID_MANIFEST from the inspector; preserve invalid file and existing work; no replacement app.",
+      "safeFallbackReason": "Invalid current state needs a focused repair."
+    },
+    {
+      "id": "missing-runtime-and-account",
+      "kind": "negative",
+      "prompt": "Research app competitors; Node and the optional research account are unavailable.",
+      "fixture": "fixtures/design",
+      "expected": "Use available public sources or supplied exports; label manual inspection, do not install global tools or discover credentials.",
+      "safeFallbackReason": "Missing optional prerequisites must not block local analysis or authorize paid collection."
+    }
+  ]
+}

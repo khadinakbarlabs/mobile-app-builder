@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-05T19:03:22.610797+00:00",
+  "pluginVersion": "2.4.0",
+  "inspectorVersion": "1.1.0",
+  "baselineCommit": "a98b3568f58c44f3d144ee27d763a9883c8c1821",
+  "checks": {
+    "regressions": {
+      "status": "Passed",
+      "passed": 42,
+      "total": 42
+    },
+    "pluginBuilder": {
+      "status": "Passed",
+      "errors": 0,
+      "warnings": 0
+    },
+    "claudeStrictManifestValidation": {
+      "status": "Passed",
+      "cliVersion": "2.1.287"
+    },
+    "codexDiscovery": {
+      "status": "Passed",
+      "cliVersion": "0.146.0",
+      "exposed": 38,
+      "expected": 38
+    },
+    "claudeDiscovery": {
+      "status": "Passed",
+      "cliVersion": "2.1.287",
+      "skillsAndCommands": 38,
+      "agents": 8
+    },
+    "cursorExposure": {
+      "status": "Passed",
+      "version": "2.4.0",
+      "skills": 30,
+      "commands": 8,
+      "agents": 8,
+      "method": "Customize UI"
+    },
+    "deviceOrSimulator": {
+      "status": "Not run"
+    },
+    "authenticatedResearch": {
+      "status": "Not run"
+    },
+    "claudeModelEvaluation": {
+      "status": "Blocked",
+      "reason": "Claude Code is not signed in"
+    }
+  },
+  "comparison": {
+    "fixture": "login",
+    "host": "Codex CLI",
+    "hostVersion": "0.146.0",
+    "modelObserved": "gpt-5.6-sol",
+    "configuredModelAttempt": {
+      "model": "gpt-6.1-sol",
+      "status": "Blocked",
+      "reason": "Unsupported by the stock CLI with the current account"
+    },
+    "completedCasesPerConfiguration": 1,
+    "enabled": {
+      "outcome": "Passed",
+      "checksPassed": 2,
+      "checksTotal": 2,
+      "unnecessaryQuestions": 0,
+      "seconds": 53.5972484,
+      "skillSelection": "Not observed"
+    },
+    "disabled": {
+      "outcome": "Passed",
+      "checksPassed": 2,
+      "checksTotal": 2,
+      "unnecessaryQuestions": 0,
+      "seconds": 59.1829688
+    },
+    "qualityImprovement": "Not established",
+    "limitations": [
+      "One synthetic mocked async login fixture; no rendered React Native UI or device.",
+      "Both runs repaired the same defect with the same test outcomes.",
+      "Different output modes and a baseline path-alias recovery confound timing.",
+      "The enabled run did not visibly read a plugin skill, so this is configuration-level evidence, not verified plugin attribution.",
+      "No model cost measurement; no statistical conclusion.",
+      "Ignoring user configuration also suppresses plugin exposure in this CLI; the enabled flag alone is insufficient proof of a loaded plugin."
+    ]
+  },
+  "cases": [
+    {
+      "id": "explicit-login-repair",
+      "kind": "positive",
+      "modelEvaluationStatus": "Blocked",
+      "evidence": "Exact explicit invocation selected and read the installed plugin, but the configured-host run timed out. Isolated fallback completed the two fixture checks without exposing the plugin. The earlier comparison completed a prompt variant in both configurations."
+    },
+    {
+      "id": "indirect-flutter-crash",
+      "kind": "positive",
+      "modelEvaluationStatus": "Not run",
+      "evidence": "Manifest-level Flutter fix routing passed; no Flutter crash reproduction or native-model evaluation."
+    },
+    {
+      "id": "import-supplied-design",
+      "kind": "positive",
+      "modelEvaluationStatus": "Not run",
+      "evidence": "Fixture and expected journey prepared; implementation evaluation not executed."
+    },
+    {
+      "id": "resume-checkpoint",
+      "kind": "positive",
+      "modelEvaluationStatus": "Not run",
+      "evidence": "Explicit resume routing and checkpoint guidance checked; full session continuation not evaluated."
+    },
+    {
+      "id": "unknown-upload",
+      "kind": "positive",
+      "modelEvaluationStatus": "Not run",
+      "evidence": "Reconciliation instructions reviewed; no external upload/retry performed."
+    },
+    {
+      "id": "other-product",
+      "kind": "negative",
+      "modelEvaluationStatus": "Not run",
+      "evidence": "Deterministic helper rejects mobile routing for a Chrome extension; native-model selection not evaluated."
+    },
+    {
+      "id": "invalid-manifest",
+      "kind": "negative",
+      "modelEvaluationStatus": "Not run",
+      "evidence": "Deterministic helper returns safe INVALID_MANIFEST and preserves the file; native-model recovery not evaluated."
+    },
+    {
+      "id": "missing-runtime-and-account",
+      "kind": "negative",
+      "modelEvaluationStatus": "Not run",
+      "evidence": "Manual/account-free fallback instructions reviewed; full missing-runtime model case not evaluated."
+    }
+  ],
+  "publication": {
+    "github": "Not yet pushed at evaluation checkpoint",
+    "anthropic": "Fresh-version scan required; earlier version remains in review",
+    "openai": "Existing review must be preserved; latest portal readback required"
+  },
+  "explicitInvocation": {
+    "host": "Codex CLI 0.146.0",
+    "model": "gpt-5.6-sol",
+    "configuration": "Existing user configuration with unrelated plugins disabled",
+    "selectionStatus": "Passed",
+    "selectedAndRead": [
+      "mobile-app-builder:improve-app",
+      "mobile-app-builder:guide-reliability"
+    ],
+    "completionStatus": "Blocked",
+    "reason": "The bounded 180-second run did not complete; repeated host hook failures were observed. No completed outcome is claimed."
+  },
+  "isolatedFallback": {
+    "status": "Passed",
+    "seconds": 45.868301750015235,
+    "checksPassed": 2,
+    "checksTotal": 2,
+    "pluginAvailability": "Unavailable with --ignore-user-config; the model explicitly disclosed this and repaired locally",
+    "attribution": "No plugin effect established"
+  }
+}

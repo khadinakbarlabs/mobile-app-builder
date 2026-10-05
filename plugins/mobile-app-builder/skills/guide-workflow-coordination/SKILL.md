@@ -1,6 +1,6 @@
 ---
 name: guide-workflow-coordination
-description: "Coordinate new or existing app work across research, design, development, QA, launch and growth with clear owners, handoffs and evidence."
+description: "Resume an app task, audit or review a change, import a supplied artifact, or coordinate a focused build, fix or release in the existing stack."
 ---
 
 # Coordination & workflow

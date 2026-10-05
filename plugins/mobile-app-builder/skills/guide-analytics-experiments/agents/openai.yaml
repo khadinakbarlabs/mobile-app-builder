@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Analytics Experiments
+  short_description: Define app activation and retention events, instrument an author
+  default_prompt: Use $guide-analytics-experiments for the relevant app task and return
+    a verified result.

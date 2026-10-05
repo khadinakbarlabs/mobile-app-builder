@@ -1,6 +1,6 @@
 ---
 name: guide-build-signing
-description: "Use for builds & signing in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Diagnose iOS and Android build failures and prepare owner-managed signing without opening local private keys."
 ---
 
 # Builds & signing

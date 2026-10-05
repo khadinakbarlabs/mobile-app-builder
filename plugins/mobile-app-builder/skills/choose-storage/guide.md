@@ -19,8 +19,9 @@ Pick the right Expo storage primitive.
 ```ts
 import * as SecureStore from 'expo-secure-store';
 await SecureStore.setItemAsync('authToken', token);
-const token = await SecureStore.getItemAsync('authToken');
 ```
+
+Here `token` is an explicit value from the consuming app's sign-in flow. Retrieval belongs to that app's session adapter, with missing-value, invalidation and sign-out tests; follow [the SecureStore API](https://docs.expo.dev/versions/latest/sdk/securestore/) for the project's SDK. The plugin never extracts an installer's stored credentials or a real app session for diagnostics.
 
 ## MMKV
 ```bash

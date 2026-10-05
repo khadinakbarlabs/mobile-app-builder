@@ -1,6 +1,6 @@
 ---
 name: guide-design-handoff
-description: "Use for design-to-code handoff in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Turn a supplied design or prototype into implementable app screens, components, states and acceptance checks."
 ---
 
 # Design-to-code handoff

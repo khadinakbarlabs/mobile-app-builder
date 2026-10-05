@@ -9,7 +9,7 @@ Three default profiles + how to extend them.
 
 ## Credential and external action gate
 
-Editing a local profile is safe. Creating EAS environment variables, reading or storing credentials, starting a cloud build, or changing a project setting is external and may incur cost. Obtain owner confirmation of the exact EAS account, project, environment, variable classification, and action first. Never place a server secret in an `EXPO_PUBLIC_*` variable or commit it to `eas.json`.
+Editing a local profile is safe. Account configuration and cloud builds belong to the owner's delivery environment and may incur cost. Reuse valid authorization for the exact EAS account, project, environment, variable classification and action; obtain only missing decisions. Core does not read installer credentials or private signing files. Have the owner configure private values in the provider interface. Never place a server secret in an `EXPO_PUBLIC_*` variable or commit it to `eas.json`.
 
 ## Default 3 profiles
 - **development** — `developmentClient: true`, `distribution: internal`. Dev tools enabled. Install dev client on physical iPhone.
@@ -46,11 +46,7 @@ Editing a local profile is safe. Creating EAS environment variables, reading or 
 - Use `m-large` only if `m-medium` is bottlenecking your dev cycle
 
 ## Environment variables — single source of truth
-Use **EAS Environment Variables** (web dashboard or `eas env:create`), not `eas.json`. Scoped to development/preview/production. Create them only after the owner approves the project and variable classification.
-
-```bash
-eas env:create --scope project --environment production --name SENTRY_DSN --value "<owner-managed-value>"
-```
+Use **EAS Environment Variables** in the owner-managed web dashboard, scoped to development/preview/production. Prepare the variable name, classification and consuming build environment locally; the owner enters private values directly in the provider interface. Keep non-sensitive public application configuration in the local profile when appropriate.
 
 Three visibility levels:
 - **Plaintext** — visible in UI/logs

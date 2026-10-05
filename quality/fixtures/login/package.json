@@ -1,0 +1,1 @@
+{"name": "synthetic-rn-app", "type": "module", "dependencies": {"react-native": "0.81.0"}, "scripts": {"test": "node --test tests/login.test.mjs"}}

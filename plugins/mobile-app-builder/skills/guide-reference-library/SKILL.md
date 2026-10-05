@@ -1,6 +1,6 @@
 ---
 name: guide-reference-library
-description: "Use for technical reference library in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Find a specific preserved mobile workflow, SDK reference, platform guide or CLI resource without loading the full library."
 ---
 
 # Technical reference library

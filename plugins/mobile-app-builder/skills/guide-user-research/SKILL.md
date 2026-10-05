@@ -1,6 +1,6 @@
 ---
 name: guide-user-research
-description: "Use for user research in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Plan user interviews, synthesize supplied feedback and test app usability with clear questions, consent and evidence limits."
 ---
 
 # User research

@@ -8,12 +8,38 @@ Use this operating guide with any Mobile App Builder command or lead agent. Its 
 2. For an existing repository, read its instructions and inspect only the relevant code, manifests, recent changes and available evidence. The optional local helper can provide a small manifest snapshot:
 
    ```text
-   node scripts/inspect-project.mjs /path/to/app --goal "the user's outcome"
+   node scripts/inspect-project.mjs /path/to/app --goal "Fix the login error" --intent fix --task-id login-repair
    ```
 
    The helper reads only selected public project manifests, never environment files, source contents, analytics accounts or credentials. Its output is a starting clue, not proof that a platform builds or a feature works. For an idea without a repository, skip it.
 3. Choose the smallest relevant entry skill and detailed guide. Add another lead only when a handoff is needed. The eight commands are shortcuts, not a fixed process everyone must follow.
 4. Take authorized, reversible steps that move the request forward. Ask one concise question only when a missing answer changes the next dependent action.
+
+## Take the shortest route
+
+These routes share the same public skills and command shortcuts. They do not add new mandatory stages. Use the actual request over the inspector's keyword hint. A focused fix does not need market research, onboarding questions or a new architecture proposal.
+
+| Request | First useful result | Relevant entry |
+| --- | --- | --- |
+| Build a feature | One working slice with affected checks; choose auth, storage, native or UI guidance by the feature | `build-app` |
+| Fix a crash or regression | Reproduction, focused repair and the check that would catch it again | `guide-reliability`, `improve-app` |
+| Audit the app | Prioritized findings supported by current files or observed behavior; implement fixes within the requested scope | `test-app` |
+| Improve a journey | One observed friction removed and verified in the existing design | `improve-app` |
+| Import a design or artifact | A mapped, reviewable adaptation that preserves working app behavior | `guide-design-handoff`, `guide-workflow-coordination` |
+| Review a change | Actionable findings and affected evidence without unrelated edits | `guide-workflow-coordination` |
+| Release a candidate | Exact build/commit, verification gaps and authorized target action | `launch-app` |
+| Continue | The next unresolved checkpoint reconciled with current files | `guide-workflow-coordination` |
+| Research an idea | One product decision supported by public evidence or a supplied export | `research-app` |
+
+For Chrome extensions, Shopify apps or text processing, use the corresponding product workflow rather than creating a mobile app. Follow explicit user skill selection; do not override it because a keyword matches another route.
+
+## Use an execution receipt
+
+The inspector requires an available Node.js runtime; check its version in the host before use. Do not silently install a global runtime. If it is unavailable, inspect the selected public markers manually and label that evidence. The inspector executes no project code, contacts no service and creates no persistent state. Its [execution contract](EXECUTION-CONTRACT.md) describes input limits, identity, safe errors and recovery. Preserve the receipt's task ID with the existing checkpoint when continuity is useful.
+
+Choose one acceptance condition before editing: for example, the failed login displays a retryable error without blocking the app. Inspect available test scripts before executing them; a manifest's script name is not proof of a safe or installed executable. Apply the app's own toolchain and current platform documentation. For an Android-only defect in a Flutter app, start with the failing Flutter/Android path; do not migrate to Expo or test unrelated store flows.
+
+After a potentially external timeout, mark the outcome **unknown** and read back the same build, submission or research run ID before retrying. Bound status checks to three attempts per task, spaced according to provider guidance, then keep a continuation point. Limit paid research by both records and an approved financial ceiling using the research component; a record limit alone is not a cost limit. Preserve partial results and their source IDs, timestamps, missing fields and conflicts. Never describe replay as safe without provider support.
 
 ## Carry context across sessions
 
@@ -28,6 +54,8 @@ Use the project's existing issue, brief or planning file where one exists. Other
 | Current task | Outcome, constraints, acceptance and authorized scope |
 | Verification | Source commit, tests, build, device, deployed URL and store state separately |
 | Next action | One recommended move, why it matters and what would change it |
+
+For “continue,” use the task ID, last accepted checkpoint, completed artifacts, unresolved blocker and next action. Reconcile the recorded commit and files first. Preserve valid authorization for the same scope; request a new decision only when the account, cost, target or consequential action has changed. If no checkpoint exists, reconstruct the task from available context before asking the user to repeat it.
 
 Read this card and current repository evidence on later tasks. Never treat a stale card as current device, analytics, store or build proof. Update only decision-relevant facts. Keep transcripts, tokens, raw customer records, private datasets and undisclosed telemetry out of it. Do not silently publish the card.
 

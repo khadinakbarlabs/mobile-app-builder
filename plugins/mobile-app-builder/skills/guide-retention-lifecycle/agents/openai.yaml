@@ -1,0 +1,6 @@
+interface:
+  display_name: Guide Retention Lifecycle
+  short_description: Improve app activation, retention and lifecycle messaging from
+    o
+  default_prompt: Use $guide-retention-lifecycle for the relevant app task and return
+    a verified result.

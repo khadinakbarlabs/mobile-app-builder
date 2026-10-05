@@ -1,6 +1,6 @@
 ---
 name: guide-market-discovery
-description: "Use for markets & demand in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Research a new app idea, validate the user problem and demand evidence, and define the first useful MVP before choosing infrastructure."
 ---
 
 # Markets & demand

@@ -1,6 +1,6 @@
 ---
 name: guide-competitor-intelligence
-description: "Use for competitors & reviews in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Compare app competitors, store listings and user reviews to find unmet needs, positioning gaps and verifiable feature evidence."
 ---
 
 # Competitors & reviews

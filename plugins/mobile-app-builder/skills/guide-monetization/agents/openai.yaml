@@ -1,0 +1,6 @@
+interface:
+  display_name: Guide Monetization
+  short_description: Choose app pricing, subscriptions or freemium boundaries from
+    us
+  default_prompt: Use $guide-monetization for the relevant app task and return a verified
+    result.

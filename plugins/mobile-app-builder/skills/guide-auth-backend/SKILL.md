@@ -1,6 +1,6 @@
 ---
 name: guide-auth-backend
-description: "Use for authentication & backend in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Add or fix sign-in, sessions, account deletion, backend access and authorization in the existing app stack."
 ---
 
 # Authentication & backend

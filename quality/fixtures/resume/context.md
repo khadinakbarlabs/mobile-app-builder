@@ -1,0 +1,1 @@
+Task onboarding-01. Accepted stack: Flutter. Completed: form validation. Blocker: device unavailable. Next action: implement retryable offline state. Authorized: local source edits and checks only. No deployment or paid research.

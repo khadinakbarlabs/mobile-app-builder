@@ -1,6 +1,6 @@
 ---
 name: guide-native-extensions
-description: "Use for native platform extensions in iOS, Android or web app work. Match the user's actual platform and task before opening a detailed guide."
+description: "Implement platform-specific widgets, watch features, app clips, live activities, shortcuts and native Android services."
 ---
 
 # Native platform extensions

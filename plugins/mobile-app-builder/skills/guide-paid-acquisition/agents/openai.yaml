@@ -1,0 +1,6 @@
+interface:
+  display_name: Guide Paid Acquisition
+  short_description: Research app advertising and prepare measurable Apple, Google,
+    M
+  default_prompt: Use $guide-paid-acquisition for the relevant app task and return
+    a verified result.

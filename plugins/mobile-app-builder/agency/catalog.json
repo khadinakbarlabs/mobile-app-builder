@@ -899,7 +899,7 @@
     },
     {
       "id": "build-cancellation-flow",
-      "description": "Build a cancellation / churn-interception flow with an exit survey, reason-matched save offers, and graceful exit — preserving rating and recovering 10–35% of cancellations. Use when the user says 'cancellation flow', 'cancel survey', 'save offer', 'prevent churn', 'subscription cancel', 'downgrade flow', or 'retention offer'.",
+      "description": "Build a cancellation / churn-interception flow with an exit survey, reason-matched save offers, and graceful exit \u2014 preserving rating and recovering 10\u201335% of cancellations. Use when the user says 'cancellation flow', 'cancel survey', 'save offer', 'prevent churn', 'subscription cancel', 'downgrade flow', or 'retention offer'.",
       "path": "skills/build-cancellation-flow/guide.md",
       "platform": "shared",
       "department": "growth",
@@ -908,7 +908,7 @@
     },
     {
       "id": "build-creator-program",
-      "description": "Build a creator-led TikTok/Reels/Shorts marketing program — the Cal AI acquisition model (seed organic creators, repurpose top-performing organic content as paid Spark Ads). Use when the user says 'creator marketing', 'influencer program', 'TikTok growth', 'UGC program', 'Spark Ads', 'creator deals', or wants app growth via creators.",
+      "description": "Build a creator-led TikTok/Reels/Shorts marketing program \u2014 the Cal AI acquisition model (seed organic creators, repurpose top-performing organic content as paid Spark Ads). Use when the user says 'creator marketing', 'influencer program', 'TikTok growth', 'UGC program', 'Spark Ads', 'creator deals', or wants app growth via creators.",
       "path": "skills/build-creator-program/guide.md",
       "platform": "shared",
       "department": "growth",
@@ -935,7 +935,7 @@
     },
     {
       "id": "build-web-app",
-      "description": "Build and verify responsive web experiences alongside iOS and Android, preserving the current stack and product direction.",
+      "description": "Build, improve and verify the web experience of an iOS, Android and web app. Use for responsive browser UI, web routes, static exports, accessibility, SEO, progressive web capabilities or a browser-specific bug in an existing app.",
       "path": "skills/build-web-app/guide.md",
       "platform": "web",
       "department": "engineering",
@@ -971,7 +971,7 @@
     },
     {
       "id": "code-signing",
-      "description": "Manage iOS code signing: ASC API key, Distribution Certificate, Provisioning Profiles via EAS managed credentials. Use when the user says 'code signing', 'provisioning profile', 'distribution certificate', 'ASC API key'.",
+      "description": "Prepare iOS certificates, provisioning profiles, entitlements and owner-managed signing recovery for the selected app. Use for code signing, expired profiles or App Store Connect key setup.",
       "path": "skills/code-signing/guide.md",
       "platform": "ios",
       "department": "launch",
@@ -980,7 +980,7 @@
     },
     {
       "id": "code-signing-android",
-      "description": "Manage Android signing keys: upload key (you), signing key (Play), keystore generation, EAS credentials, SHA hash extraction. Use when the user says 'android signing', 'keystore', 'signing key android'.",
+      "description": "Prepare Android upload signing, Play App Signing and public certificate fingerprints without reading private keystores. Use for signing failures, Firebase fingerprints or upload-key recovery.",
       "path": "skills/code-signing-android/guide.md",
       "platform": "android",
       "department": "launch",
@@ -1205,7 +1205,7 @@
     },
     {
       "id": "design-lifecycle-messaging",
-      "description": "Design the cross-channel (push + email + in-app) lifecycle messaging cadence that drives retention without spamming — frequency capping, first-72-hours, re-engagement, and win-back coordination. Use when the user says 'lifecycle messaging', 'retention emails', 'push cadence', 're-engagement', 'frequency capping', 'onboarding emails', or 'lifecycle automation'.",
+      "description": "Design the cross-channel (push + email + in-app) lifecycle messaging cadence that drives retention without spamming \u2014 frequency capping, first-72-hours, re-engagement, and win-back coordination. Use when the user says 'lifecycle messaging', 'retention emails', 'push cadence', 're-engagement', 'frequency capping', 'onboarding emails', or 'lifecycle automation'.",
       "path": "skills/design-lifecycle-messaging/guide.md",
       "platform": "shared",
       "department": "growth",
@@ -1214,7 +1214,7 @@
     },
     {
       "id": "design-onboarding-funnel",
-      "description": "Design onboarding as a conversion sales funnel (the Cal AI / Jake Castillo pattern) — the deliberate alternative to activation-first onboarding. Use when the user says 'high-converting onboarding', 'sales funnel onboarding', 'quiz onboarding', 'personalization onboarding', 'Cal AI style onboarding', or wants to maximize trial-start and trial-to-paid conversion.",
+      "description": "Design onboarding as a conversion sales funnel (the Cal AI / Jake Castillo pattern) \u2014 the deliberate alternative to activation-first onboarding. Use when the user says 'high-converting onboarding', 'sales funnel onboarding', 'quiz onboarding', 'personalization onboarding', 'Cal AI style onboarding', or wants to maximize trial-start and trial-to-paid conversion.",
       "path": "skills/design-onboarding-funnel/guide.md",
       "platform": "shared",
       "department": "design",
@@ -1259,7 +1259,7 @@
     },
     {
       "id": "design-retention-loop",
-      "description": "Design the habit-forming retention loop that moves D1/D7/D30 retention — the Hook Model, streaks, investments, daily-use triggers. Use when the user says 'retention', 'D1 retention', 'habit-forming', 'streaks', 'stickiness', 'keep users coming back', 'DAU/MAU', or wants to stop the greater than 90%-churn-by-day-30 problem.",
+      "description": "Design the habit-forming retention loop that moves D1/D7/D30 retention \u2014 the Hook Model, streaks, investments, daily-use triggers. Use when the user says 'retention', 'D1 retention', 'habit-forming', 'streaks', 'stickiness', 'keep users coming back', 'DAU/MAU', or wants to stop the greater than 90%-churn-by-day-30 problem.",
       "path": "skills/design-retention-loop/guide.md",
       "platform": "shared",
       "department": "growth",
@@ -1286,7 +1286,7 @@
     },
     {
       "id": "design-shareable-result-card",
-      "description": "Design and implement a shareable result card that turns an in-app outcome into organic marketing — the Wordle grid / Cal AI calorie card / Spotify Wrapped pattern. Use when the user says 'shareable card', 'viral share', 'Instagram Story share', 'result card', 'share image', 'make my app viral', or wants organic word-of-mouth.",
+      "description": "Design and implement a shareable result card that turns an in-app outcome into organic marketing \u2014 the Wordle grid / Cal AI calorie card / Spotify Wrapped pattern. Use when the user says 'shareable card', 'viral share', 'Instagram Story share', 'result card', 'share image', 'make my app viral', or wants organic word-of-mouth.",
       "path": "skills/design-shareable-result-card/guide.md",
       "platform": "shared",
       "department": "design",
@@ -1304,7 +1304,7 @@
     },
     {
       "id": "design-viral-loop",
-      "description": "Design a viral growth loop with a measurable viral coefficient (K-factor), give-get referrals, and invite-to-unlock mechanics — the Dropbox/Wordle/Duolingo pattern. Use when the user says 'viral coefficient', 'K-factor', 'referral mechanic', 'give-get', 'invite-to-unlock', 'make my app go viral', or wants engineered word-of-mouth.",
+      "description": "Design a viral growth loop with a measurable viral coefficient (K-factor), give-get referrals, and invite-to-unlock mechanics \u2014 the Dropbox/Wordle/Duolingo pattern. Use when the user says 'viral coefficient', 'K-factor', 'referral mechanic', 'give-get', 'invite-to-unlock', 'make my app go viral', or wants engineered word-of-mouth.",
       "path": "skills/design-viral-loop/guide.md",
       "platform": "shared",
       "department": "growth",
@@ -1574,7 +1574,7 @@
     },
     {
       "id": "instrument-growth-funnel",
-      "description": "Instrument the full mobile growth funnel — install → activate → trial → convert → retain → refer — with the right events, cohort analysis, and the 2026 RevenueCat benchmarks to beat. Use when the user says 'what should I track', 'analytics events', 'growth metrics', 'funnel tracking', 'cohort analysis', 'instrumentation', 'KPI dashboard', or 'how do I measure my app'.",
+      "description": "Instrument the full mobile growth funnel \u2014 install \u2192 activate \u2192 trial \u2192 convert \u2192 retain \u2192 refer \u2014 with the right events, cohort analysis, and the 2026 RevenueCat benchmarks to beat. Use when the user says 'what should I track', 'analytics events', 'growth metrics', 'funnel tracking', 'cohort analysis', 'instrumentation', 'KPI dashboard', or 'how do I measure my app'.",
       "path": "skills/instrument-growth-funnel/guide.md",
       "platform": "shared",
       "department": "growth",
@@ -1997,7 +1997,7 @@
     },
     {
       "id": "run-paid-acquisition",
-      "description": "Run paid acquisition for a mobile app — Apple Search Ads (intent capture), TikTok Spark Ads (demand generation from creator content), and Meta Advantage+ app campaigns. Use when the user says 'Apple Search Ads', 'ASA', 'TikTok ads', 'Spark Ads', 'Meta app install ads', 'paid acquisition', 'paid CPI', 'app install campaign', or 'user acquisition'.",
+      "description": "Run paid acquisition for a mobile app \u2014 Apple Search Ads (intent capture), TikTok Spark Ads (demand generation from creator content), and Meta Advantage+ app campaigns. Use when the user says 'Apple Search Ads', 'ASA', 'TikTok ads', 'Spark Ads', 'Meta app install ads', 'paid acquisition', 'paid CPI', 'app install campaign', or 'user acquisition'.",
       "path": "skills/run-paid-acquisition/guide.md",
       "platform": "shared",
       "department": "growth",
@@ -2006,7 +2006,7 @@
     },
     {
       "id": "set-up-ab-testing",
-      "description": "Set up A/B testing infrastructure for an Expo/React Native app — the single most-cited growth lever (Cal AI ran 5 real experiments/month across 46 trigger points). Use when the user says 'A/B testing', 'experiment', 'split test', 'feature flag', 'experimentation', 'test paywall variants', or 'optimize conversion'.",
+      "description": "Set up A/B testing infrastructure for an Expo/React Native app \u2014 the single most-cited growth lever (Cal AI ran 5 real experiments/month across 46 trigger points). Use when the user says 'A/B testing', 'experiment', 'split test', 'feature flag', 'experimentation', 'test paywall variants', or 'optimize conversion'.",
       "path": "skills/set-up-ab-testing/guide.md",
       "platform": "shared",
       "department": "growth",

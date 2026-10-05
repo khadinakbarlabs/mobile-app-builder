@@ -230,17 +230,17 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "7b622cdca8db20422479218e5b96f9965034d19c3860ff78b8e5b8868c8289a5",
+      "targetSha256": "9469c26e9537778d611bc04e33834ba5c46d368e7812b2a92aaa96278650d83f",
       "status": "adapted",
-      "reason": "Updated installed metadata or links for version 2.3.9; source provenance remains preserved."
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "b383a3f74d55f3d41c32c367da17805be0857023e0bb9347e80b305e5537e243",
+      "targetSha256": "2fa69e7366c34ef9d87c33b89c058d09ad8289b8d49e8d76703ad0e993d9c9f2",
       "status": "adapted",
-      "reason": "Updated installed metadata or links for version 2.3.9; source provenance remains preserved."
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "LICENSE",
@@ -302,9 +302,9 @@
       "source": "agency/catalog.json",
       "sourceSha256": "c5df5fcdcb94c4f5bb9caa91432830f525b0d1173a9dce2412492ab19e81d6ba",
       "target": "plugins/mobile-app-builder/agency/catalog.json",
-      "targetSha256": "69293fd4284be65630dcbe2cbcb1b83cca5869b8fd0f03b8b2ddfee6da8be6e0",
+      "targetSha256": "49b87d60108011abb9c2c9ef461b2cb82d6b1c82a68eb4f43ee4bbd47734abc8",
       "status": "adapted",
-      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "agency/taxonomy.json",
@@ -590,9 +590,9 @@
       "source": "scripts/agency-runtime.mjs",
       "sourceSha256": "36fbba12a7eece98b295bdd853b8d41ee5ec158bd2b90c58a9fb0274d5d58603",
       "target": "plugins/mobile-app-builder/scripts/agency-runtime.mjs",
-      "targetSha256": "f5ca314d823755fece0423f44cfc938c22d47ad156de9610750c3e6ee0a19465",
+      "targetSha256": "020f07e610b7097133ad129b468812f258e5622d20168423b50ccdd99c2986ca",
       "status": "adapted",
-      "reason": "Guide retained with local links adjusted for consolidated entry points."
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "scripts/agency.mjs",
@@ -614,9 +614,9 @@
       "source": "skills/5-1-2-i-ai-disclosure/SKILL.md",
       "sourceSha256": "d52338cd200c20ee4213f33973d2e2089a5837d64d4d59b86a79d74fec9aa65a",
       "target": "plugins/mobile-app-builder/skills/5-1-2-i-ai-disclosure/guide.md",
-      "targetSha256": "d52338cd200c20ee4213f33973d2e2089a5837d64d4d59b86a79d74fec9aa65a",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "3d2434381ea331bfa9103ad0d7167d79223ed28115657fae6ae2ffe2b90e1429",
+      "status": "adapted",
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "skills/5-1-2-i-ai-disclosure/references/06-store-readiness.md",
@@ -830,9 +830,9 @@
       "source": "skills/add-expo-secure-store/SKILL.md",
       "sourceSha256": "9e300318899477e1973566276bae390f02aeeae056d7efc1ad1d0797fb1c7d15",
       "target": "plugins/mobile-app-builder/skills/add-expo-secure-store/guide.md",
-      "targetSha256": "9e300318899477e1973566276bae390f02aeeae056d7efc1ad1d0797fb1c7d15",
+      "targetSha256": "8d1b5c36fab801d7178871afae2c0b341c903431b929e1ee8c936fde8a6cf6b4",
       "status": "adapted",
-      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "skills/add-expo-secure-store/references/01-expo-sdk-54.md",
@@ -846,9 +846,9 @@
       "source": "skills/add-expo-secure-store-keystore/SKILL.md",
       "sourceSha256": "763e245c1281b67eacc8d4fe5dcbcaeb37489766a154ba08c1881a7c7e0f42b2",
       "target": "plugins/mobile-app-builder/skills/add-expo-secure-store-keystore/guide.md",
-      "targetSha256": "763e245c1281b67eacc8d4fe5dcbcaeb37489766a154ba08c1881a7c7e0f42b2",
+      "targetSha256": "caf9e5b3329c8a58972584b12b5c589cd88a1fbe372320b7cb18329745e09e7b",
       "status": "adapted",
-      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "skills/add-firebase-android/SKILL.md",
@@ -1038,9 +1038,9 @@
       "source": "skills/add-supabase-auth/SKILL.md",
       "sourceSha256": "5edd4782c82a6de0f9cc8e70502f384c385cd309b394a2ac57ab2825e97359fe",
       "target": "plugins/mobile-app-builder/skills/add-supabase-auth/guide.md",
-      "targetSha256": "5edd4782c82a6de0f9cc8e70502f384c385cd309b394a2ac57ab2825e97359fe",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "d8502fd5b5ff99390b696954084d866b4f41a6d4ff00f4c559aee6b025645776",
+      "status": "adapted",
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "skills/add-supabase-auth-android/SKILL.md",
@@ -1422,17 +1422,17 @@
       "source": "skills/choose-storage/SKILL.md",
       "sourceSha256": "78fecae385efe39329409d93bae5bcfe235c43c9c33ec12c7e6c585ed219f58e",
       "target": "plugins/mobile-app-builder/skills/choose-storage/guide.md",
-      "targetSha256": "78fecae385efe39329409d93bae5bcfe235c43c9c33ec12c7e6c585ed219f58e",
+      "targetSha256": "6a2c3e9e09c7bf695fcd0091de93cedb70adc15841edff42fa281a81803150bc",
       "status": "adapted",
-      "reason": "Restored useful installed guidance after controlled directory scans did not change the credential warning."
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "skills/code-signing/SKILL.md",
       "sourceSha256": "1ba92472d96edf1ac9103090d6e2216ed81eb7737c2328cf487cd5c0b64da82c",
       "target": "plugins/mobile-app-builder/skills/code-signing/guide.md",
-      "targetSha256": "1ba92472d96edf1ac9103090d6e2216ed81eb7737c2328cf487cd5c0b64da82c",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "0eaec4aae6e78500ee72238780f17f1690c00727e9ea025cac2d35e290e71f1d",
+      "status": "adapted",
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "skills/code-signing/references/02-eas-pipeline.md",
@@ -1446,9 +1446,9 @@
       "source": "skills/code-signing-android/SKILL.md",
       "sourceSha256": "7cfb3faa6b9d8abc3152d8c892f6f483420effddd816ec46efef79bd72f6181d",
       "target": "plugins/mobile-app-builder/skills/code-signing-android/guide.md",
-      "targetSha256": "7cfb3faa6b9d8abc3152d8c892f6f483420effddd816ec46efef79bd72f6181d",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "8b1fc6417f3743376585d1760af807f059a4a01ac371818a22767f7f749b9fe9",
+      "status": "adapted",
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "skills/command-aso-pass/SKILL.md",
@@ -1838,9 +1838,9 @@
       "source": "skills/eas-build-profiles/SKILL.md",
       "sourceSha256": "a305e8bd33639ba20780c4adc907a3a557053936f8f26485b28ef56a4e10b0b4",
       "target": "plugins/mobile-app-builder/skills/eas-build-profiles/guide.md",
-      "targetSha256": "a305e8bd33639ba20780c4adc907a3a557053936f8f26485b28ef56a4e10b0b4",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "7739debeb85b45b1039be41ce3c1b63bd290ea76aa9319edacc4951871cc5921",
+      "status": "adapted",
+      "reason": "Workflow retained with owner-managed credential boundaries, focused execution and recovery guidance."
     },
     {
       "source": "skills/eas-build-profiles/references/02-eas-pipeline.md",
@@ -1862,9 +1862,9 @@
       "source": "skills/eas-submit-play/SKILL.md",
       "sourceSha256": "ad446fafb83b773c77d7f8cd89da6733ae68db9ac984a2c04442a396abd471fa",
       "target": "plugins/mobile-app-builder/skills/eas-submit-play/guide.md",
-      "targetSha256": "ad446fafb83b773c77d7f8cd89da6733ae68db9ac984a2c04442a396abd471fa",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "71dab11c686db0a21e1a452224dd8ee43e11c5da265084a80ddbda342301b3c4",
+      "status": "adapted",
+      "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
     {
       "source": "skills/eas-submit-testflight/SKILL.md",
@@ -2054,9 +2054,9 @@
       "source": "skills/install-cli-tools/SKILL.md",
       "sourceSha256": "00fc4dd1de00744840514b911056fddaa7d735477a745d55ff76816ca9fba389",
       "target": "plugins/mobile-app-builder/skills/install-cli-tools/guide.md",
-      "targetSha256": "00fc4dd1de00744840514b911056fddaa7d735477a745d55ff76816ca9fba389",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "56ecf69b8b58537e2f636530208b08b42a8efb09d85f2259ee1af320fd07c5fc",
+      "status": "adapted",
+      "reason": "Workflow retained with owner-managed credential boundaries, focused execution and recovery guidance."
     },
     {
       "source": "skills/install-cursor-vscode/SKILL.md",
