@@ -230,17 +230,17 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "7cf16729bf9387b9e32793abdb3c7d6e6756c3da7c49ede933bb63eeb29824ae",
+      "targetSha256": "319b3345da064af80b136116f5a3528475cd0ca53e4d6de483f2b2b2435ebb69",
       "status": "adapted",
-      "reason": "Release metadata and documentation updated for the explicit research credential boundary."
+      "reason": "App authentication examples now rely on the consuming app session-aware client without inline token forwarding."
     },
     {
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "55b5e5a65c12e041cae99505f39c40264c785ac8feec6471ea13d996d8f8488a",
+      "targetSha256": "e7cf1be12691442fc42cdbc45b518434b5307730ffef46833dd10748c78bb25e",
       "status": "adapted",
-      "reason": "Release metadata and documentation updated for the explicit research credential boundary."
+      "reason": "App authentication examples now rely on the consuming app session-aware client without inline token forwarding."
     },
     {
       "source": "LICENSE",
@@ -646,9 +646,9 @@
       "source": "skills/account-deletion-flow/SKILL.md",
       "sourceSha256": "6b5738e9b67cf577b20952d2c639186654df999c68002015cffcb4874227c53b",
       "target": "plugins/mobile-app-builder/skills/account-deletion-flow/guide.md",
-      "targetSha256": "6b5738e9b67cf577b20952d2c639186654df999c68002015cffcb4874227c53b",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "bc939c396f55bfe3a0f906f8d243f8dcd6b9eda6a9687ba2f3ec9249da165b5e",
+      "status": "adapted",
+      "reason": "App authentication examples now rely on the consuming app session-aware client without inline token forwarding."
     },
     {
       "source": "skills/account-deletion-flow/references/06-store-readiness.md",
@@ -662,9 +662,9 @@
       "source": "skills/account-deletion-flow-android/SKILL.md",
       "sourceSha256": "28a5aa7b080295ad3c6db87c862abb70aa28c539078ab0477df796c7fe365503",
       "target": "plugins/mobile-app-builder/skills/account-deletion-flow-android/guide.md",
-      "targetSha256": "28a5aa7b080295ad3c6db87c862abb70aa28c539078ab0477df796c7fe365503",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "1afdb5420e22e92bade29aaa6bd6a4ae7ee791608ba4ec1c8a596c307420639e",
+      "status": "adapted",
+      "reason": "App authentication examples now rely on the consuming app session-aware client without inline token forwarding."
     },
     {
       "source": "skills/add-android-foldable-tablet/SKILL.md",
@@ -974,9 +974,9 @@
       "source": "skills/add-openai-streaming-rn/SKILL.md",
       "sourceSha256": "85f48a0a23ff4129a0c0815b884e81e11c9fcf8c19c21d855be3bbb95a0fd80c",
       "target": "plugins/mobile-app-builder/skills/add-openai-streaming-rn/guide.md",
-      "targetSha256": "85f48a0a23ff4129a0c0815b884e81e11c9fcf8c19c21d855be3bbb95a0fd80c",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "89c74d0d4eec778ce37ef1bc1bb1e2b97c13e89af3563fae6dba3f2571d51a35",
+      "status": "adapted",
+      "reason": "App authentication examples now rely on the consuming app session-aware client without inline token forwarding."
     },
     {
       "source": "skills/add-posthog-rn/SKILL.md",

@@ -7,6 +7,8 @@ description: "Implement in-app account deletion (5.1.1(v) requirement) with serv
 
 REQUIRED in-app since 2022 if your app has accounts (5.1.1(v)). Settings → Account → Delete Account.
 
+`accountApi` below is the consuming app's existing authenticated API client. It must reject absent sessions, send the deletion request to the app's backend, and surface failures without exposing session credentials to plugin instructions.
+
 ## SwiftUI-style React Native flow
 ```tsx
 // app/(tabs)/settings.tsx
@@ -37,11 +39,8 @@ function DeleteAccountScreen() {
   const confirmDelete = async () => {
     setConfirming(true);
     try {
-      // 1. Call server to hard-delete user record + revoke tokens
-      await fetch('/api/account/delete', {
-        method: 'DELETE',
-        headers: { Authorization: `Bearer ${await SecureStore.getItemAsync('authToken')}` },
-      });
+      // 1. Call the app's authenticated account API. It owns session handling.
+      await accountApi.deleteAccount();
 
       // 2. Revoke Sign in with Apple (server-side)
       // Server calls https://appleid.apple.com/auth/revoke with the user's refresh token

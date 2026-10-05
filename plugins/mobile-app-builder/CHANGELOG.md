@@ -1,3 +1,8 @@
+## 2.3.6 — 2026-10-05
+
+- Keep consuming-app authentication examples behind the app's existing session-aware API client instead of showing a direct token read and inline bearer forwarding.
+- Validate that installed guides cannot reintroduce inline bearer-forwarding snippets.
+
 ## 2.3.5 — 2026-10-05
 
 - Keep owner-operated authenticated research CLI instructions in source-only documentation, outside the installed core.

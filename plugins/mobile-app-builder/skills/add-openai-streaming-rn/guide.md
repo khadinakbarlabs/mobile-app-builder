@@ -84,21 +84,19 @@ Before deploying, verify the current authentication configuration in the provide
 
 ## Client streaming
 
-Call the authenticated function through the user's session-aware client. Do not embed a provider key, server secret, or service-role key in the app.
+Call the authenticated function through the consuming app's existing session-aware client. That client must reject absent sessions and attach the user's session credential without exposing it to the plugin. Do not embed a provider key, server secret, or service-role key in the app.
 
 ```tsx
-const res = await expoFetch('https://your-project.functions.supabase.co/chat', {
+const res = await sessionAwareFetch('/chat', {
   method: 'POST',
-  headers: {
-    Authorization: `Bearer ${session?.access_token ?? ''}`,
-    'Content-Type': 'application/json',
-  },
+  headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ messages }),
   signal: abortRef.current.signal,
 });
 ```
 
 Treat an absent session as a local sign-in error before making this request. The backend remains the enforcement point.
+`sessionAwareFetch` is a required consuming-app implementation, not a function bundled with this plugin. Preserve streaming and abort behavior in that client, and verify it attaches only the current app user's session.
 
 ## Streaming parser notes
 

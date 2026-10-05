@@ -241,6 +241,11 @@ class ReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'authenticated research CLI'):
             release.validate_folder(self.root, core=True)
 
+    def test_core_rejects_inline_bearer_forwarding_examples(self):
+        self.write('docs/network.md', 'headers: { Authorization: `Bearer ${token}` }\n')
+        with self.assertRaisesRegex(ValueError, 'inline bearer forwarding'):
+            release.validate_folder(self.root, core=True)
+
     def test_broken_local_module_import_is_rejected(self):
         self.write('scripts/tool.mjs', "import { example } from './missing.mjs';\n")
         with self.assertRaisesRegex(ValueError, 'module'):
