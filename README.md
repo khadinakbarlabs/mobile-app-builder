@@ -35,6 +35,7 @@ The assistant selects the relevant workflows and specialists. You can begin with
 Describe your outcome in ordinary language. Platform-specific tooling runs in your development environment. Research-service credentials and optional integrations belong in technical setup, not product prompts; do not paste secrets into chat or public files. You can start with public sources or your own research exports.
 
 Research and release workflows can send authorized data through backend tools. See [technical CLI data handling](plugins/mobile-app-builder/docs/CLI-DATA-HANDLING.md) for the destinations, local storage and credential boundaries.
+The [owner-operated research CLI reference](docs/BACKEND-RESEARCH-CLI.md) remains available in this repository but is excluded from the installed core package.
 
 ## Verification
 

@@ -1,3 +1,9 @@
+## 2.3.5 — 2026-10-05
+
+- Keep owner-operated authenticated research CLI instructions in source-only documentation, outside the installed core.
+- Route installed research guides through public sources, user-provided exports or the separately configured research connection, whose token is supplied by the user.
+- Reject authenticated research CLI instructions from future core packages during release validation.
+
 ## 2.3.4 — 2026-10-05
 
 - Clarify that the packaged fallback icon is static artwork and remove documentation references that the directory scanner associated with executable access to the image.

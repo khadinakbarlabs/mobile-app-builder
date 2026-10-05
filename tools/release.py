@@ -26,6 +26,7 @@ ENV_READ = re.compile(r'process\s*\.\s*env|os\s*\.\s*environ|\$(?:\{)?[A-Z_]*(?:
 CORE_OUTBOUND = re.compile(
     r'\b(?:fetch\s*\(|new\s+WebSocket\s*\(|(?:from|import\s*\(|require\s*\()\s*[\'\"]'
     r'(?:node:)?(?:https?|net|tls|dgram|child_process)(?:/[^\'\"]*)?[\'\"])', re.I)
+AUTHENTICATED_RESEARCH_CLI = re.compile(r'\bapify\s+(?:actors|runs|datasets)\s+(?:info|start|get-items)\b', re.I)
 PRIVATE_ENV_KEY = re.compile(r'(?:^|_)(?:TOKEN|SECRET|PASSWORD|API_KEY|PRIVATE_KEY)(?:$|_)', re.I)
 # Firebase client keys are public app configuration; allow only this fake example,
 # never arbitrary values or a blanket EXPO_PUBLIC_* credential exception.
@@ -207,6 +208,8 @@ def validate_folder(folder, core=False):
             if path.suffix == '.md':
                 if core:
                     validate_documented_build_environments(text, relative)
+                    if AUTHENTICATED_RESEARCH_CLI.search(text):
+                        raise ValueError('Core must not instruct authenticated research CLI execution')
                 resource_patterns = [
                     r'\b(?:node|python3)\s+["\']?((?:\./)?scripts/[A-Za-z0-9_./-]+\.(?:mjs|js|py|sh))',
                     r'`((?:references|scripts)/[A-Za-z0-9_./-]+\.(?:md|json|yaml|mjs|js|py|sh))`',

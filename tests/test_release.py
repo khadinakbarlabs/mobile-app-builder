@@ -236,6 +236,11 @@ class ReleaseBoundaryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'sensitive'):
             release.validate_folder(self.root)
 
+    def test_core_rejects_authenticated_research_cli_instructions(self):
+        self.write('docs/research.md', 'Run `apify actors start example/actor` after signing in.\n')
+        with self.assertRaisesRegex(ValueError, 'authenticated research CLI'):
+            release.validate_folder(self.root, core=True)
+
     def test_broken_local_module_import_is_rejected(self):
         self.write('scripts/tool.mjs', "import { example } from './missing.mjs';\n")
         with self.assertRaisesRegex(ValueError, 'module'):

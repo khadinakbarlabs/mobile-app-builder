@@ -4,7 +4,7 @@ This page documents optional development-tool behavior for reviewers and people 
 
 ## Research
 
-The owner-operated research CLI guide can send selected queries, source URLs and run inputs to https://api.apify.com and retrieve authorized research results. The independently installed research connection instead declares https://mcp.apify.com and explicit sensitive user configuration in its own manifest. It is not installed by core. Research may contain public personal data such as names and professional profiles; results can be written to the user's chosen local research folder. Scope, lawful data sources, collection limits and run budget remain explicit. Never borrow an installer's ambient credentials or print a token.
+Core research uses public sources, user-provided exports, or an independently installed research connection that declares https://mcp.apify.com and explicit sensitive user configuration in its own manifest. It is not installed by core. The owner-operated backend CLI procedure remains in the source repository outside the installed core package. Research may contain public personal data such as names and professional profiles; results can be written to the user's chosen local research folder. Scope, lawful data sources, collection limits and run budget remain explicit. Never borrow an installer's ambient credentials or print a token.
 
 ## Development and release
 
