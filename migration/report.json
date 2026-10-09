@@ -230,7 +230,7 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "9469c26e9537778d611bc04e33834ba5c46d368e7812b2a92aaa96278650d83f",
+      "targetSha256": "6e327f79900e7b52688adf2c7951237d255e2737206221472085ed96ab2218da",
       "status": "adapted",
       "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
@@ -238,7 +238,7 @@
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "2fa69e7366c34ef9d87c33b89c058d09ad8289b8d49e8d76703ad0e993d9c9f2",
+      "targetSha256": "543eba07f2d9ba0e1d989997b8e8a0ad012a5c880285a73d4805c95bba6bde78",
       "status": "adapted",
       "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },

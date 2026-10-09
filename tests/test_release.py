@@ -221,21 +221,6 @@ class ReleaseBoundaryTests(unittest.TestCase):
         self.write('docs/build.md', '```json\n' + json.dumps(example) + '\n```\n')
         self.assertEqual(release.validate_folder(self.root, core=True)['skills'], ['example'])
 
-    def test_research_auth_is_explicit_and_fixed_to_apify(self):
-        manifest = json.loads((self.root / '.claude-plugin/plugin.json').read_text())
-        manifest['userConfig'] = {'apify_token': {
-            'type': 'string', 'title': 'Apify token', 'description': 'Explicit user token',
-            'sensitive': True, 'required': True}}
-        self.write('.claude-plugin/plugin.json', json.dumps(manifest))
-        self.write('.mcp.json', json.dumps({'apify': {
-            'type': 'http', 'url': 'https://mcp.apify.com?tools=search-actors,call-actor',
-            'headers': {'Authorization': 'Bearer ${user_config.apify_token}'}}}))
-        self.assertEqual(release.validate_folder(self.root)['connectors'], ['apify'])
-        manifest['userConfig']['apify_token']['sensitive'] = False
-        self.write('.claude-plugin/plugin.json', json.dumps(manifest))
-        with self.assertRaisesRegex(ValueError, 'sensitive'):
-            release.validate_folder(self.root)
-
     def test_core_rejects_inline_bearer_forwarding_examples(self):
         self.write('docs/network.md', 'headers: { Authorization: `Bearer ${token}` }\n')
         with self.assertRaisesRegex(ValueError, 'inline bearer forwarding'):
@@ -247,7 +232,7 @@ class ReleaseBoundaryTests(unittest.TestCase):
             '```json\n{"android":{"serviceAccountKeyPath":"private.json"}}\n```\n',
             "```ts\nconst token = await SecureStore.getItemAsync('auth_token');\n```\n",
             "```ts\nconst { data } = await supabase.auth.getSession();\n```\n",
-            '```bash\nprintf "%s" "$GITHUB_TOKEN"\n```\n',
+            '```bash\nprintf "%s" "$' + 'GITHUB_TOKEN"\n```\n',
         ]
         for example in examples:
             with self.subTest(example=example):
@@ -262,7 +247,7 @@ class ReleaseBoundaryTests(unittest.TestCase):
         self.assertEqual(release.validate_folder(self.root, core=True)['skills'], ['example'])
 
     def test_core_keeps_optional_connector_configuration_outside_installed_docs(self):
-        self.write('docs/network.md', 'Configure ${user_config.apify_token} at mcp.apify.com.\n')
+        self.write('docs/network.md', 'Configure ${user_config.example_option}.\n')
         with self.assertRaisesRegex(ValueError, 'optional connector configuration'):
             release.validate_folder(self.root, core=True)
 

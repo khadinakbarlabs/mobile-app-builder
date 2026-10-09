@@ -1,3 +1,8 @@
+## 2.4.1 — 2026-10-09
+
+- Move the optional research connection to its own repository, khadinakbarlabs/mobile-app-builder-research, so this repository and its marketplace contain only the skills plugin and no connector or credential configuration.
+- Remove connector-specific validation, fixtures and CI steps from this repository's publisher tooling.
+
 ## 2.4.0 — 2026-10-05
 
 - Replace vague skill descriptions with task-oriented triggers and preserve the existing 30 public entry IDs, eight commands, eight leads and 190 detailed workflows.

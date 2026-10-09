@@ -14,8 +14,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 CORE = 'mobile-app-builder'
-RESEARCH = 'mobile-app-builder-research'
-PLUGINS = (CORE, RESEARCH)
+PLUGINS = (CORE,)
 TEXT_TYPES = {'.md', '.json', '.mjs', '.txt', '.yaml', '.yml'}
 ID = re.compile(r'[a-z0-9][a-z0-9-]{0,62}[a-z0-9]|[a-z0-9]')
 SEMVER = re.compile(r'\d+\.\d+\.\d+')
@@ -100,28 +99,6 @@ def command_frontmatter(text):
     value = yaml.load(match[1], Loader=UniqueLoader)
     if not isinstance(value, dict) or not isinstance(value.get('description'), str) or not value['description'].strip():
         raise ValueError('Command description is required')
-
-
-def validate_connectors(folder, manifest):
-    config = folder / '.mcp.json'
-    if not config.exists():
-        return []
-    servers = json.loads(config.read_text())
-    if not isinstance(servers, dict) or set(servers) != {'apify'}:
-        raise ValueError('Only the declared Apify connector belongs in this edition')
-    server = servers['apify']
-    parsed = urlparse(server.get('url', ''))
-    if (server.get('type') != 'http' or parsed.scheme != 'https'
-            or parsed.netloc != 'mcp.apify.com' or parsed.path not in {'', '/'}):
-        raise ValueError('Research destination must be the declared HTTPS Apify endpoint')
-    if set(server) != {'type', 'url', 'headers'} or server['headers'] != {
-            'Authorization': 'Bearer ${user_config.apify_token}'}:
-        raise ValueError('Research must use an explicit user_config header')
-    option = manifest.get('userConfig', {}).get('apify_token', {})
-    if (option.get('type') != 'string' or option.get('sensitive') is not True
-            or option.get('required') is not True or 'default' in option):
-        raise ValueError('Research token must be a required sensitive user option without a default')
-    return sorted(servers)
 
 
 def validate_documented_build_environments(text, relative):
@@ -219,7 +196,7 @@ def validate_folder(folder, core=False):
                         raise ValueError(f'Core credential read or file upload in example: {relative}')
                     if INLINE_BEARER_FORWARDING.search(text):
                         raise ValueError('Core must not include inline bearer forwarding examples')
-                    if '${user_config.' in text or 'mcp.apify.com' in text:
+                    if '${user_config.' in text:
                         raise ValueError('Core must keep optional connector configuration outside installed docs')
                 resource_patterns = [
                     r'\b(?:node|python3)\s+["\']?((?:\./)?scripts/[A-Za-z0-9_./-]+\.(?:mjs|js|py|sh))',
@@ -257,7 +234,7 @@ def validate_folder(folder, core=False):
         raise ValueError('Plugin README requires at least 40 words')
     return {'name': manifest['name'], 'version': manifest['version'],
             'skills': sorted(skills), 'agents': sorted(agents), 'commands': sorted(commands), 'files': inventory,
-            'connectors': validate_connectors(folder, manifest), 'directoryApproval': False}
+            'directoryApproval': False}
 
 
 def build_archive(folder, destination):
@@ -337,7 +314,7 @@ def validate_repository(root=ROOT):
     marketplace = json.loads((root / '.claude-plugin/marketplace.json').read_text())
     if {entry['name']: entry['source'] for entry in marketplace['plugins']} != {
             name: './plugins/' + name for name in PLUGINS}:
-        raise ValueError('Marketplace must point at the exact two installed roots')
+        raise ValueError('Marketplace must point at the exact installed root')
     migration = json.loads((root / 'migration/report.json').read_text())
     source = json.loads((root / 'migration/source.json').read_text())
     validate_preserved_skills(root / 'plugins' / CORE, core['skills'], catalog['skills'], source)

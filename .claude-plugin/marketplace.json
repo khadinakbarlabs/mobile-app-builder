@@ -5,18 +5,13 @@
   },
   "metadata": {
     "description": "Mobile App Builder for iOS, Android and web",
-    "version": "2.4.0"
+    "version": "2.4.1"
   },
   "plugins": [
     {
       "name": "mobile-app-builder",
       "source": "./plugins/mobile-app-builder",
       "description": "Research, design, build and grow iOS, Android and web apps"
-    },
-    {
-      "name": "mobile-app-builder-research",
-      "source": "./plugins/mobile-app-builder-research",
-      "description": "Optional technical research connection for app development"
     }
   ]
 }
