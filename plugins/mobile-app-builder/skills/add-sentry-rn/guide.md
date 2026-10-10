@@ -76,7 +76,7 @@ In the consuming app's `eas.json`, select the build environment:
 }
 ```
 
-The app owner configures `SENTRY_AUTH_TOKEN` in that project's production EAS environment with sensitive visibility, or in the selected CI secret store, following [Expo's Sentry guide](https://docs.expo.dev/guides/using-sentry/#usage-with-eas-build). A string beginning with `@` in `eas.json` is not a secret lookup. Do not copy the token into JSON, source, command arguments or this plugin, and do not inspect the installer's environment for it. Authentication and source-map upload belong to the owner's approved build environment.
+The app owner adds the Sentry upload secret to that project's production EAS environment with sensitive visibility, or to the selected CI secret store, through the Expo or CI dashboard, following [Expo's Sentry guide](https://docs.expo.dev/guides/using-sentry/#usage-with-eas-build). A string beginning with `@` in `eas.json` is not a secret lookup. The assistant never reads, checks, copies or forwards that secret. Authentication and source-map upload belong to the owner's approved build environment.
 
 Review the wizard's generated changes before a build. After an authorized build, verify the source-map upload and a sanitized test error against the exact release. Environment selection alone does not prove that upload succeeded.
 
@@ -136,7 +136,7 @@ Auto-enabled with `replaysOnErrorSampleRate`. Privacy: by default Sentry masks a
 
 ## Common gotchas
 
-- Source maps not uploading? Check `SENTRY_AUTH_TOKEN` is set in EAS env
+- Source maps not uploading? Ask the app owner to confirm the Sentry upload secret exists in the EAS environment dashboard
 - Errors show as "minified.js:1" in production = source map upload failed
 - Sentry kills cold start by 50-100ms; use `enableTracing: false` if perf-critical
 - Init MUST be the first thing in your entry file or you'll miss early errors

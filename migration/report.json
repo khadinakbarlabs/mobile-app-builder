@@ -230,7 +230,7 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "6e327f79900e7b52688adf2c7951237d255e2737206221472085ed96ab2218da",
+      "targetSha256": "3d188b315c61aa8ec650ad2f160d7663e7a80992fa8c12f611b333dfa4e2a3fc",
       "status": "adapted",
       "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
@@ -238,7 +238,7 @@
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "543eba07f2d9ba0e1d989997b8e8a0ad012a5c880285a73d4805c95bba6bde78",
+      "targetSha256": "fbea8acf6ee3b1c42f780de1a5b7b01b4a2dd17799e46957c956933bea9c4ed7",
       "status": "adapted",
       "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
@@ -1022,7 +1022,7 @@
       "source": "skills/add-sentry-rn/SKILL.md",
       "sourceSha256": "5bf5f69f8e1314499b574baa82b60f02c11371f4db4825cffefdd7b36e96ccb7",
       "target": "plugins/mobile-app-builder/skills/add-sentry-rn/guide.md",
-      "targetSha256": "74c5554574b32ed16d96b8d4bf3bf5975f57aa5abe5f3818ad2e821dbce64fe4",
+      "targetSha256": "efdd796df7101b4737f5f3843f6e014c5e36cca6a099c242adbc9971d5fa30c7",
       "status": "adapted",
       "reason": "Guide retained with local links adjusted for consolidated entry points."
     },
@@ -1030,7 +1030,7 @@
       "source": "skills/add-sentry-rn-android/SKILL.md",
       "sourceSha256": "3331b493fa96ca8646cd5c51c1b98cb46910975a8112a42b1462c36ce6858db8",
       "target": "plugins/mobile-app-builder/skills/add-sentry-rn-android/guide.md",
-      "targetSha256": "17cad83a5667e40e5b729be048f8504f0034230ba3bf8d3234864d46279e9ad1",
+      "targetSha256": "e41af3aa03e458f2f9be7d3d3c2539f887acc7977d4b105adf9bd16388193292",
       "status": "adapted",
       "reason": "Guide retained with local links adjusted for consolidated entry points."
     },

@@ -25,6 +25,7 @@ ENV_READ = re.compile(r'process\s*\.\s*env|os\s*\.\s*environ|\$(?:\{)?[A-Z_]*(?:
 CORE_OUTBOUND = re.compile(
     r'\b(?:fetch\s*\(|new\s+WebSocket\s*\(|(?:from|import\s*\(|require\s*\()\s*[\'\"]'
     r'(?:node:)?(?:https?|net|tls|dgram|child_process)(?:/[^\'\"]*)?[\'\"])', re.I)
+CREDENTIAL_ENV_NAME = re.compile(r'\b[A-Z][A-Z0-9]*_[A-Z0-9_]*(?:TOKEN|SECRET|PASSWORD|CREDENTIALS?)\b')
 INLINE_BEARER_FORWARDING = re.compile(r'\bAuthorization\s*:\s*[`\'\"]Bearer\s', re.I)
 CORE_SENSITIVE_READ = re.compile(
     r'\bSecureStore\s*\.\s*getItem(?:Async)?\s*\('
@@ -194,6 +195,8 @@ def validate_folder(folder, core=False):
                     examples = '\n'.join(re.findall(r'^```[^\n]*\n(.*?)^```\s*$', text, re.M | re.S))
                     if CORE_SENSITIVE_READ.search(examples) or ENV_READ.search(examples):
                         raise ValueError(f'Core credential read or file upload in example: {relative}')
+                    if CREDENTIAL_ENV_NAME.search(text):
+                        raise ValueError(f'Core must not name installer credential variables: {relative}')
                     if INLINE_BEARER_FORWARDING.search(text):
                         raise ValueError('Core must not include inline bearer forwarding examples')
                     if '${user_config.' in text:

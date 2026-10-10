@@ -1,3 +1,8 @@
+## 2.4.2 — 2026-10-10
+
+- Stop naming the Sentry upload credential variable in the Sentry setup guides. The guides no longer tell the assistant to check an environment credential; the app owner manages the secret in the Expo or CI dashboard. This was the only credential-named environment variable left in the plugin.
+- Reject credential-named environment variables in core text during release validation.
+
 ## 2.4.1 — 2026-10-09
 
 - Move the optional research connection to its own repository, khadinakbarlabs/mobile-app-builder-research, so this repository and its marketplace contain only the skills plugin and no connector or credential configuration.

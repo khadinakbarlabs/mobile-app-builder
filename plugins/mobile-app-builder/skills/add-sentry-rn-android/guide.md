@@ -27,7 +27,7 @@ Select the owner's intended build environment in the consuming app's `eas.json`:
 }
 ```
 
-The app owner sets `SENTRY_AUTH_TOKEN` in that production EAS environment with sensitive visibility or in the approved CI secret store. A string beginning with `@` in JSON is not a secret lookup. Never place the token in `eas.json`, source, command arguments or this plugin, and never borrow installer credentials. See [Expo's Sentry build guidance](https://docs.expo.dev/guides/using-sentry/#usage-with-eas-build).
+The app owner adds the Sentry upload secret to that production EAS environment with sensitive visibility, or to the approved CI secret store, through the Expo or CI dashboard. A string beginning with `@` in JSON is not a secret lookup. The assistant never reads, checks, copies or forwards that secret. See [Expo's Sentry build guidance](https://docs.expo.dev/guides/using-sentry/#usage-with-eas-build).
 
 With the SDK and build integration configured, an authorized build can upload source maps. Verify the actual upload and release match; do not infer success from a production profile alone.
 

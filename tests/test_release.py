@@ -221,6 +221,11 @@ class ReleaseBoundaryTests(unittest.TestCase):
         self.write('docs/build.md', '```json\n' + json.dumps(example) + '\n```\n')
         self.assertEqual(release.validate_folder(self.root, core=True)['skills'], ['example'])
 
+    def test_core_rejects_named_credential_environment_variables(self):
+        self.write('docs/upload.md', 'Check `SENTRY_' + 'AUTH_TOKEN` is set before upload.\n')
+        with self.assertRaisesRegex(ValueError, 'credential variables'):
+            release.validate_folder(self.root, core=True)
+
     def test_core_rejects_inline_bearer_forwarding_examples(self):
         self.write('docs/network.md', 'headers: { Authorization: `Bearer ${token}` }\n')
         with self.assertRaisesRegex(ValueError, 'inline bearer forwarding'):
