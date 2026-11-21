@@ -38,12 +38,12 @@ Keep logo within center 264×264 circle.
   "expo": {
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon-fg.png",
-        "backgroundImage": "./assets/adaptive-icon-bg.png",
-        "monochromeImage": "./assets/adaptive-icon-mono.png",
+        "foregroundImage": "./assets/<adaptive-icon-fg-image>",
+        "backgroundImage": "./assets/<adaptive-icon-bg-image>",
+        "monochromeImage": "./assets/<adaptive-icon-mono-image>",
         "backgroundColor": "#FFFFFF"
       },
-      "icon": "./assets/icon.png"
+      "icon": "./assets/<icon-image>"
     }
   }
 }

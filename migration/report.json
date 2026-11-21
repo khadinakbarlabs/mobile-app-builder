@@ -230,7 +230,7 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "3d188b315c61aa8ec650ad2f160d7663e7a80992fa8c12f611b333dfa4e2a3fc",
+      "targetSha256": "5d4781150dbb49819735e6c2aa05e34b98081bbd9ed5b076d57778ad318b7ac1",
       "status": "adapted",
       "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
@@ -238,7 +238,7 @@
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "fbea8acf6ee3b1c42f780de1a5b7b01b4a2dd17799e46957c956933bea9c4ed7",
+      "targetSha256": "36690e3f84257b4956021f07a8c17516d35da4985c328d17e74c19a40cefa91d",
       "status": "adapted",
       "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
@@ -294,7 +294,7 @@
       "source": "WORKFLOWS.md",
       "sourceSha256": "a50d48661a768eacfb5200914457033b318d750a83ed10fd0c98be735b32ea72",
       "target": "plugins/mobile-app-builder/WORKFLOWS.md",
-      "targetSha256": "b6ec9a65f6191dd92404d509efddec8a13f53fa3aff76ab202c619d20c4af037",
+      "targetSha256": "a2fe01bea58dbaf71f1e6f34c1af7684e8071d6018421051f899f7991f94ff1d",
       "status": "adapted",
       "reason": "Consolidated entry points, routing and release documentation."
     },
@@ -478,7 +478,7 @@
       "source": "docs/BRAND.md",
       "sourceSha256": "09f57acbf62f870530dcd952574d41ccb8191fbf2f7481ca629e02582161dd7f",
       "target": "plugins/mobile-app-builder/docs/BRAND.md",
-      "targetSha256": "b03734e76b392c8c1c79595aaae8aebacd90ab3d9b8130f907fc35da37e62c8f",
+      "targetSha256": "8e882852604725c2e1941e09ad9c57da832a04db34e1ccd1c3c1fee20aae3a68",
       "status": "adapted",
       "reason": "Updated installed metadata or links for version 2.3.9; source provenance remains preserved."
     },
@@ -734,9 +734,9 @@
       "source": "skills/add-app-icon-launch-screen/SKILL.md",
       "sourceSha256": "8e82411920cc76c6acc5488fda1546fb4732391a6460e4572474772bb9889f8d",
       "target": "plugins/mobile-app-builder/skills/add-app-icon-launch-screen/guide.md",
-      "targetSha256": "8e82411920cc76c6acc5488fda1546fb4732391a6460e4572474772bb9889f8d",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "fecf9bf80fab7dfb66d65234dc70db49f38b5a6bd982ea3ff693d4189375c9e3",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/add-deep-links/SKILL.md",
@@ -806,9 +806,9 @@
       "source": "skills/add-expo-notifications/SKILL.md",
       "sourceSha256": "39b2eccda36741c9ba97d3b8157e44a605c062162660ef8a45899a5a90f54ae7",
       "target": "plugins/mobile-app-builder/skills/add-expo-notifications/guide.md",
-      "targetSha256": "39b2eccda36741c9ba97d3b8157e44a605c062162660ef8a45899a5a90f54ae7",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "e33f4c1cb0f4ec02131e001681da6478404764af2c9f04b2393e026e3a009f60",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/add-expo-notifications/references/01-expo-sdk-54.md",
@@ -822,9 +822,9 @@
       "source": "skills/add-expo-notifications-fcm/SKILL.md",
       "sourceSha256": "ea5880be5a0dc7f005742274fe26532ea455c36ca6001617c4756f0ac7c1d9ac",
       "target": "plugins/mobile-app-builder/skills/add-expo-notifications-fcm/guide.md",
-      "targetSha256": "ea5880be5a0dc7f005742274fe26532ea455c36ca6001617c4756f0ac7c1d9ac",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "2defacd0240a0a70d58d6bb55afb4b8b2970215eb63596cf886e2f4901e47746",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/add-expo-secure-store/SKILL.md",
@@ -926,17 +926,17 @@
       "source": "skills/add-image/SKILL.md",
       "sourceSha256": "d1d976a127b74e08ecd1c0cb07af8cd47f4af4c6dd7e990447102db4068ff698",
       "target": "plugins/mobile-app-builder/skills/add-image/guide.md",
-      "targetSha256": "d1d976a127b74e08ecd1c0cb07af8cd47f4af4c6dd7e990447102db4068ff698",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "bdc0d873479407537f67bfe56e8a07f96016ccba1019ff123b8c2f101aa8f0eb",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/add-image-android/SKILL.md",
       "sourceSha256": "c1ba84508a97effe958cee0792ec1a1eb7d692fb46df1475d56e10ab7b1afcaa",
       "target": "plugins/mobile-app-builder/skills/add-image-android/guide.md",
-      "targetSha256": "c1ba84508a97effe958cee0792ec1a1eb7d692fb46df1475d56e10ab7b1afcaa",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "033d99cd936519079aa3c16249faab20a6af3202b9f69396f7a27ab195cd7ed4",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/add-live-activity/SKILL.md",
@@ -1006,9 +1006,9 @@
       "source": "skills/add-reanimated/SKILL.md",
       "sourceSha256": "b24b8f744d580aed5567d9bd45e057f9a6b075200be332d1ad8e832f0689acbd",
       "target": "plugins/mobile-app-builder/skills/add-reanimated/guide.md",
-      "targetSha256": "b24b8f744d580aed5567d9bd45e057f9a6b075200be332d1ad8e832f0689acbd",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "042860d33ab137e993ae9e36606889ad6f62d53f3a80f6c503bcac5af886b724",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/add-reanimated/references/01-expo-sdk-54.md",
@@ -1606,9 +1606,9 @@
       "source": "skills/competitor-paywall-analysis/SKILL.md",
       "sourceSha256": "d51e5585ffa58440b6892655b00c3279f70632ff1f3063ed1ff3c318d1175f1a",
       "target": "plugins/mobile-app-builder/skills/competitor-paywall-analysis/guide.md",
-      "targetSha256": "d51e5585ffa58440b6892655b00c3279f70632ff1f3063ed1ff3c318d1175f1a",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "9ed14a1909b38f5eb0444f44dc01f45c50ffd0b9bf36b02da254c74fcf65f45a",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/competitor-paywall-analysis-android/SKILL.md",
@@ -1622,9 +1622,9 @@
       "source": "skills/configure-aab-build/SKILL.md",
       "sourceSha256": "4fd92b3a05517090a1f2468d6a98a6e824bb6b6c9189e80877b3890a85bcb409",
       "target": "plugins/mobile-app-builder/skills/configure-aab-build/guide.md",
-      "targetSha256": "4fd92b3a05517090a1f2468d6a98a6e824bb6b6c9189e80877b3890a85bcb409",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "45840e57e7852f55c3bde74ccdb0cb7b099b1827e4f4c922d505774af211f3b4",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/custom-product-pages/SKILL.md",
@@ -1662,9 +1662,9 @@
       "source": "skills/design-app-icon-adaptive/SKILL.md",
       "sourceSha256": "e1ab266d136155070f72d26cd0e4d2ee174e590d8ac4621101605dae96a855b9",
       "target": "plugins/mobile-app-builder/skills/design-app-icon-adaptive/guide.md",
-      "targetSha256": "e1ab266d136155070f72d26cd0e4d2ee174e590d8ac4621101605dae96a855b9",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "b4ad94e3075bd21e14624564d32058fb9f663ca91cb995f68b21df5b679474e3",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/design-lifecycle-messaging/SKILL.md",
@@ -1710,9 +1710,9 @@
       "source": "skills/design-paywall/SKILL.md",
       "sourceSha256": "8ed3b70e689928cbb44595d731cd56aec8c78433299191702a609977ba107f81",
       "target": "plugins/mobile-app-builder/skills/design-paywall/guide.md",
-      "targetSha256": "8ed3b70e689928cbb44595d731cd56aec8c78433299191702a609977ba107f81",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "aee0f38e06e559dba9e3105b53089c63ff0bba1f3cf52609346a34c71408f5c4",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/design-paywall/references/03-monetization.md",
@@ -1782,17 +1782,17 @@
       "source": "skills/design-shareable-result-card/SKILL.md",
       "sourceSha256": "287e76bf616cd10229dec18ba52f9687618779f8a98b4ab2a6367ea85f011864",
       "target": "plugins/mobile-app-builder/skills/design-shareable-result-card/guide.md",
-      "targetSha256": "287e76bf616cd10229dec18ba52f9687618779f8a98b4ab2a6367ea85f011864",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "bea0e7750abe07fa97466b09d8f1b4fdcda381b713aaadf41fed30b3dc7dc45c",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/design-splash-screen/SKILL.md",
       "sourceSha256": "41de294f2fcb977c18d31809237e879c39bc393b116788a1a9a3cf0048b0e3f4",
       "target": "plugins/mobile-app-builder/skills/design-splash-screen/guide.md",
-      "targetSha256": "41de294f2fcb977c18d31809237e879c39bc393b116788a1a9a3cf0048b0e3f4",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
+      "targetSha256": "a8cfdbd3e91d0246c12ced9931e576ee2a0d3e6bbb82627f53fd776439227519",
+      "status": "adapted",
+      "reason": "Guide retained with example image file names replaced by placeholders."
     },
     {
       "source": "skills/design-viral-loop/SKILL.md",

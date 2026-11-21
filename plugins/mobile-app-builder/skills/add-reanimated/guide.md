@@ -42,7 +42,7 @@ function HeartButton() {
   return (
     <Pressable onPress={handlePress}>
       <Animated.View style={animatedStyle}>
-        <Image source={require('./heart.png')} />
+        <Image source={require('./<heart-image>')} />
       </Animated.View>
     </Pressable>
   );

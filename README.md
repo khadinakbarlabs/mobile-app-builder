@@ -1,7 +1,5 @@
 # Mobile App Builder
 
-![Mobile App Builder](assets/mobile-app-builder-banner-v9.png)
-
 Research, design, build and grow **iOS, Android and web apps**. Mobile App Builder offers **30 focused skills, 8 specialist leads and 8 commands** for product research, UI/UX, development, QA, screenshots, store metadata, launch, marketing and SEO. All 190 detailed workflows remain available as references.
 
 ## Start where you are

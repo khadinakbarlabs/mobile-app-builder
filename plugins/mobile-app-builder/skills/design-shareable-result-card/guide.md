@@ -69,7 +69,7 @@ export function ResultCard({ result, userName }: { result: number; userName: str
 **Targeting Instagram Stories directly** (skip the share sheet): use the Instagram URL scheme with the `InstagramStories` background-image. This requires hosting the image at a public URL first (upload to your backend or a CDN), then:
 
 ```ts
-const bgImage = encodeURIComponent('https://cdn.yourapp.com/share/123.png');
+const bgImage = encodeURIComponent('https://cdn.yourapp.com/share/<result-card-image>');
 Linking.openURL(`instagram-stories://share?backgroundImage=${bgImage}`);
 ```
 

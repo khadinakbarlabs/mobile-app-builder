@@ -1,3 +1,8 @@
+## 2.4.3 — 2026-11-22
+
+- Manifest cleanup for the Claude directory — removed listing-only and cross-tool keys from .claude-plugin/plugin.json and the unused agent-plugins root manifest; no behavior change.
+- Replace literal image file names in skill examples and docs with placeholders, and drop the README image embeds and the unused repository artwork that only they referenced.
+
 ## 2.4.2 — 2026-10-10
 
 - Stop naming the Sentry upload credential variable in the Sentry setup guides. The guides no longer tell the assistant to check an environment credential; the app owner manages the secret in the Expo or CI dashboard. This was the only credential-named environment variable left in the plugin.

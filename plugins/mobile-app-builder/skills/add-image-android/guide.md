@@ -17,7 +17,7 @@ npm exec --no -- expo install expo-image
 import { Image } from 'expo-image';
 
 <Image
-  source={{ uri: 'https://cdn.example.com/image.jpg' }}
+  source={{ uri: 'https://cdn.example.com/<image-file>' }}
   style={{ width: 200, height: 200 }}
   contentFit="cover"
   placeholder={{ blurhash: 'L6PZfSi_.AyE_3t7t7R**0o#DgR4' }}
@@ -57,7 +57,7 @@ import { Image } from 'expo-image';
 ## Local assets
 
 ```tsx
-import Logo from '../assets/logo.png';
+import Logo from '../assets/<logo-image>';
 <Image source={Logo} />
 ```
 

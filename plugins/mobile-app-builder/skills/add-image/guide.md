@@ -17,7 +17,7 @@ npm exec --no -- expo install expo-image
 import { Image } from 'expo-image';
 
 <Image
-  source={{ uri: 'https://example.com/avatar.jpg' }}
+  source={{ uri: 'https://example.com/<avatar-image>' }}
   style={{ width: 60, height: 60, borderRadius: 30 }}
   contentFit="cover"
   transition={200}
@@ -37,7 +37,7 @@ import { Image } from 'expo-image';
 ```tsx
 import { Image } from 'expo-image';
 
-await Image.prefetch(['https://example.com/img1.jpg', '...']);
+await Image.prefetch(['https://example.com/<image-1>', '...']);
 await Image.clearMemoryCache();
 await Image.clearDiskCache();
 ```
