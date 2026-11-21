@@ -54,7 +54,7 @@ Get the FULL paywall screen. If it has multiple steps (e.g., trial timeline -> p
 
 ```markdown
 # Paywall: [Competitor Name]
-[screenshot]
+[screenshot.png]
 
 ## The offer
 - Trigger: After 3rd workout logged

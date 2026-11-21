@@ -70,7 +70,7 @@ function PaywallScreen() {
 
   return (
     <ScrollView>
-      <Image source={require('@/assets/<paywall-hero-image>')} />
+      <Image source={require('@/assets/paywall-hero.png')} />
       <Text style={styles.headline}>The only food log that finishes itself</Text>
       <Text style={styles.subhead}>47,000 meals logged this week</Text>
 

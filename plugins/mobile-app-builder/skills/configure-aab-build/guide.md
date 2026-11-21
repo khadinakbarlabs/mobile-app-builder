@@ -70,7 +70,7 @@ WARNING: some emulators are x86. Keep x86_64 if targeting devs.
 ```bash
 # Before adding to assets/
 # Use WebP instead of PNG (50% smaller)
-cwebp -q 80 <input-image> -o <output-image>
+cwebp -q 80 input.png -o output.webp
 ```
 
 ## ProGuard config rules

@@ -1,8 +1,8 @@
 # Mobile App Builder
 
-_(The original banner image embed is omitted from this provenance copy.)_
+![Mobile App Builder — Research. Design. Build. Grow.](assets/mobile-app-builder-banner.png)
 
-Version 1.3.9 ([release](https://github.com/khadinakbarlabs/expo-mobile-app-builder/releases/tag/v1.3.9)) · License: MIT ([LICENSE](LICENSE)) · [Validate public package](https://github.com/khadinakbarlabs/expo-mobile-app-builder/actions/workflows/validate.yml)
+[![Version](https://img.shields.io/badge/version-1.3.9-2154D8)](https://github.com/khadinakbarlabs/expo-mobile-app-builder/releases/tag/v1.3.9) [![License: MIT](https://img.shields.io/badge/license-MIT-10213C)](LICENSE) [![Validate public package](https://github.com/khadinakbarlabs/expo-mobile-app-builder/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/khadinakbarlabs/expo-mobile-app-builder/actions/workflows/validate.yml)
 
 **Your mobile app agency, from the first research question to the next product improvement.**
 

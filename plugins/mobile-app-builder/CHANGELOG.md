@@ -1,12 +1,6 @@
-## 2.4.4 — 2026-11-22
-
-- Manifest cleanup for the Claude directory — removed listing-only and cross-tool keys from .claude-plugin/plugin.json and the unused agent-plugins root manifest; no behavior change.
-- Finish the cleanup: remove the packaged default icon and the retired repository artwork, keep the installed package text-only, and stop release and adapter tooling from expecting image files. The listing icon remains in the directory listing.
-
 ## 2.4.3 — 2026-11-22
 
-- Manifest cleanup for the Claude directory — removed listing-only and cross-tool keys from .claude-plugin/plugin.json and the unused agent-plugins root manifest; no behavior change.
-- Replace literal image file names in skill examples and docs with placeholders, and drop the README image embeds and the unused repository artwork that only they referenced.
+- Manifest cleanup for the Claude directory: removed the listing-only `displayName` key from `.claude-plugin/plugin.json`. The directory listing keeps its stored name; no behavior change.
 
 ## 2.4.2 — 2026-10-10
 

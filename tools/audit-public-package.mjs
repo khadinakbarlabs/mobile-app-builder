@@ -9,7 +9,7 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const packageRoot = path.resolve(process.argv[2] ?? path.join(scriptDirectory, ".."));
 const ignoredDirectories = new Set([".git", "node_modules", ".expo", "dist", "coverage"]);
 const credentialFilePattern = /(^|\/)(?:\.env(?:\..+)?|\.dev\.vars(?:\..+)?|GoogleService-Info\.plist|google-services\.json|credentials\.json|service-account[^/]*\.json|[^/]+\.(?:p8|p12|pem|key|jks|keystore))$/i;
-const textExtensions = new Set([".md", ".mjs", ".js", ".cjs", ".py", ".html", ".json", ".yaml", ".yml", ".txt", ".toml", ".sh"]);
+const textExtensions = new Set([".md", ".mjs", ".js", ".cjs", ".py", ".html", ".json", ".yaml", ".yml", ".txt", ".svg", ".toml", ".sh"]);
 const contentRules = [
   ["private-key-block", /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/],
   ["openai-key", /\bsk-[A-Za-z0-9_-]{16,}\b/],

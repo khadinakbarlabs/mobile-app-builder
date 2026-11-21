@@ -2,6 +2,7 @@ import importlib.util
 import json
 import os
 from pathlib import Path
+import shutil
 import socket
 import tempfile
 import unittest
@@ -182,23 +183,23 @@ class ReleaseBoundaryTests(unittest.TestCase):
                     release.validate_folder(self.root, core=True)
                 helper.unlink()
 
-    def test_core_keeps_listing_metadata_and_binary_artwork_outside_installed_root(self):
+    def test_core_keeps_listing_metadata_and_artwork_outside_installed_root(self):
         manifest_path = self.root / '.claude-plugin/plugin.json'
         manifest = json.loads(manifest_path.read_text())
-        manifest['icon'] = './assets/listing-artwork'
+        manifest['icon'] = './assets/logo.png'
         manifest_path.write_text(json.dumps(manifest))
         with self.assertRaisesRegex(ValueError, 'Directory listing fields'):
             release.validate_folder(self.root, core=True)
         del manifest['icon']
         manifest_path.write_text(json.dumps(manifest))
-        for relative in ('assets/listing-artwork.bin', '.claude-plugin/default-artwork.bin'):
-            with self.subTest(relative=relative):
-                asset = self.root / relative
-                asset.parent.mkdir(parents=True, exist_ok=True)
-                asset.write_bytes(b'\x89binary-artwork')
-                with self.assertRaisesRegex(ValueError, 'Unsupported file type'):
-                    release.validate_folder(self.root, core=True)
-                asset.unlink()
+        asset = self.root / 'assets/logo.png'
+        asset.parent.mkdir(parents=True)
+        asset.write_bytes(b'not-a-png')
+        with self.assertRaisesRegex(ValueError, 'Directory artwork'):
+            release.validate_folder(self.root, core=True)
+        asset.unlink()
+        shutil.copyfile(ROOT / 'migration/previous-assets/mobile-app-builder-logo-v8.png',
+                        self.root / '.claude-plugin/icon.png')
         self.assertEqual(release.validate_folder(self.root, core=True)['skills'], ['example'])
 
     def test_documented_build_config_cannot_serialize_credentials(self):

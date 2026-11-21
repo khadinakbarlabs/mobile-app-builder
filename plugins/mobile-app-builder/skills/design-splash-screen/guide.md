@@ -31,16 +31,16 @@ npm exec --no -- expo install expo-splash-screen
       [
         "expo-splash-screen",
         {
-          "image": "./assets/<splash-icon-image>",
+          "image": "./assets/splash-icon.png",
           "imageWidth": 200,
           "backgroundColor": "#ffffff",
           "android": {
-            "image": "./assets/<splash-icon-android-image>",
+            "image": "./assets/splash-icon-android.png",
             "imageWidth": 200,
             "backgroundColor": "#ffffff"
           },
           "dark": {
-            "image": "./assets/<splash-icon-dark-image>",
+            "image": "./assets/splash-icon-dark.png",
             "backgroundColor": "#000000"
           }
         }

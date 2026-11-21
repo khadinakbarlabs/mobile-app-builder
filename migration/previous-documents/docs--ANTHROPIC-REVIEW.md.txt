@@ -2,7 +2,7 @@
 
 Directory readback before this release — 2026-10-04: Anthropic scanned v1.3.5 c98ff4e, security passed, In review, Live not yet. The named AI-secret and download/run findings cleared; INVENTORY_INCOMPLETE and broad manifest asset/credential associations remain with a reviewer. No missing or unreadable file is named. Valid icon and four listing URLs are explicitly informational/no-action findings. Release 1.3.6 removes the last ambient public-key example, fixes Supabase magic-link sessions and excludes the publisher-only HTML artwork preview from installed bundles. The owner authorized shipping; inspect the exact new native commit before claiming any finding cleared or publication.
 
-_(The original logo image embed is omitted from this provenance copy.)_
+![Mobile App Builder](../assets/mobile-app-builder-logo-v8.png)
 
 ## Proposed listing
 

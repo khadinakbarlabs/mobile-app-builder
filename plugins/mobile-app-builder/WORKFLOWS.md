@@ -5,6 +5,7 @@ The full categorized 1.2.0 library is in [the skill catalog](docs/SKILL-CATALOG.
 # Mobile App Builder — detailed workflows
 
 [![skills.sh](https://skills.sh/b/khadinakbarlabs/expo-mobile-app-builder)](https://skills.sh/khadinakbarlabs/expo-mobile-app-builder)
+[![CI](https://github.com/khadinakbarlabs/expo-mobile-app-builder/actions/workflows/validate.yml/badge.svg)](https://github.com/khadinakbarlabs/expo-mobile-app-builder/actions/workflows/validate.yml)
 [![license](https://img.shields.io/badge/license-MIT-2154D8)](LICENSE)
 [![Expo SDK 54](https://img.shields.io/badge/Expo-SDK%2054-000020)](https://docs.expo.dev/versions/v54.0.0/)
 [![iOS + Android](https://img.shields.io/badge/platforms-iOS%20%2B%20Android-2154D8)](#iosandroid-parity-by-default)

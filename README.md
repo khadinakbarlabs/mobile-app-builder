@@ -1,5 +1,7 @@
 # Mobile App Builder
 
+![Mobile App Builder](assets/mobile-app-builder-banner-v9.png)
+
 Research, design, build and grow **iOS, Android and web apps**. Mobile App Builder offers **30 focused skills, 8 specialist leads and 8 commands** for product research, UI/UX, development, QA, screenshots, store metadata, launch, marketing and SEO. All 190 detailed workflows remain available as references.
 
 ## Start where you are
@@ -36,7 +38,7 @@ Research and release workflows can send authorized data through backend tools. S
 
 ## Verification
 
-All 189 previous workflows and 16 specialist role cards remain readable behind the consolidated entry points, with supporting references and templates retained. The added web workflow covers responsive UI, routing, rendering, accessibility, SEO and browser verification. The [migration report](migration/report.json) accounts for every previous native file except two retired artwork binaries, which remain in the upstream source history.
+All 189 previous workflows and 16 specialist role cards remain readable behind the consolidated entry points, with supporting references, templates and artwork retained. The added web workflow covers responsive UI, routing, rendering, accessibility, SEO and browser verification. The [migration report](migration/report.json) accounts for every previous native file.
 
 Release checks cover package integrity, credential safety, native manifests and actual component discovery. They do not prove a consuming app's deployment, device behavior or store approval. Directory submission and its reviewer status are reported separately.
 

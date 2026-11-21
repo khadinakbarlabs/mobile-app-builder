@@ -22,7 +22,7 @@ Run `set-up-firebase-cli` skill first. Result: `google-services.json` in `androi
   "expo": {
     "android": { "googleServicesFile": "./google-services.json" },
     "notification": {
-      "icon": "./assets/<notification-icon-image>",
+      "icon": "./assets/notification-icon.png",
       "color": "#ffffff",
       "androidMode": "default"
     }

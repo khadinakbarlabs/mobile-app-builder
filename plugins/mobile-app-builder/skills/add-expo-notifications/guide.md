@@ -18,7 +18,7 @@ npm exec --no -- expo install expo-notifications expo-device
   "expo": {
     "plugins": [
       ["expo-notifications", {
-        "icon": "./assets/<notification-icon-image>",
+        "icon": "./assets/notification-icon.png",
         "color": "#ffffff",
         "sounds": ["./assets/notification.wav"]
       }]

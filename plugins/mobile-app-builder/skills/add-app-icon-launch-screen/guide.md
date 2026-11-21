@@ -13,14 +13,14 @@ The 5-second decision asset. Get this right or installs drop 30%.
 1024×1024 PNG, no transparency, no rounded corners (Apple rounds them).
 
 ### Where to put it (Expo)
-Save the 1024×1024 PNG in `assets/` (shown below as `<icon-image>`; use your actual file name). Then in `app.json`:
+Save to `assets/icon.png` (1024×1024). Then in `app.json`:
 
 ```json
 {
   "expo": {
-    "icon": "./assets/<icon-image>",
+    "icon": "./assets/icon.png",
     "ios": {
-      "icon": "./assets/<icon-image>"
+      "icon": "./assets/icon.png"
     }
   }
 }
@@ -52,9 +52,9 @@ In `app.json`:
   "expo": {
     "ios": {
       "icon": {
-        "light": "./assets/<icon-image>",
-        "dark": "./assets/<icon-dark-image>",
-        "tinted": "./assets/<icon-tinted-image>"
+        "light": "./assets/icon.png",
+        "dark": "./assets/icon-dark.png",
+        "tinted": "./assets/icon-tinted.png"
       }
     }
   }
@@ -74,14 +74,14 @@ In `app.json`:
 {
   "expo": {
     "splash": {
-      "image": "./assets/<splash-image>",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
       "splash": {
-        "image": "./assets/<splash-image>",
-        "tabletImage": "./assets/<splash-ipad-image>",
+        "image": "./assets/splash.png",
+        "tabletImage": "./assets/splash-ipad.png",
         "resizeMode": "contain",
         "backgroundColor": "#ffffff"
       }
