@@ -1,3 +1,8 @@
+## 2.4.4 — 2026-11-22
+
+- Manifest cleanup for the Claude directory — removed listing-only and cross-tool keys from .claude-plugin/plugin.json and the unused agent-plugins root manifest; no behavior change.
+- Finish the cleanup: remove the packaged default icon and the retired repository artwork, keep the installed package text-only, and stop release and adapter tooling from expecting image files. The listing icon remains in the directory listing.
+
 ## 2.4.3 — 2026-11-22
 
 - Manifest cleanup for the Claude directory — removed listing-only and cross-tool keys from .claude-plugin/plugin.json and the unused agent-plugins root manifest; no behavior change.

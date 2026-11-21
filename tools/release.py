@@ -8,7 +8,6 @@ import tempfile
 from urllib.parse import unquote, urlparse
 import zipfile
 
-from PIL import Image
 import yaml
 
 
@@ -160,74 +159,62 @@ def validate_folder(folder, core=False):
         data = path.read_bytes()
         if len(data) >= 5 * 1024 * 1024:
             raise ValueError('Plugin file exceeds the directory limit')
-        if core and path.suffix == '.png' and relative.as_posix() != '.claude-plugin/icon.png':
-            raise ValueError('Directory artwork must stay outside the installed plugin root except the default icon')
-        if path.suffix == '.png':
-            with Image.open(path) as image:
-                if image.format != 'PNG':
-                    raise ValueError('Image must be a complete PNG')
-                if core and relative.as_posix() == '.claude-plugin/icon.png' and (
-                        image.width != image.height or not 512 <= image.width <= 2048 or len(data) >= 2 * 1024 * 1024):
-                    raise ValueError('Default directory icon must be square, 512-2048 pixels, under 2 MiB')
-                image.verify()
-            with Image.open(path) as image:
-                image.load()
-        else:
-            if path.suffix not in TEXT_TYPES and path.name != 'LICENSE':
-                raise ValueError('Unsupported file type in plugin')
-            if len(data) >= 256 * 1024:
-                raise ValueError('Text file must be below 256 KiB')
-            try:
-                text = data.decode('utf-8', errors='strict')
-            except UnicodeDecodeError as error:
-                raise ValueError('Plugin text is not readable UTF-8') from error
-            if '\x00' in text or SECRET_CONTENT.search(text):
-                raise ValueError('Unreadable text or credential in plugin content')
-            if path.suffix == '.json':
-                json.loads(text)
-            if core and path.suffix == '.mjs' and ENV_READ.search(text):
-                raise ValueError('Core helper must not read installer environment credentials')
-            if core and path.suffix == '.mjs' and CORE_OUTBOUND.search(text):
-                raise ValueError('Core helper must not use network or subprocess access')
-            if path.suffix == '.md':
-                if core:
-                    validate_documented_build_environments(text, relative)
-                    examples = '\n'.join(re.findall(r'^```[^\n]*\n(.*?)^```\s*$', text, re.M | re.S))
-                    if CORE_SENSITIVE_READ.search(examples) or ENV_READ.search(examples):
-                        raise ValueError(f'Core credential read or file upload in example: {relative}')
-                    if CREDENTIAL_ENV_NAME.search(text):
-                        raise ValueError(f'Core must not name installer credential variables: {relative}')
-                    if INLINE_BEARER_FORWARDING.search(text):
-                        raise ValueError('Core must not include inline bearer forwarding examples')
-                    if '${user_config.' in text:
-                        raise ValueError('Core must keep optional connector configuration outside installed docs')
-                resource_patterns = [
-                    r'\b(?:node|python3)\s+["\']?((?:\./)?scripts/[A-Za-z0-9_./-]+\.(?:mjs|js|py|sh))',
-                    r'`((?:references|scripts)/[A-Za-z0-9_./-]+\.(?:md|json|yaml|mjs|js|py|sh))`',
-                ]
-                for pattern in resource_patterns:
-                    for reference in re.findall(pattern, text):
-                        candidates = [path.parent / reference, folder / reference]
-                        if not any(candidate.is_file() and candidate.resolve().is_relative_to(folder.resolve())
-                                   for candidate in candidates):
-                            raise ValueError(f'Missing documented resource reference: {relative}: {reference}')
-                for reference in re.findall(r'\]\(([^)\s]+)\)', text):
-                    target = reference.strip('<>').split('#', 1)[0]
-                    if not target or re.match(r'(?:https?://|mailto:)', target):
-                        continue
-                    contained_file(folder, path.parent / unquote(target), 'Markdown reference', allow_directory=True)
-            if path.suffix == '.mjs':
-                for reference in re.findall(r'(?:from\s*|import\s*)[\'"](\.[^\'"]+)[\'"]', text):
-                    contained_file(folder, path.parent / reference, 'local module')
-            if relative.parts[:1] == ('skills',) and path.name == 'SKILL.md':
-                frontmatter(text, path.parent.name)
-                skills.append(path.parent.name)
-            if relative.parts[:1] == ('agents',) and path.suffix == '.md':
-                frontmatter(text, path.stem)
-                agents.append(path.stem)
-            if relative.parts[:1] == ('commands',) and path.suffix == '.md':
-                command_frontmatter(text)
-                commands.append(path.stem)
+        # Only readable text ships; binary artwork stays in the directory listing.
+        if path.suffix not in TEXT_TYPES and path.name != 'LICENSE':
+            raise ValueError('Unsupported file type in plugin')
+        if len(data) >= 256 * 1024:
+            raise ValueError('Text file must be below 256 KiB')
+        try:
+            text = data.decode('utf-8', errors='strict')
+        except UnicodeDecodeError as error:
+            raise ValueError('Plugin text is not readable UTF-8') from error
+        if '\x00' in text or SECRET_CONTENT.search(text):
+            raise ValueError('Unreadable text or credential in plugin content')
+        if path.suffix == '.json':
+            json.loads(text)
+        if core and path.suffix == '.mjs' and ENV_READ.search(text):
+            raise ValueError('Core helper must not read installer environment credentials')
+        if core and path.suffix == '.mjs' and CORE_OUTBOUND.search(text):
+            raise ValueError('Core helper must not use network or subprocess access')
+        if path.suffix == '.md':
+            if core:
+                validate_documented_build_environments(text, relative)
+                examples = '\n'.join(re.findall(r'^```[^\n]*\n(.*?)^```\s*$', text, re.M | re.S))
+                if CORE_SENSITIVE_READ.search(examples) or ENV_READ.search(examples):
+                    raise ValueError(f'Core credential read or file upload in example: {relative}')
+                if CREDENTIAL_ENV_NAME.search(text):
+                    raise ValueError(f'Core must not name installer credential variables: {relative}')
+                if INLINE_BEARER_FORWARDING.search(text):
+                    raise ValueError('Core must not include inline bearer forwarding examples')
+                if '${user_config.' in text:
+                    raise ValueError('Core must keep optional connector configuration outside installed docs')
+            resource_patterns = [
+                r'\b(?:node|python3)\s+["\']?((?:\./)?scripts/[A-Za-z0-9_./-]+\.(?:mjs|js|py|sh))',
+                r'`((?:references|scripts)/[A-Za-z0-9_./-]+\.(?:md|json|yaml|mjs|js|py|sh))`',
+            ]
+            for pattern in resource_patterns:
+                for reference in re.findall(pattern, text):
+                    candidates = [path.parent / reference, folder / reference]
+                    if not any(candidate.is_file() and candidate.resolve().is_relative_to(folder.resolve())
+                               for candidate in candidates):
+                        raise ValueError(f'Missing documented resource reference: {relative}: {reference}')
+            for reference in re.findall(r'\]\(([^)\s]+)\)', text):
+                target = reference.strip('<>').split('#', 1)[0]
+                if not target or re.match(r'(?:https?://|mailto:)', target):
+                    continue
+                contained_file(folder, path.parent / unquote(target), 'Markdown reference', allow_directory=True)
+        if path.suffix == '.mjs':
+            for reference in re.findall(r'(?:from\s*|import\s*)[\'"](\.[^\'"]+)[\'"]', text):
+                contained_file(folder, path.parent / reference, 'local module')
+        if relative.parts[:1] == ('skills',) and path.name == 'SKILL.md':
+            frontmatter(text, path.parent.name)
+            skills.append(path.parent.name)
+        if relative.parts[:1] == ('agents',) and path.suffix == '.md':
+            frontmatter(text, path.stem)
+            agents.append(path.stem)
+        if relative.parts[:1] == ('commands',) and path.suffix == '.md':
+            command_frontmatter(text)
+            commands.append(path.stem)
         inventory.append({'path': relative.as_posix(), 'bytes': len(data),
                           'sha256': hashlib.sha256(data).hexdigest()})
     if len(inventory) > 512:

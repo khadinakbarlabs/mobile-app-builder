@@ -40,9 +40,6 @@ def export_edition(source, destination, host):
     manifest = json.loads((source / '.claude-plugin/plugin.json').read_text())
     # Everything copied was already validated as installed core content by release.py.
     shutil.copytree(source, destination, ignore=shutil.ignore_patterns('.claude-plugin'))
-    artwork = destination / 'assets'
-    artwork.mkdir()
-    shutil.copyfile(source / '.claude-plugin/icon.png', artwork / 'logo.png')
     identity = {key: manifest[key] for key in
                 ('name', 'version', 'description', 'author', 'homepage', 'repository', 'license', 'keywords')}
     # Portable skill inventories expect only executable entries in skills/.
@@ -108,14 +105,14 @@ def export_edition(source, destination, host):
             'defaultPrompt': ['Research a new app idea and define its first useful feature.',
                               'Fix this issue in my existing iOS, Android or web app.',
                               'Continue my app task from its accepted checkpoint.'],
-            'brandColor': '#2154D8', 'composerIcon': './assets/logo.png', 'logo': './assets/logo.png'}
+            'brandColor': '#2154D8'}
         write_json(destination / 'plugin.json', {
             '$schema': 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json', **identity,
             'extensions': {'com.openai': {'interface': interface}}})
         write_json(destination / '.codex-plugin/plugin.json', {**identity, 'skills': './skills/', 'interface': interface})
     else:
         identity['author'] = {'name': manifest['author']['name']}
-        write_json(destination / '.cursor-plugin/plugin.json', {**identity, 'logo': './assets/logo.png'})
+        write_json(destination / '.cursor-plugin/plugin.json', identity)
     readme = (destination / 'README.md').read_text()
     start = readme.index('## Install\n')
     end = readme.index('## Execution and data handling\n', start)
@@ -148,9 +145,6 @@ def validate_edition(folder, host):
         interface = manifest['extensions']['com.openai']['interface']
         if len(interface['shortDescription']) > 30 or interface != legacy['interface']:
             raise ValueError('Native interface mismatch')
-        for key in ('composerIcon', 'logo'):
-            if not (folder / interface[key]).is_file():
-                raise ValueError('Missing artwork resource')
     entries = sorted(folder.rglob('*'))
     check_names([path.relative_to(folder) for path in entries])
     skills = []
@@ -161,23 +155,23 @@ def validate_edition(folder, host):
         if not path.is_file():
             continue
         data = path.read_bytes()
-        if path.suffix != '.png':
-            text = data.decode('utf-8')
-            if SECRET_CONTENT.search(text):
-                raise ValueError('Credential in native package')
-            if path.name == 'SKILL.md':
-                fields = frontmatter(text, path.parent.name)
-                skills.append(fields['name'])
-                metadata_path = path.parent / 'agents/openai.yaml'
-                if not metadata_path.is_file() or '$' + fields['name'] not in metadata_path.read_text():
-                    raise ValueError('Missing skill UI resource')
-            for reference in re.findall(r'\]\(([^)\s]+)\)', text) if path.suffix == '.md' else []:
-                target = reference.split('#', 1)[0]
-                if not target or re.match(r'(?:https?://|mailto:)', target):
-                    continue
-                resource = (path.parent / target).resolve()
-                if not resource.is_relative_to(folder.resolve()) or not resource.exists():
-                    raise ValueError('Missing or escaping native resource: ' + path.relative_to(folder).as_posix())
+        # Native editions are text-only; no artwork is copied into them.
+        text = data.decode('utf-8')
+        if SECRET_CONTENT.search(text):
+            raise ValueError('Credential in native package')
+        if path.name == 'SKILL.md':
+            fields = frontmatter(text, path.parent.name)
+            skills.append(fields['name'])
+            metadata_path = path.parent / 'agents/openai.yaml'
+            if not metadata_path.is_file() or '$' + fields['name'] not in metadata_path.read_text():
+                raise ValueError('Missing skill UI resource')
+        for reference in re.findall(r'\]\(([^)\s]+)\)', text) if path.suffix == '.md' else []:
+            target = reference.split('#', 1)[0]
+            if not target or re.match(r'(?:https?://|mailto:)', target):
+                continue
+            resource = (path.parent / target).resolve()
+            if not resource.is_relative_to(folder.resolve()) or not resource.exists():
+                raise ValueError('Missing or escaping native resource: ' + path.relative_to(folder).as_posix())
         files.append({'path': path.relative_to(folder).as_posix(), 'sha256': hashlib.sha256(data).hexdigest()})
     commands = len(list((folder / 'commands').glob('*.md')))
     agents = len(list((folder / 'agents').glob('*.md')))

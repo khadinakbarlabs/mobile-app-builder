@@ -2,7 +2,8 @@
   "upstream": "https://github.com/khadinakbarlabs/expo-mobile-app-builder",
   "nativeCommit": "3b6c85860691e31f3a30fa475ef212c1c2e35e2e",
   "previousFiles": 312,
-  "accountedFiles": 312,
+  "accountedFiles": 310,
+  "retiredArtworkFiles": 2,
   "lostFiles": 0,
   "previousSkillIds": 189,
   "retainedSkillIds": [
@@ -230,7 +231,7 @@
       "source": ".claude-plugin/plugin.json",
       "sourceSha256": "c17f33f004df737bb6965f8a60c844cc6f987c4fbd80d58c9b74311f96ea5aad",
       "target": "plugins/mobile-app-builder/.claude-plugin/plugin.json",
-      "targetSha256": "5d4781150dbb49819735e6c2aa05e34b98081bbd9ed5b076d57778ad318b7ac1",
+      "targetSha256": "74abea091fe52e0f03658d8159e7da645031437d017c5081a119d4f344befdaf",
       "status": "adapted",
       "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
@@ -238,7 +239,7 @@
       "source": "CHANGELOG.md",
       "sourceSha256": "586af90f270582642ea3ff63d0c0239b3cb2b5a5dd8e98c7aa89859e4044b81a",
       "target": "plugins/mobile-app-builder/CHANGELOG.md",
-      "targetSha256": "36690e3f84257b4956021f07a8c17516d35da4985c328d17e74c19a40cefa91d",
+      "targetSha256": "df24eae3f10cd652cf5d7c32d1860c1bb2c45e7a4436cb281b76576fc20ee7d6",
       "status": "adapted",
       "reason": "Adapted for 2.4.0 credential boundaries, concrete task routing or native compatibility; original source identity and hash remain preserved."
     },
@@ -262,9 +263,9 @@
       "source": "README.md",
       "sourceSha256": "e3732ea7ebcbd62e709d19a88a4eb6370a3d0d62ceb176606a25a8ce4f378005",
       "target": "migration/previous-documents/README.md.txt",
-      "targetSha256": "e3732ea7ebcbd62e709d19a88a4eb6370a3d0d62ceb176606a25a8ce4f378005",
-      "status": "relocated",
-      "reason": "Original kept as source provenance; new user-facing guide installed."
+      "targetSha256": "0824730ba3500a1cca220d47006c8f9b46050e2963a3730ad770e8c6817e9325",
+      "status": "adapted",
+      "reason": "Original kept as source provenance; new user-facing guide installed. Image embeds were replaced with plain text notes."
     },
     {
       "source": "SECURITY.md",
@@ -443,22 +444,6 @@
       "reason": "Guide retained with local links adjusted for consolidated entry points."
     },
     {
-      "source": "assets/mobile-app-builder-banner.png",
-      "sourceSha256": "113ded0016c656f3e8cfd06f8e67e55f1bab6d418329fdccc5e8b69119ee74af",
-      "target": "migration/previous-assets/mobile-app-builder-banner.png",
-      "targetSha256": "113ded0016c656f3e8cfd06f8e67e55f1bab6d418329fdccc5e8b69119ee74af",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
-    },
-    {
-      "source": "assets/mobile-app-builder-logo-v8.png",
-      "sourceSha256": "4a3663a826010f645c460ad9d732ffa44a39a2563cec1f543b3477df0a7a5cbf",
-      "target": "migration/previous-assets/mobile-app-builder-logo-v8.png",
-      "targetSha256": "4a3663a826010f645c460ad9d732ffa44a39a2563cec1f543b3477df0a7a5cbf",
-      "status": "relocated",
-      "reason": "Original bytes preserved."
-    },
-    {
       "source": "docs/AGENCY.md",
       "sourceSha256": "ade30f6f62ffc472523bc22eb01b4a5412a6b7c2324d42ee3aa462c397ce7df5",
       "target": "plugins/mobile-app-builder/docs/AGENCY.md",
@@ -470,15 +455,15 @@
       "source": "docs/ANTHROPIC-REVIEW.md",
       "sourceSha256": "35a2fd9929a374949b5d915a98e23612c34b5ff3636875a5db0cc4320a093aa1",
       "target": "migration/previous-documents/docs--ANTHROPIC-REVIEW.md.txt",
-      "targetSha256": "35a2fd9929a374949b5d915a98e23612c34b5ff3636875a5db0cc4320a093aa1",
-      "status": "relocated",
-      "reason": "Historical reviewer evidence preserved; new package boundary explained."
+      "targetSha256": "1bf1af6126314f1ddca92d60770dca071766e8166502b03dbdc4156b33570086",
+      "status": "adapted",
+      "reason": "Historical reviewer evidence preserved; new package boundary explained. Image embeds were replaced with plain text notes."
     },
     {
       "source": "docs/BRAND.md",
       "sourceSha256": "09f57acbf62f870530dcd952574d41ccb8191fbf2f7481ca629e02582161dd7f",
       "target": "plugins/mobile-app-builder/docs/BRAND.md",
-      "targetSha256": "8e882852604725c2e1941e09ad9c57da832a04db34e1ccd1c3c1fee20aae3a68",
+      "targetSha256": "22a9e3a9674bb2398b39cfdd558c567121a15709f589d521dbdf3d4a31b8325a",
       "status": "adapted",
       "reason": "Updated installed metadata or links for version 2.3.9; source provenance remains preserved."
     },

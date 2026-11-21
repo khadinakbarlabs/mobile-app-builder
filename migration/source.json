@@ -3,7 +3,9 @@
   "sourceCommit": "3b1834833207216d8b15f98cbc04b47b3a2a2981",
   "nativeCommit": "3b6c85860691e31f3a30fa475ef212c1c2e35e2e",
   "version": "1.3.9",
-  "fileCount": 312,
+  "fileCount": 310,
+  "retiredArtworkFiles": 2,
+  "retiredArtworkNote": "Two previous artwork binaries are no longer tracked in this repository; their original bytes remain at sourceCommit in the upstream repository.",
   "files": [
     {
       "path": ".claude-plugin/marketplace.json",
@@ -116,14 +118,6 @@
     {
       "path": "agents/visual-designer.md",
       "sha256": "d67ea26da48c39e3db6db07cbeea84b1b19a69c5b60f03d692517a85a282f178"
-    },
-    {
-      "path": "assets/mobile-app-builder-banner.png",
-      "sha256": "113ded0016c656f3e8cfd06f8e67e55f1bab6d418329fdccc5e8b69119ee74af"
-    },
-    {
-      "path": "assets/mobile-app-builder-logo-v8.png",
-      "sha256": "4a3663a826010f645c460ad9d732ffa44a39a2563cec1f543b3477df0a7a5cbf"
     },
     {
       "path": "docs/AGENCY.md",
