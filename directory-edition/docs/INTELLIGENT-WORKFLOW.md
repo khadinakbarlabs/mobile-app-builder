@@ -113,8 +113,10 @@ A focused fix needs a short result, changed behavior, affected checks and remain
 
 **Rules for every report:**
 
-1. Ask before overwriting an existing file; otherwise choose a new file name.
-2. Before writing, check the content for secrets and remove any match. At minimum look for:
+1. Ask before overwriting an existing file; otherwise choose a new file name. Never write over a file silently.
+2. Keep the report input to 128 KiB (131,072 bytes) or less. If the gathered content is larger, shorten it to the limits above instead of writing a larger report.
+3. Refuse or strip text that contains control characters: bytes 0x00-0x08, 0x0B, 0x0C and 0x0E-0x1F. Tab (0x09), line feed (0x0A) and carriage return (0x0D) are allowed. If such characters appear in project-derived text, remove them and note it under Limits and unknowns.
+4. Before writing, check the content for secrets and remove any match. At minimum look for:
 
    | Pattern | Example of what it catches |
    | --- | --- |
@@ -125,10 +127,11 @@ A focused fix needs a short result, changed behavior, affected checks and remain
    | `github_pat_` followed by 20 or more characters | GitHub fine-grained tokens |
    | Values from `.env` files, signing passwords, store API keys | Any credential |
 
-3. In HTML, escape every piece of user-supplied or project-derived text: `&` as `&amp;`, `<` as `&lt;`, `>` as `&gt;`, `"` as `&quot;` and `'` as `&#39;`. Escape before inserting into any element or attribute.
-4. HTML reports contain no `<script>`, no event-handler attributes, no remote fonts, images, stylesheets or trackers, and no forms. Inline CSS only.
-5. Do not upload, publish or share the report. Check it for personal data and share only an authorized copy.
-6. Show signals, findings, next actions and limits. Never substitute a visual score for missing verification; show a score only when it is backed by evidence.
+5. In HTML, escape every piece of user-supplied or project-derived text: `&` as `&amp;`, `<` as `&lt;`, `>` as `&gt;`, `"` as `&quot;` and `'` as `&#39;`. Escape before inserting into any element or attribute.
+6. HTML reports contain no `<script>`, no event-handler attributes, no remote fonts, images, stylesheets or trackers, and no forms. Inline CSS only.
+7. Right after writing the report, make it private to its owner with Bash: `chmod 600 <report-file>`. Confirm with `ls -l <report-file>` that it shows `-rw-------`. If the host has no shell, tell the user the report is not yet private and ask them to restrict its permissions.
+8. Do not upload, publish or share the report. Check it for personal data and share only an authorized copy.
+9. Show signals, findings, next actions and limits. Never substitute a visual score for missing verification; show a score only when it is backed by evidence.
 
 Open or show the result for the user when the host supports it.
 
