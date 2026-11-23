@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Notifications Billing
+  short_description: Add or fix push notifications, deep-link delivery, subscriptions
+  default_prompt: Use $guide-notifications-billing for the relevant app task and return
+    a verified result.

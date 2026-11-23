@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Workflow Coordination
+  short_description: 'Resume an app task, audit or review a change, import a supplied '
+  default_prompt: Use $guide-workflow-coordination for the relevant app task and return
+    a verified result.

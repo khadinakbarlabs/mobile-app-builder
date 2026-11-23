@@ -32,6 +32,8 @@ The assistant selects the relevant workflows and specialists. You can begin with
 /plugin install mobile-app-builder@khadin-mobile-builder
 ```
 
+**Two editions.** [`plugins/mobile-app-builder`](plugins/mobile-app-builder) is the full edition installed from this marketplace, including optional local helper scripts. [`directory-edition`](directory-edition) is a text-only build of the same plugin (same name and version) for the Claude plugin directory: the helpers are replaced by written procedures, as described in its README.
+
 Describe your outcome in ordinary language. Platform-specific tooling runs in your development environment. Research-service credentials and optional integrations belong in technical setup, not product prompts; do not paste secrets into chat or public files. You can start with public sources or your own research exports.
 
 Research and release workflows can send authorized data through backend tools. See [technical CLI data handling](docs/CLI-DATA-HANDLING.md) for the destinations, local storage and credential boundaries.

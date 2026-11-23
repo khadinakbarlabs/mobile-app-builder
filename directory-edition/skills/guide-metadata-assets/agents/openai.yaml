@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Metadata Assets
+  short_description: Prepare truthful App Store and Google Play metadata, screenshots
+  default_prompt: Use $guide-metadata-assets for the relevant app task and return
+    a verified result.

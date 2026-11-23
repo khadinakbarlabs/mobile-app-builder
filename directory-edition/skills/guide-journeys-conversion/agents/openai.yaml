@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Journeys Conversion
+  short_description: Design onboarding, paywalls, conversion journeys and screen stat
+  default_prompt: Use $guide-journeys-conversion for the relevant app task and return
+    a verified result.

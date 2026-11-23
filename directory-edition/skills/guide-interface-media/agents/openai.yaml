@@ -1,0 +1,6 @@
+interface:
+  display_name: Guide Interface Media
+  short_description: Build app UI, navigation, media, camera, images, haptics and
+    ada
+  default_prompt: Use $guide-interface-media for the relevant app task and return
+    a verified result.

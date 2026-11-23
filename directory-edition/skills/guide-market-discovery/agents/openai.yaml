@@ -1,0 +1,6 @@
+interface:
+  display_name: Guide Market Discovery
+  short_description: Research a new app idea, validate the user problem and demand
+    ev
+  default_prompt: Use $guide-market-discovery for the relevant app task and return
+    a verified result.

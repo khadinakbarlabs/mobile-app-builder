@@ -1,0 +1,25 @@
+{
+  "name": "mobile-app-builder",
+  "version": "2.4.3",
+  "description": "Research, design, build and grow iOS, Android and web apps",
+  "author": {
+    "name": "Khadin Akbar Ventures LLC",
+    "url": "https://github.com/khadinakbarlabs/mobile-app-builder"
+  },
+  "homepage": "https://github.com/khadinakbarlabs/mobile-app-builder",
+  "repository": "https://github.com/khadinakbarlabs/mobile-app-builder",
+  "license": "MIT",
+  "keywords": [
+    "mobile-app-builder",
+    "ios",
+    "android",
+    "web",
+    "app-development",
+    "ui-ux",
+    "research",
+    "quality-assurance",
+    "app-growth",
+    "seo",
+    "store-assets"
+  ]
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Reference Library
+  short_description: Find a specific preserved mobile workflow, SDK reference, platfo
+  default_prompt: Use $guide-reference-library for the relevant app task and return
+    a verified result.

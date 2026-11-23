@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Accessibility
+  short_description: Audit and fix screen-reader labels, focus, touch targets, contra
+  default_prompt: Use $guide-accessibility for the relevant app task and return a
+    verified result.

@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Positioning
+  short_description: Name and position an app around its audience, problem, different
+  default_prompt: Use $guide-positioning for the relevant app task and return a verified
+    result.

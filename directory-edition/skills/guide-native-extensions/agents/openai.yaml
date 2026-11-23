@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Native Extensions
+  short_description: 'Implement platform-specific widgets, watch features, app clips, '
+  default_prompt: Use $guide-native-extensions for the relevant app task and return
+    a verified result.

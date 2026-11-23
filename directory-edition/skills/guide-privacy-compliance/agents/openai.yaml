@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Privacy Compliance
+  short_description: 'Review app privacy, consent, account deletion, data disclosure, '
+  default_prompt: Use $guide-privacy-compliance for the relevant app task and return
+    a verified result.

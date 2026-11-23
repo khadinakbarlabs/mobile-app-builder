@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide State Storage
+  short_description: 'Add or repair app state, queries, local persistence and offline '
+  default_prompt: Use $guide-state-storage for the relevant app task and return a
+    verified result.

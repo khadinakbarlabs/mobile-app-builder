@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Behavior Device
+  short_description: Reproduce and test app behavior on relevant iOS and Android devi
+  default_prompt: Use $guide-behavior-device for the relevant app task and return
+    a verified result.

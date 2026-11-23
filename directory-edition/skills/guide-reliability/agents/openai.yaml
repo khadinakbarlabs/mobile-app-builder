@@ -1,0 +1,5 @@
+interface:
+  display_name: App Reliability
+  short_description: Fix crashes, stuck screens and broken app behavior
+  default_prompt: Use $guide-reliability for the relevant app task and return a verified
+    result.

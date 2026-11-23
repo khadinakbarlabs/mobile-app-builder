@@ -1,0 +1,5 @@
+interface:
+  display_name: Guide Submission Rollout
+  short_description: Prepare and verify iOS, Android and web submissions, test tracks
+  default_prompt: Use $guide-submission-rollout for the relevant app task and return
+    a verified result.
